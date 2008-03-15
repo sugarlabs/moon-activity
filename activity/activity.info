@@ -1,0 +1,7 @@
+[Activity]
+name = Moon
+activity_version = 4
+service_name = com.garycmartin.Moon
+icon = moon-icon
+class = moon.MoonActivity
+show_launcher = yes

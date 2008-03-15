@@ -1,0 +1,16 @@
+Moon.activity/
+Moon.activity//activity
+Moon.activity//activity/activity.info
+Moon.activity//activity/moon-icon.svg
+Moon.activity//icons
+Moon.activity//icons/grid-icon.svg
+Moon.activity//icons/hemi-icon.svg
+Moon.activity//MANIFEST
+Moon.activity//moon.jpg
+Moon.activity//moon.py
+Moon.activity//moon.pyc
+Moon.activity//Moon.xo
+Moon.activity//po
+Moon.activity//po/moon.pot
+Moon.activity//po/POTFILES.in
+Moon.activity//setup.py
