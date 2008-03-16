@@ -58,7 +58,7 @@ from sugar.graphics.toolbutton import ToolButton
 from gettext import gettext as _
 import math
 import time
-import cPickle
+import json
 import os
 
 IMAGE_SIZE = 726
@@ -77,7 +77,7 @@ class MoonActivity(activity.Activity):
 		self.activityState = {}
 		self.activityState['hemisphereView'] = self.hemisphereView
 		self.activityState['showGrid'] = self.showGrid
-		self.parse_preferences(os.environ['SUGAR_ACTIVITY_ROOT'] + '/data/defaults')
+		self.read_and_parse_preferences(os.environ['SUGAR_ACTIVITY_ROOT'] + '/data/defaults')
 				
 		# Toolbox
 		toolbox = activity.ActivityToolbox(self)
@@ -144,35 +144,40 @@ class MoonActivity(activity.Activity):
 		self.set_canvas(self.mainView)
 		self.show_all()
 
-	def parse_preferences(self, file_path):
+	def read_and_parse_preferences(self, file_path):
 		"""Parse and set preference data from a given file."""
+		readFile = open(file_path, 'r')
 		try:
-			f = file(file_path, 'r')
-			self.activityState = cPickle.load(f)
-			f.close()
-			if 'hemisphereView' in self.activityState.keys():
+			self.activityState = json.read(readFile.read())
+			if self.activityState.has_key('hemisphereView'):
 				self.hemisphereView = self.activityState['hemisphereView']
-			if 'showGrid' in self.activityState.keys():
+			if self.activityState.has_key('showGrid'):
 				self.showGrid = self.activityState['showGrid']
-		except:
-			print "preference data %s not available" % (file_path)
+		finally:
+			readFile.close()
 
 	def read_file(self, file_path):
 		"""Read state from datastore."""
-		self.parse_preferences(file_path)
-		print "Reading previous state from datastore."
+		self.read_and_parse_preferences(file_path)
 		self.blockViewButtonsDuringUpdate()
 		
 	def write_file(self, file_path):
 		"""Write state to journal datastore and to persistent file system."""
 		self.activityState['hemisphereView'] = self.hemisphereView
 		self.activityState['showGrid'] = self.showGrid
+		serialisedData = json.write(self.activityState)
+		
 		toJournal = file(file_path, 'w')
-		cPickle.dump(self.activityState, toJournal)
-		toJournal.close()
+		try:
+			toJournal.write(serialisedData)
+		finally:
+			toJournal.close()
+			
 		toPersistentFs = file(os.environ['SUGAR_ACTIVITY_ROOT'] + '/data/defaults', 'w')
-		cPickle.dump(self.activityState, toPersistentFs)
-		toPersistentFs.close()
+		try:
+			toPersistentFs.write(serialisedData)
+		finally:
+			toPersistentFs.close()
 	
 	def toggleGridClicked(self, widget):
 		"""Respond to toolbar button to hide/show grid lines."""
