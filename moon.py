@@ -100,7 +100,7 @@ class MoonActivity(activity.Activity):
 		# Create the main activity container
 		self.mainView = gtk.HBox()
 
-		# Create an event box to hold the Moon image (mainly so I can set background color)
+		# Create event box to hold Moon image (so I can set background color)
 		self.event_box = gtk.EventBox()
 		colormap = gtk.gdk.colormap_get_system()
 		self.blackAllocColor = colormap.alloc_color('black')
@@ -125,7 +125,7 @@ class MoonActivity(activity.Activity):
 		self.info.set_justify(gtk.JUSTIFY_LEFT)
 		self.infoPanel.pack_start(self.info, False, False, 0)
 		self.mainView.pack_start(self.infoPanel, False, False, 0)
-		
+
 		# Create Moon data model
 		self.dataModel = DataModel()
 
@@ -146,15 +146,16 @@ class MoonActivity(activity.Activity):
 
 	def read_and_parse_preferences(self, file_path):
 		"""Parse and set preference data from a given file."""
-		readFile = open(file_path, 'r')
 		try:
+			readFile = open(file_path, 'r')
 			self.activityState = json.read(readFile.read())
 			if self.activityState.has_key('hemisphereView'):
 				self.hemisphereView = self.activityState['hemisphereView']
 			if self.activityState.has_key('showGrid'):
 				self.showGrid = self.activityState['showGrid']
-		finally:
 			readFile.close()
+		except:
+			pass
 
 	def read_file(self, file_path):
 		"""Read state from datastore."""
