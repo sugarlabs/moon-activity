@@ -1,0 +1,13 @@
+NEWS
+moon.jpg
+AUTHORS
+setup.py
+COPYING
+moon.py
+po/moon.pot
+po/POTFILES.in
+locale/es/activity.linfo
+icons/grid-icon.svg
+icons/hemi-icon.svg
+activity/activity.info
+activity/moon-icon.svg
