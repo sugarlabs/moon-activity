@@ -3,7 +3,6 @@ name = Moon
 activity_version = 5
 host_version = 1
 bundle_id = com.garycmartin.Moon
-service_name = com.garycmartin.Moon
 icon = moon-icon
 class = moon.MoonActivity
 show_launcher = yes
