@@ -1,12 +1,6 @@
 #!/usr/bin/env python
 try:
 	from sugar.activity import bundlebuilder
-	bundlebuilder.start("moon")
+	bundlebuilder.start()
 except ImportError:
-	import os
-	os.system("find ./ | sed 's,^./,Moon.activity/,g' | sed 's,//,/,g' | grep -v /.git | grep -v .DS_Store > MANIFEST")
-	os.system('rm Moon.xo')
-	os.chdir('..')
-	os.system('zip -r Moon.xo Moon.activity -x \*/.git\* \*.DS_Store')
-	os.system('mv Moon.xo ./Moon.activity')
-	os.chdir('Moon.activity')
+	print "Error: sugar.activity.Bundlebuilder not found."
