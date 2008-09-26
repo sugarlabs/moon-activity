@@ -58,7 +58,7 @@ msgid ""
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
-"Fecha Juliana"
+"Fecha Juliana:\n"
 "%.2f (astronomical)\n"
 "\n"
 
