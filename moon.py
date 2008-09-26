@@ -120,7 +120,7 @@ class MoonActivity(activity.Activity):
         
         # Create Moon information panel
         self.infoPanel = gtk.VBox()
-        self.infoPanel.set_border_width(17)
+        self.infoPanel.set_border_width(10)
         self.info = gtk.Label()
         self.info.set_justify(gtk.JUSTIFY_LEFT)
         self.infoPanel.pack_start(self.info, False, False, 0)
@@ -221,7 +221,7 @@ class MoonActivity(activity.Activity):
         informationString += _("Age:\n%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n\n") % {'days':self.dataModel.daysOld, 'hours':self.dataModel.hoursOld, 'minutes':self.dataModel.minutesOld}
         informationString += _("Lunation:\n%(phase).2f%% through lunation %(lunation)d\n\n") % {'phase':self.dataModel.phaseOfMoon * 100, 'lunation':self.dataModel.lunation}
         informationString += _("Surface Visibility:\n%.0f%% (estimated)\n\n") % (self.dataModel.percentOfFullMoon * 100)
-        informationString += _("Selenographic Terminator Longitude:\n%(deg).1f˚%(westOrEast)s (%(riseOrSet)s)\n\n") % {'deg':self.dataModel.selenographicDeg, 'westOrEast':self.dataModel.westOrEast, 'riseOrSet':self.dataModel.riseOrSet}
+        informationString += _(u"Selenographic Terminator Longitude:\n%(deg).1f\u00b0%(westOrEast)s (%(riseOrSet)s)\n\n") % {'deg':self.dataModel.selenographicDeg, 'westOrEast':self.dataModel.westOrEast, 'riseOrSet':self.dataModel.riseOrSet}
         informationString += _("Next Full Moon:\n%(date)s in %(days).0f days\n\n") % {'date':time.ctime(self.dataModel.nextFullMoonDate), 'days':self.dataModel.daysUntilFullMoon}
         informationString += _("Next New Moon:\n%(date)s in %(days).0f days\n\n") % {'date':time.ctime(self.dataModel.nextNewMoonDate), 'days':self.dataModel.daysUntilNewMoon}
         informationString += _("Next Lunar eclipse:\n%(date)s in %(days).0f days\n\n") % {'date':time.ctime(self.dataModel.nextLunarEclipseDate), 'days':self.dataModel.daysUntilLunarEclipse}

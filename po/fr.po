@@ -47,7 +47,7 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
-"Phase :\n"
+"Phase:\n"
 "%s\n"
 "\n"
 
@@ -99,11 +99,11 @@ msgstr ""
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
-"%(deg).1f˚%(westOrEast)s (%(riseOrSet)s)\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
 "Longitude du terminateur sélénographique:\n"
-"%(deg).1f˚%(westOrEast)s (%(riseOrSet)s)\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 
 #: ../moon.py:197
