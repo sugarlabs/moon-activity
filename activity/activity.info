@@ -1,6 +1,6 @@
 [Activity]
 name = Moon
-activity_version = 5
+activity_version = 6
 host_version = 1
 bundle_id = com.garycmartin.Moon
 icon = moon-icon
