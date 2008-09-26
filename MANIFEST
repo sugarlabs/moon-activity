@@ -13,3 +13,6 @@ locale/es/activity.linfo
 locale/es/LC_MESSAGES/com.garycmartin.Moon.mo
 activity/activity.info
 activity/moon-icon.svg
+po/fr.po
+locale/fr/activity.linfo
+locale/fr/LC_MESSAGES/com.garycmartin.Moon.mo
