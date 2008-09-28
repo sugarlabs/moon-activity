@@ -22,11 +22,11 @@ msgstr "Luna"
 
 #: ../moon.py:83
 msgid "Toggle Grid View"
-msgstr "Cambiar a Vista Grilla"
+msgstr "Cambiar a vista grilla"
 
 #: ../moon.py:88
 msgid "Toggle Hemisphere View"
-msgstr "Cambiar a Vista Hemisferio"
+msgstr "Cambiar a vista hemisferio"
 
 #: ../moon.py:93
 msgid "View"
@@ -37,7 +37,7 @@ msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
-"Información de la Luna para Hoy\n"
+"Información de la Luna para hoy\n"
 "\n"
 
 #: ../moon.py:191
@@ -59,7 +59,7 @@ msgid ""
 "\n"
 msgstr ""
 "Fecha Juliana:\n"
-"%.2f (astronomical)\n"
+"%.2f (astronómical)\n"
 "\n"
 
 #: ../moon.py:193
@@ -70,7 +70,7 @@ msgid ""
 "\n"
 msgstr ""
 "Edad:\n"
-"%(days).0f días, %(hours).0f horas, %(minutes).0f minutes\n"
+"%(days).0f días, %(hours).0f horas, %(minutes).0f minutos\n"
 "\n"
 
 #: ../moon.py:194
@@ -91,8 +91,8 @@ msgid ""
 "%.0f%% (estimated)\n"
 "\n"
 msgstr ""
-"Visibilidad de la Superficie:\n"
-"%.0f%% (estimated)\n"
+"Visibilidad de la superficie:\n"
+"%.0f%% (estimada)\n"
 "\n"
 
 #: ../moon.py:196
@@ -102,7 +102,7 @@ msgid ""
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
-"Longitud del Terminador Selenográfico:\n"
+"Longitud del terminador selenográfico:\n"
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 
@@ -135,7 +135,7 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
-"Próximo Eclipse Lunar:\n"
+"Próximo eclipse lunar:\n"
 "%(date)s en %(days).0f días\n"
 "\n"
 
@@ -146,7 +146,7 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
-"Próximo Eclipse Solar:\n"
+"Próximo eclipse solar:\n"
 "%(date)s en %(days).0f días\n"
 "\n"
 
@@ -176,11 +176,11 @@ msgstr "este"
 
 #: ../moon.py:442
 msgid "Sunset"
-msgstr "Ocaso"
+msgstr "Se pone"
 
 #: ../moon.py:444
 msgid "Sunrise"
-msgstr "Alba"
+msgstr "Sale"
 
 #: ../moon.py:458 ../moon.py:474
 msgid "New Moon"
