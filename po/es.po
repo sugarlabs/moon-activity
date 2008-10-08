@@ -80,8 +80,8 @@ msgid ""
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 msgstr ""
-"Revolución:\n"
-"%(phase).2f%% hasta la revolución %(lunation)d\n"
+"Lunación:\n"
+"%(phase).2f%% hasta la lunación %(lunation)d\n"
 "\n"
 
 #: ../moon.py:195
