@@ -1,0 +1,53 @@
+8
+
+* Updated empty NEWS file with actual news
+* Added pt_BR.po translation (from Gabriel Menini).
+* Corrected some word translations for Spanish.
+* Added some revised Spanish translation changes from Gabriel Menini.
+
+7
+
+* Added French locale by Bastien Guerry (thanks!)
+* Reduced frame padding to allow more space for longer French strings.
+* Fixed encoding issue affecting one string in the po file for both FR and ES.
+* Added French locale, kindly provided by Bastien Guerry.
+* Corrected missing newline from Juliana translation string.
+
+6
+
+* Updated version number from 5 to 6 that now has a Spanish locale by Gabriel Menini (th
+* Removed service_name from .info, that spec went away a long time ago.
+* Added es locale files, ready for testing
+* Change methods from camelcase to make pylint happier...
+
+5
+
+* Some license type cruft, and some git wierdness
+* General clean-up including, locale/es addition, updated MANIFEST, and a bug fix for 'f
+* Stop .DS_Store cruft getting into bundles
+* Git now includes the below Spanish name modification
+
+4
+
+* New .xo bundle made by community for Peru
+* Now called Luna in the activity bar in Spanish locales. Still needs translation for spanish...
+
+3
+
+* Added a view toolbar.
+* Feature added to display selenographic longitude and latitude grid lines (to help learning the terms).
+* Feature added to toggle Moon image view between Northern and Southern hemisphere viewing location (rotates view 180deg).
+* Textual displayed dates/times comply with local daylight saving rules and time zones (all internal calculations are in UTC).
+More accurate selenographic terminator visualisation (shadow) for waning gibbous & waxing crescent (corrected estimate for 3d curvature).
+* Added a .gitignore file to keep file cruft out of rep
+* Improved setup.py to ignore git stuff for easier building
+* Switched from cPickle to json storage for preferences.
+* Initial git import
+
+2
+
+* Minor update to display information using your local time zone, instead of UTC
+
+1
+
+* Beta version with basic core functionality (text information, Moon phase visualisation, Lunar eclipse data & effect).
