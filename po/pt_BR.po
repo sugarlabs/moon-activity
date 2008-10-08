@@ -16,11 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../activity/activity.info:2
-msgid "Moon"
-msgstr "Lua"
-
-#: ../moon.py:71
+#: ../activity/activity.info:2 ../moon.py:71
 msgid "Moon"
 msgstr "Lua"
 

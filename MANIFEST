@@ -16,3 +16,6 @@ activity/moon-icon.svg
 po/fr.po
 locale/fr/activity.linfo
 locale/fr/LC_MESSAGES/com.garycmartin.Moon.mo
+po/pt_BR.po
+locale/pt_BR/activity.linfo
+locale/pt_BR/LC_MESSAGES/com.garycmartin.Moon.mo

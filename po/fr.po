@@ -1,13 +1,13 @@
 # Moon XO's Activity translation
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Gabriel Menini <gabriel.menini@gmail.com>, 2008.
+# Bastien Guerry <bzg@laptop.org>, 2008.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: 6\n"
+"Report-Msgid-Bugs-To: Gary Martin <gary@garycmartin.com>\n"
 "POT-Creation-Date: 2008-03-14 16:02+0000\n"
 "PO-Revision-Date: 2008-09-26 11:19+0200\n"
 "Last-Translator: Bastien Guerry <bzg@laptop.org>\n"
