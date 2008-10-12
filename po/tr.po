@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-01 11:54-0400\n"
+"PO-Revision-Date: 2008-10-07 07:58-0400\n"
+"Last-Translator: abdullah kocabas <abdullah.kocabas@abcdizustu.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0rc2\n"
+
+#: activity/activity.info:2 moon.py:72
+msgid "Moon"
+msgstr "Ay"
+
+#: moon.py:86
+msgid "Toggle Grid View"
+msgstr "Grid Koordinatları Görünümüne Geçin"
+
+#: moon.py:91
+msgid "Toggle Hemisphere View"
+msgstr "Yarımküre Görünümüne Geçin"
+
+#: moon.py:96
+msgid "View"
+msgstr "Görünüm"
+
+#: moon.py:218
+msgid ""
+"Today's Moon Information\n"
+"\n"
+msgstr ""
+"Günlük Ay Bilgisi\n"
+"\n"
+
+#: moon.py:219
+#, python-format
+msgid ""
+"Phase:\n"
+"%s\n"
+"\n"
+msgstr ""
+"Evreler:\n"
+"%s\n"
+"\n"
+
+#: moon.py:220
+#, python-format
+msgid ""
+"Julian Date:\n"
+"%.2f (astronomical)\n"
+"\n"
+msgstr ""
+"Julian Takvime göre tarih:\n"
+"%.2f (astronomik)\n"
+"\n"
+
+#: moon.py:221
+#, python-format
+msgid ""
+"Age:\n"
+"%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
+"\n"
+msgstr ""
+"Yaş:\n"
+"%(günler).0 günler, %(saatler).0 saatler, %(dakika).0f dakikalar\n"
+"\n"
+
+#: moon.py:222
+#, python-format
+msgid ""
+"Lunation:\n"
+"%(phase).2f%% through lunation %(lunation)d\n"
+"\n"
+msgstr ""
+"29.5 günlük devre:\n"
+"%(evre).2f%% 29.5 gün boyunca %(29.5 günlük devre)d\n"
+"\n"
+
+#: moon.py:223
+#, python-format
+msgid ""
+"Surface Visibility:\n"
+"%.0f%% (estimated)\n"
+"\n"
+msgstr ""
+"Yüzey Görünürlüğü:\n"
+"%.0f%% (tahmini)\n"
+"\n"
+
+#: moon.py:224
+#, python-format
+msgid ""
+"Selenographic Terminator Longitude:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
+msgstr ""
+"Ayın aydınlık ve karanlık kısımlarını ayıran sınırın Selenografik Boylamı:\n"
+"%(derece).1f°%(batı ya da doğu)s (%(doğma ya da batma)s)\n"
+"\n"
+
+#: moon.py:225
+#, python-format
+msgid ""
+"Next Full Moon:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Bir sonraki Dolunay Zamanı:\n"
+"%(tarih)s %(günler).0f günler içinde\\\n"
+
+#: moon.py:226
+#, python-format
+msgid ""
+"Next New Moon:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Bir sonraki Yeniay Zamanı:\n"
+"%(tarih)s %(günler).0f günler içinde\n"
+"\n"
+
+#: moon.py:227
+#, python-format
+msgid ""
+"Next Lunar eclipse:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Bir sonraki Ay Tutulması:\n"
+"%(tarih)s %(günler).0f günler içinde\n"
+"\n"
+
+#: moon.py:228
+#, python-format
+msgid ""
+"Next Solar eclipse:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Bir sonraki Güneş Tutulması:\n"
+"%(tarih)s %(günler).0f günler içinde\n"
+"\n"
+
+#: moon.py:310
+msgid "SNWE"
+msgstr "GKBD(Güney,Kuzey,Batı,Doğu)"
+
+#: moon.py:313
+msgid "NSEW"
+msgstr "KGDB(Kuzey,Güney,Doğu,Batı)"
+
+#: moon.py:366
+msgid "Latitude"
+msgstr "Enlem"
+
+#: moon.py:368
+msgid "Longitude"
+msgstr "Boylam"
+
+#: moon.py:465
+msgid "west"
+msgstr "Batı"
+
+#: moon.py:467
+msgid "east"
+msgstr "Doğu"
+
+#: moon.py:470
+msgid "Sunset"
+msgstr "Gün batımı"
+
+#: moon.py:472
+msgid "Sunrise"
+msgstr "Gündoğumu"
+
+#: moon.py:486 moon.py:502
+msgid "New Moon"
+msgstr "Yeniay"
+
+#: moon.py:488
+msgid "Waxing Crescent"
+msgstr "Hilal"
+
+#: moon.py:490
+msgid "First Quarter"
+msgstr "İlk Çeyrek"
+
+#: moon.py:492
+msgid "Waxing Gibbous"
+msgstr "İlk Çeyrekle Dolunay Arasındaki Evre"
+
+#: moon.py:494
+msgid "Full Moon"
+msgstr "Dolunay"
+
+#: moon.py:496
+msgid "Waning Gibbous"
+msgstr "Dolunayla Son Çeyrek Arasındaki Evre"
+
+#: moon.py:498
+msgid "Last Quarter"
+msgstr "Son Çeyrek"
+
+#: moon.py:500
+msgid "Waning Crescent"
+msgstr "Gündoğumuna Yakın Görünen İnce Ay "
