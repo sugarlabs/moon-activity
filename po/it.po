@@ -1,0 +1,228 @@
+# Moon XO's Activity translation
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Gabriel Menini <gabriel.menini@gmail.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-14 16:02+0000\n"
+"PO-Revision-Date: 2008-10-01 15:48-0400\n"
+"Last-Translator: Carlo Falciola <cfalciola@yahoo.it>\n"
+"Language-Team: Spanish <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0rc2\n"
+
+#: ../activity/activity.info:2
+#: ../moon.py:71
+msgid "Moon"
+msgstr "Luna"
+
+#: ../moon.py:83
+msgid "Toggle Grid View"
+msgstr "Cambia visualizzazione griglia"
+
+#: ../moon.py:88
+msgid "Toggle Hemisphere View"
+msgstr "Cambia vista emisfero"
+
+#: ../moon.py:93
+msgid "View"
+msgstr "Guarda"
+
+#: ../moon.py:190
+msgid ""
+"Today's Moon Information\n"
+"\n"
+msgstr ""
+"Informazioni sulla Luna per oggi\n"
+"\n"
+
+#: ../moon.py:191
+#, python-format
+msgid ""
+"Phase:\n"
+"%s\n"
+"\n"
+msgstr ""
+"Fase:\n"
+"%s\n"
+"\n"
+
+#: ../moon.py:192
+#, python-format
+msgid ""
+"Julian Date:\n"
+"%.2f (astronomical)\n"
+"\n"
+msgstr ""
+"Data Cal.Giuliano:\n"
+"%.2f (astronomica)\n"
+"\n"
+
+#: ../moon.py:193
+#, python-format
+msgid ""
+"Age:\n"
+"%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
+"\n"
+msgstr ""
+"Età:\n"
+"%(days).in giorni, %(hours).in ore, %(minutes).in minuti\n"
+"\n"
+
+#: ../moon.py:194
+#, python-format
+msgid ""
+"Lunation:\n"
+"%(phase).2f%% through lunation %(lunation)d\n"
+"\n"
+msgstr ""
+"Lunazione:\n"
+"%(phase).2f%% della Lunazione %(lunation)d\n"
+"\n"
+
+#: ../moon.py:195
+#, python-format
+msgid ""
+"Surface Visibility:\n"
+"%.0f%% (estimated)\n"
+"\n"
+msgstr ""
+"Visibilità della Superficie:\n"
+"%.0f%% (estimated)\n"
+"\n"
+
+#: moon.py:224
+#, python-format
+msgid ""
+"Selenographic Terminator Longitude:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
+msgstr ""
+"Longitudine Terminatore Selenografico:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
+
+#: ../moon.py:197
+#, python-format
+msgid ""
+"Next Full Moon:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Prossima Luna Piena:\n"
+"%(date)s in %(days).0f días\n"
+"\n"
+
+#: ../moon.py:198
+#, python-format
+msgid ""
+"Next New Moon:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Prossima Luna Nuova:\n"
+"%(date)s in %(days).0f días\n"
+"\n"
+
+#: ../moon.py:199
+#, python-format
+msgid ""
+"Next Lunar eclipse:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Prossima Eclisse di Luna:\n"
+"%(date)s in %(days).0f días\n"
+"\n"
+
+#: ../moon.py:200
+#, python-format
+msgid ""
+"Next Solar eclipse:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Prossima Eclisse di Sole:\n"
+"%(date)s in %(days).0f días\n"
+"\n"
+
+#: ../moon.py:282
+msgid "SNWE"
+msgstr "SNWE"
+
+#: ../moon.py:285
+msgid "NSEW"
+msgstr "NSEW"
+
+#: ../moon.py:338
+msgid "Latitude"
+msgstr "Latitudine"
+
+#: ../moon.py:340
+msgid "Longitude"
+msgstr "Longitudine"
+
+#: ../moon.py:437
+msgid "west"
+msgstr "ovest"
+
+#: ../moon.py:439
+msgid "east"
+msgstr "est"
+
+#: ../moon.py:442
+msgid "Sunset"
+msgstr "Tramonto"
+
+#: ../moon.py:444
+msgid "Sunrise"
+msgstr "Alba"
+
+#: ../moon.py:458
+#: ../moon.py:474
+msgid "New Moon"
+msgstr "Luna Nuova"
+
+#: ../moon.py:460
+msgid "Waxing Crescent"
+msgstr "Falce di Luna Crescente"
+
+#: ../moon.py:462
+msgid "First Quarter"
+msgstr "Primo Quarto"
+
+#: ../moon.py:464
+msgid "Waxing Gibbous"
+msgstr "Gobba Crescente"
+
+#: ../moon.py:466
+msgid "Full Moon"
+msgstr "Luna Piena"
+
+#: ../moon.py:468
+msgid "Waning Gibbous"
+msgstr "Gobba Calante"
+
+#: ../moon.py:470
+msgid "Last Quarter"
+msgstr "Quarto Calante"
+
+#: ../moon.py:472
+msgid "Waning Crescent"
+msgstr "Falce di Luna Calante"
+
+#: ../moon.py:196
+#, python-format
+msgid ""
+"Selenographic Terminator Longitude:\n"
+"%(deg).1f˚%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
+msgstr ""
+"Longitudine del Terminatore Selenografico:\n"
+"%(deg).1f˚%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
