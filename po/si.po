@@ -2,41 +2,40 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-01 11:54-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2008-11-30 04:43-0500\n"
+"Last-Translator: Rashan Anushka <rashan.uoc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.1.1rc4\n"
+"X-Generator: Pootle 1.1.0rc2\n"
 
 #: activity/activity.info:2 moon.py:72
 msgid "Moon"
-msgstr ""
+msgstr "හඳ"
 
 #: moon.py:86
 msgid "Toggle Grid View"
-msgstr ""
+msgstr "කොටු දසුන පෙන්වන්න"
 
 #: moon.py:91
 msgid "Toggle Hemisphere View"
-msgstr ""
+msgstr "අර්ධ ගෝල දසුන පෙන්වන්න"
 
 #: moon.py:96
 msgid "View"
-msgstr ""
+msgstr "දසුන"
 
 #: moon.py:218
 msgid ""
 "Today's Moon Information\n"
 "\n"
-msgstr ""
+msgstr "අද දින හඳෙහි තොරතුරු"
 
 #: moon.py:219
 #, python-format
@@ -45,6 +44,9 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"කරුණාකර:\n"
+"%s\n"
+"\n"
 
 #: moon.py:220
 #, python-format
@@ -53,6 +55,9 @@ msgid ""
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
+"ජූලියානු දිනය:\n"
+"%.2f (astronomical)\n"
+"\n"
 
 #: moon.py:221
 #, python-format
@@ -61,6 +66,9 @@ msgid ""
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
+"වයස\n"
+"දින %(days)., පැය %(hours)., මිනිත්තු %(minutes)\n"
+"\n"
 
 #: moon.py:222
 #, python-format
