@@ -72,12 +72,16 @@ class MoonActivity(activity.Activity):
         self.set_title(_("Moon"))
         
         # Defaults (Resume priority, persistent file secondary, fall-back hardcoded)
+        if handle.object_id == None:
+            print "Launched from home."
+        else:
+            print "Journal resume."
         self.hemisphere_view = 'north'
         self.show_grid = False
         self.activity_state = {}
         self.activity_state['hemisphereView'] = self.hemisphere_view
         self.activity_state['showGrid'] = self.show_grid
-        self.read_and_parse_preferences(os.environ['SUGAR_ACTIVITY_ROOT'] + '/data/defaults')
+        self.read_and_parse_prefs(os.environ['SUGAR_ACTIVITY_ROOT'] + '/data/defaults')
                 
         # Toolbox
         toolbox = activity.ActivityToolbox(self)
@@ -92,6 +96,7 @@ class MoonActivity(activity.Activity):
         self.toggle_hemisphere_handler_id = self.toggle_hemisphere_button.connect('clicked', self.toggle_hemisphere_clicked)
         view_tool_bar.insert(self.toggle_hemisphere_button, -1)
         self.toggle_hemisphere_button.show()
+
         view_tool_bar.show()
         toolbox.add_toolbar(_('View'), view_tool_bar)
         self.set_toolbox(toolbox)
@@ -144,7 +149,7 @@ class MoonActivity(activity.Activity):
         self.set_canvas(self.main_view)
         self.show_all()
 
-    def read_and_parse_preferences(self, file_path):
+    def read_and_parse_prefs(self, file_path):
         """Parse and set preference data from a given file."""
         try:
             read_file = open(file_path, 'r')
@@ -159,7 +164,7 @@ class MoonActivity(activity.Activity):
 
     def read_file(self, file_path):
         """Read state from datastore."""
-        self.read_and_parse_preferences(file_path)
+        self.read_and_parse_prefs(file_path)
         self.block_view_buttons_during_update()
         
     def write_file(self, file_path):
