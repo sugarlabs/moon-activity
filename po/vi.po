@@ -2,41 +2,42 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-01 11:54-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2009-02-17 04:40-0500\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.1.1rc4\n"
+"X-Generator: Pootle 1.1.0rc2\n"
 
 #: activity/activity.info:2 moon.py:72
 msgid "Moon"
-msgstr ""
+msgstr "Mặt trăng"
 
 #: moon.py:86
 msgid "Toggle Grid View"
-msgstr ""
+msgstr "Hiện/ẩn ô xem lưới"
 
 #: moon.py:91
 msgid "Toggle Hemisphere View"
-msgstr ""
+msgstr "Hiện/ẩn ô xem bán cầu"
 
 #: moon.py:96
 msgid "View"
-msgstr ""
+msgstr "Xem"
 
 #: moon.py:218
 msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
+"Thông tin về mặt trăng của hôm nay\n"
+"\n"
 
 #: moon.py:219
 #, python-format
@@ -45,6 +46,9 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"Tuần:\n"
+"%s\n"
+"\n"
 
 #: moon.py:220
 #, python-format
@@ -53,6 +57,9 @@ msgid ""
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
+"Lịch juliêng:\n"
+"%.2f (thiên văn)\n"
+"\n"
 
 #: moon.py:221
 #, python-format
@@ -61,6 +68,9 @@ msgid ""
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
+"Thời gian hoạt động:\n"
+"%(days).0f ngày, %(hours).0f giờ, %(minutes).0f phút\n"
+"\n"
 
 #: moon.py:222
 #, python-format
@@ -69,6 +79,9 @@ msgid ""
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 msgstr ""
+"Tháng âm lịch:\n"
+"%(phase).2f%% trong tuần trăng %(lunation)d\n"
+"\n"
 
 #: moon.py:223
 #, python-format
@@ -77,6 +90,9 @@ msgid ""
 "%.0f%% (estimated)\n"
 "\n"
 msgstr ""
+"Khả kiến mặt:\n"
+"%.0f%% (xấp xỉ)\n"
+"\n"
 
 #: moon.py:224
 #, python-format
@@ -85,6 +101,9 @@ msgid ""
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
+"Độ kinh đường chấm dứt thuộc khoa nghiên cứu mặt trăng:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
 
 #: moon.py:225
 #, python-format
@@ -93,6 +112,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Trăng tròn kế tiếp:\n"
+"%(date)s trong vòng %(days).0f ngày\n"
+"\n"
 
 #: moon.py:226
 #, python-format
@@ -101,6 +123,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Trăng non kế tiếp:\n"
+"%(date)s trong vòng %(days).0f ngày\n"
+"\n"
 
 #: moon.py:227
 #, python-format
@@ -109,6 +134,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Che khuất mặt trăng kế tiếp:\n"
+"%(date)s trong vòng %(days).0f ngày\n"
+"\n"
 
 #: moon.py:228
 #, python-format
@@ -117,67 +145,70 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Che khuất mặt trời kế tiếp:\n"
+"%(date)s trong vòng %(days).0f ngày\n"
+"\n"
 
 #: moon.py:310
 msgid "SNWE"
-msgstr ""
+msgstr "SNWE"
 
 #: moon.py:313
 msgid "NSEW"
-msgstr ""
+msgstr "NSEW"
 
 #: moon.py:366
 msgid "Latitude"
-msgstr ""
+msgstr "Độ vĩ"
 
 #: moon.py:368
 msgid "Longitude"
-msgstr ""
+msgstr "Độ kinh"
 
 #: moon.py:465
 msgid "west"
-msgstr ""
+msgstr "Tây"
 
 #: moon.py:467
 msgid "east"
-msgstr ""
+msgstr "Đông"
 
 #: moon.py:470
 msgid "Sunset"
-msgstr ""
+msgstr "Hoàng hôn"
 
 #: moon.py:472
 msgid "Sunrise"
-msgstr ""
+msgstr "Rạng đông"
 
 #: moon.py:486 moon.py:502
 msgid "New Moon"
-msgstr ""
+msgstr "Trăng non"
 
 #: moon.py:488
 msgid "Waxing Crescent"
-msgstr ""
+msgstr "Lưỡi liềm tròn dần"
 
 #: moon.py:490
 msgid "First Quarter"
-msgstr ""
+msgstr "Phần tư thứ nhất"
 
 #: moon.py:492
 msgid "Waxing Gibbous"
-msgstr ""
+msgstr "Tròn dần có bướu gù"
 
 #: moon.py:494
 msgid "Full Moon"
-msgstr ""
+msgstr "Trăng tròn"
 
 #: moon.py:496
 msgid "Waning Gibbous"
-msgstr ""
+msgstr "Khuyết có bướu gù"
 
 #: moon.py:498
 msgid "Last Quarter"
-msgstr ""
+msgstr "Phần tư cuối cùng"
 
 #: moon.py:500
 msgid "Waning Crescent"
-msgstr ""
+msgstr "Lưỡi liềm khuyết"
