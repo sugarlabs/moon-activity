@@ -114,15 +114,16 @@ class MoonActivity(activity.Activity):
         self.red_alloc_color = colormap.alloc_color('#F20')
         self.blue_alloc_color = colormap.alloc_color('#04F')
         self.event_box.modify_bg(gtk.STATE_NORMAL, self.black_alloc_color)
+        self.event_box.connect('size-allocate', self._moon_size_allocate_cb)
         
         # Create the Moon image widget
         self.image = gtk.Image()
-        self.image_pixmap = gtk.gdk.Pixmap(self.window, IMAGE_SIZE, IMAGE_SIZE)
-        self.gc = self.image_pixmap.new_gc(foreground=self.black_alloc_color)
-        self.image.set_from_pixmap(self.image_pixmap, None)
         self.event_box.add(self.image)
         self.main_view.pack_end(self.event_box)
         
+        # Moon base image for sacaling to final image
+        self.moon_stamp = gtk.gdk.pixbuf_new_from_file("moon.jpg")
+
         # Create Moon information panel
         self.info_panel = gtk.VBox()
         self.info_panel.set_border_width(10)
@@ -239,6 +240,10 @@ class MoonActivity(activity.Activity):
 
     def update_moon_image_view(self):
         """Update Moon image view using last cached Moon data."""
+        self.image_pixmap = gtk.gdk.Pixmap(self.window, IMAGE_SIZE, IMAGE_SIZE)
+        self.gc = self.image_pixmap.new_gc(foreground=self.black_alloc_color)
+        self.image.set_from_pixmap(self.image_pixmap, None)
+
         # Erase last Moon rendering
         self.image_pixmap.draw_rectangle(self.gc, True, 0, 0, IMAGE_SIZE, IMAGE_SIZE)
                 
@@ -274,10 +279,12 @@ class MoonActivity(activity.Activity):
         maskgc = self.image_pixmap.new_gc(clip_mask=mask_pixmap)
         
         # Modified image based on public domain photo by John MacCooey
-        moon_pixbuf = gtk.gdk.pixbuf_new_from_file("moon.jpg")
+        moon_pixbuf = self.moon_stamp.scale_simple(IMAGE_SIZE, IMAGE_SIZE,
+                gtk.gdk.INTERP_BILINEAR)
 
         # Composite bright Moon image and semi-transparant Moon for shadow detail
         dark_pixbuf = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB, True, 8, IMAGE_SIZE, IMAGE_SIZE)
+        dark_pixbuf.fill(0x00000000)
         if (self.data_model.next_lunar_eclipse_sec == -1 and self.data_model.last_lunar_eclipse_sec > 7200) or (self.data_model.next_lunar_eclipse_sec > 7200 and self.data_model.last_lunar_eclipse_sec == -1) or min(self.data_model.next_lunar_eclipse_sec, self.data_model.last_lunar_eclipse_sec) > 7200:
             # Normal Moon phase render
             moon_pixbuf.composite(dark_pixbuf, 0, 0, IMAGE_SIZE, IMAGE_SIZE, 0, 0, 1, 1, gtk.gdk.INTERP_BILINEAR, 127)
@@ -381,7 +388,15 @@ class MoonActivity(activity.Activity):
         self.image_pixmap.draw_layout(rgc, 72, 36, pango_layout)
         pango_layout.set_text(compass_text[3])
         self.image_pixmap.draw_layout(rgc, 0, 36, pango_layout)
-        
+
+    def _moon_size_allocate_cb(self, widget, allocation):
+        global IMAGE_SIZE, HALF_SIZE
+        new_size = min(allocation.width, allocation.height)
+
+        if new_size != IMAGE_SIZE:
+            IMAGE_SIZE = min(allocation.width, allocation.height)
+            HALF_SIZE = IMAGE_SIZE / 2
+            self.update_moon_image_view()
 
 class DataModel():
     """Moon phase data model and various utility methods."""
