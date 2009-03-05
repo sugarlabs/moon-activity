@@ -58,8 +58,13 @@ from sugar.graphics.toolbutton import ToolButton
 from gettext import gettext as _
 import math
 import time
-import json
 import os
+
+try:
+    import json
+    json.dumps
+except (ImportError, AttributeError):
+    import simplejson as json
 
 IMAGE_SIZE = 726
 HALF_SIZE = IMAGE_SIZE / 2
@@ -154,7 +159,7 @@ class MoonActivity(activity.Activity):
         """Parse and set preference data from a given file."""
         try:
             read_file = open(file_path, 'r')
-            self.activity_state = json.read(read_file.read())
+            self.activity_state = json.loads(read_file.read())
             if self.activity_state.has_key('hemisphereView'):
                 self.hemisphere_view = self.activity_state['hemisphereView']
             if self.activity_state.has_key('showGrid'):
@@ -172,7 +177,7 @@ class MoonActivity(activity.Activity):
         """Write state to journal datastore and to persistent file system."""
         self.activity_state['hemisphereView'] = self.hemisphere_view
         self.activity_state['showGrid'] = self.show_grid
-        serialised_data = json.write(self.activity_state)
+        serialised_data = json.dumps(self.activity_state)
         
         to_journal = file(file_path, 'w')
         try:
