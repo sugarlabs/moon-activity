@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-01 11:54-0400\n"
-"PO-Revision-Date: 2009-05-05 12:55-0400\n"
+"PO-Revision-Date: 2009-05-12 12:49-0400\n"
 "Last-Translator: Carlo Falciola <cfalciola@yahoo.it>\n"
 "Language-Team: Spanish <LL@li.org>\n"
 "Language: it\n"
@@ -60,7 +60,7 @@ msgid ""
 "\n"
 msgstr ""
 "Data Cal.Giuliano:\n"
-"%.2f (astronomica)\n"
+"%.2f (astronomical)\n"
 "\n"
 
 #: moon.py:221
@@ -70,8 +70,8 @@ msgid ""
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
-"Age:\n"
-"%(days) giorni, %(hours) ore, %(minutes) minuti\n"
+"Età:\n"
+"%(days).0f giorni, %(hours).0f ore, %(minutes).0f minuti\n"
 "\n"
 
 #: moon.py:222
@@ -115,7 +115,7 @@ msgid ""
 "\n"
 msgstr ""
 "Prossima Luna Piena:\n"
-"%(date)s in %(days).giorni\n"
+"%(date)s in %(days).0f giorni\n"
 "\n"
 
 #: moon.py:226
@@ -126,7 +126,7 @@ msgid ""
 "\n"
 msgstr ""
 "Prossima Luna Nuova:\n"
-"%(date)s in %(days) giorni\n"
+"%(date)s in %(days).0f giorni\n"
 "\n"
 
 #: moon.py:227
@@ -137,7 +137,7 @@ msgid ""
 "\n"
 msgstr ""
 "Prossima Eclisse di Luna:\n"
-"%(date)s in %(days) giorni\n"
+"%(date)s in %(days).0f giorni\n"
 "\n"
 
 #: moon.py:228
@@ -148,16 +148,16 @@ msgid ""
 "\n"
 msgstr ""
 "Prossima Eclisse di Sole:\n"
-"%(date)s in %(days) giorni\n"
+"%(date)s in %(days).0f giorni\n"
 "\n"
 
 #: moon.py:310
 msgid "SNWE"
-msgstr "SNWE"
+msgstr "SNOE"
 
 #: moon.py:313
 msgid "NSEW"
-msgstr "NSEW"
+msgstr "NSEO"
 
 #: moon.py:366
 msgid "Latitude"
