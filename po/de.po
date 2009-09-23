@@ -7,13 +7,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-01 11:54-0400\n"
-"PO-Revision-Date: 2008-10-05 17:41-0400\n"
+"PO-Revision-Date: 2009-09-23 19:24-0400\n"
 "Last-Translator: Markus Schlager <m.slg@gmx.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 1.1.0rc2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 1.2.1\n"
 
 # O.T.
 #: activity/activity.info:2 moon.py:72
@@ -22,16 +24,15 @@ msgstr "Mond"
 
 # O.T.
 #: moon.py:86
-#, fuzzy
 msgid "Toggle Grid View"
 msgstr "Koordinatengitter ein- oder ausblenden"
 
 # O.T.: Es wird der Mond aus Sicht der Nordhalbkugel gezeigt. Umschalten bewirkt Ansicht von der Südhalbkugel und umgekehrt.
 # (Markus S.) 'Wechsle Hemisphäre'?
+# (Markus S.) war 'Umschalten auf Ansicht von anderer Hemisphäre'
 #: moon.py:91
-#, fuzzy
 msgid "Toggle Hemisphere View"
-msgstr "Umschalten auf Ansicht von anderer Hemisphäre"
+msgstr "Hemisphäre wechseln"
 
 # O.T.
 #: moon.py:96
@@ -40,7 +41,6 @@ msgstr "Ansicht"
 
 # O.T.
 #: moon.py:218
-#, fuzzy
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -75,7 +75,6 @@ msgstr ""
 # O.T.
 #: moon.py:221
 #, python-format
-#, fuzzy
 msgid ""
 "Age:\n"
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
@@ -88,7 +87,6 @@ msgstr ""
 # O.T.: Die Lunationen (Mondwechsel) werden in der Astronomie fortlaufend nummeriert. Die Lunation bezeichnet die Zeit von einem Neumond zum nächsten Neumond. 10% der Lunation x ist also ein zunehmender Sichelmond, 50% ist Vollmond, 90% ist ein abnehmender Sichelmond.
 #: moon.py:222
 #, python-format
-#, fuzzy
 msgid ""
 "Lunation:\n"
 "%(phase).2f%% through lunation %(lunation)d\n"
@@ -101,7 +99,6 @@ msgstr ""
 # O.T.
 #: moon.py:223
 #, python-format
-#, fuzzy
 msgid ""
 "Surface Visibility:\n"
 "%.0f%% (estimated)\n"
@@ -114,7 +111,6 @@ msgstr ""
 # O.T.: Der Inhalt der Variablen (westOrEast) und (riseOrSet) müsste auch übersetzt werden.
 #: moon.py:224
 #, python-format
-#, fuzzy
 msgid ""
 "Selenographic Terminator Longitude:\n"
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
@@ -218,23 +214,21 @@ msgid "New Moon"
 msgstr "Neumond"
 
 # O.T.: Der Mond vor dem ersten Viertel.
-# (Markus S.) 'Zunehmende Mondsichel'?
+# (Markus S.) 'Zunehmende Mondsichel'? war 'Zunehmender Sichelmond'; ich orientiere mich bei den Mondphasen an 'Grundkurs Astronomie', bsv
 #: moon.py:488
-#, fuzzy
 msgid "Waxing Crescent"
-msgstr "Zunehmender Sichelmond"
+msgstr "Zunehmende Sichel"
 
 # O.T.
 #: moon.py:490
-#, fuzzy
 msgid "First Quarter"
 msgstr "Erstes Viertel"
 
 # O.T. Der Mond nach dem ersten Viertel, vor Vollmond.
+# (Markus S.) war 'Zunehmender Halbmond', aber das wäre 'Erstes Viertel', vgl. 'GK Astronomie', bsv
 #: moon.py:492
-#, fuzzy
 msgid "Waxing Gibbous"
-msgstr "Zunehmender Halbmond"
+msgstr "Zunehmender Mond"
 
 # O.T.
 #: moon.py:494
@@ -242,20 +236,18 @@ msgid "Full Moon"
 msgstr "Vollmond"
 
 # O.T.: Der Mond nach Vollmond, vor dem letzten Viertel.
+# (Markus S.) war 'Abnehmender Halbmond'
 #: moon.py:496
-#, fuzzy
 msgid "Waning Gibbous"
-msgstr "Abnehmender Halbmond"
+msgstr "Abnehmender Mond"
 
 # O.T.
 #: moon.py:498
-#, fuzzy
 msgid "Last Quarter"
 msgstr "Letztes Viertel"
 
 # O.T.
-# (Markus S.) 'Abnehmende Mondsichel'?
+# (Markus S.) 'Abnehmende Mondsichel'? War 'Abnehmender Sichelmond'
 #: moon.py:500
-#, fuzzy
 msgid "Waning Crescent"
-msgstr "Abnehmender Sichelmond"
+msgstr "Abnehmende Sichel"
