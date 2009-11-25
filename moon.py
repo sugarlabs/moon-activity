@@ -129,13 +129,17 @@ class MoonActivity(activity.Activity):
         # Moon base image for sacaling to final image
         self.moon_stamp = gtk.gdk.pixbuf_new_from_file("moon.jpg")
 
-        # Create Moon information panel
+        # Create scrolling Moon information panel
+        info_scroll = gtk.ScrolledWindow()
+        info_scroll.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
+        info_scroll.set_size_request(-1, -1)
         self.info_panel = gtk.VBox()
         self.info_panel.set_border_width(10)
         self.info = gtk.Label()
         self.info.set_justify(gtk.JUSTIFY_LEFT)
         self.info_panel.pack_start(self.info, False, False, 0)
-        self.main_view.pack_start(self.info_panel, False, False, 0)
+        info_scroll.add_with_viewport(self.info_panel)
+        self.main_view.pack_start(info_scroll, False, False, 0)
 
         # Create Moon data model
         self.data_model = DataModel()
