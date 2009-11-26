@@ -22,33 +22,11 @@
 # Author: gary@garycmartin.com
 # Home page: http://www.garycmartin.com/
 
-"""\
-Moon phase information XO activity.
+"""Moon phase information XO activity.
 
-TODO:
-- Mouse over text hints for major Moon features
-- Reduce amount of decimal places shown
-  - remove seconds and/or minutes?
-  - make basic text info (phase) more central/larger (show mini-graphic)?
-  - make complex text info less prominent?
-  - allow hiding of different information blocks?
-    - make info area scrollable so more could be included?
-- When showing grid, draw terminator in green?
-- Would a move to Cairo allow me better alpha control?
-- Show daylight view menu option?
-  - fades out moon during the (approx) day with pastel blue
-  - eye candy cloud effect?
-  - solar eclipse effect
-- Show interesting markers view menu option?
-  - lunar probes
-  - man missions
-- Structure code into a better View, Model, Controller
-- Reduce CPU and memory footprint
-  - stop updates when the activity is not visible
-  - free up (mainly image) data between updates or when not visible?
-- Wrap 'Next' dates in round rect bezel style with mini Moon graphic?
-- New feature, mini-month calendar view in bottom of info area?
-- Dark adapted view for night gazing usage?
+Basic activity displaying Luna phase and related information. Calculations are
+based on an internal look-up table generated from a public NASA source. No
+network connection is needed.
 """
 
 import gtk
@@ -79,7 +57,8 @@ IMAGE_SIZE = 726
 HALF_SIZE = IMAGE_SIZE / 2
 
 class MoonActivity(activity.Activity):
-    """Moon phase activity."""
+    """Moon phase activity.
+    """
     def __init__(self, handle):
         activity.Activity.__init__(self, handle)
         self._name = handle
@@ -200,7 +179,8 @@ class MoonActivity(activity.Activity):
         self.show_all()
 
     def read_and_parse_prefs(self, file_path):
-        """Parse and set preference data from a given file."""
+        """Parse and set preference data from a given file.
+        """
         try:
             read_file = open(file_path, 'r')
             self.activity_state = json.loads(read_file.read())
@@ -213,12 +193,14 @@ class MoonActivity(activity.Activity):
             pass
 
     def read_file(self, file_path):
-        """Read state from datastore."""
+        """Read state from datastore.
+        """
         self.read_and_parse_prefs(file_path)
         self.block_view_buttons_during_update()
         
     def write_file(self, file_path):
-        """Write state to journal datastore and to persistent file system."""
+        """Write state to journal datastore and to persistent file system.
+        """
         self.activity_state['hemisphereView'] = self.hemisphere_view
         self.activity_state['showGrid'] = self.show_grid
         serialised_data = json.dumps(self.activity_state)
@@ -236,7 +218,8 @@ class MoonActivity(activity.Activity):
             to_persistent_fs.close()
     
     def toggle_grid_clicked(self, widget):
-        """Respond to toolbar button to hide/show grid lines."""
+        """Respond to toolbar button to hide/show grid lines.
+        """
         if self.show_grid == True:
             self.show_grid = False
         else:
@@ -244,7 +227,8 @@ class MoonActivity(activity.Activity):
         self.block_view_buttons_during_update()
 
     def toggle_hemisphere_clicked(self, widget):
-        """Respond to toolbar button to change viewing hemisphere."""
+        """Respond to toolbar button to change viewing hemisphere.
+        """
         if self.hemisphere_view == 'north':
             self.hemisphere_view = 'south'
         else:
@@ -252,19 +236,22 @@ class MoonActivity(activity.Activity):
         self.block_view_buttons_during_update()
 
     def block_view_buttons_during_update(self):
-        """Disable view buttons while updating image to prevent multi-clicks."""
+        """Disable view buttons while updating image to prevent multi-clicks.
+        """
         self.toggle_grid_button.handler_block(self.toggle_grid_handler_id)
         self.toggle_hemisphere_button.handler_block(self.toggle_hemisphere_handler_id)
         gobject.source_remove(self.update_moon_image_timeout)
         self.update_moon_image_view()
 
     def unblock_view_update_buttons(self):
-        """Reactivate view button after updating image, stops multi-clicks."""
+        """Reactivate view button after updating image, stops multi-clicks.
+        """
         self.toggle_grid_button.handler_unblock(self.toggle_grid_handler_id)
         self.toggle_hemisphere_button.handler_unblock(self.toggle_hemisphere_handler_id)
         
     def update_text_information_view(self):
-        """Generate Moon data and update text based information view."""
+        """Generate Moon data and update text based information view.
+        """
         self.data_model.update_moon_calculations(time.time())
         information_string = ""
         information_string += _("Today's Moon Information\n\n")
@@ -288,7 +275,8 @@ class MoonActivity(activity.Activity):
         return False
 
     def update_moon_image_view(self):
-        """Update Moon image view using last cached Moon data."""
+        """Update Moon image view using last cached Moon data.
+        """
         self.image_pixmap = gtk.gdk.Pixmap(self.window, IMAGE_SIZE, IMAGE_SIZE)
         self.gc = self.image_pixmap.new_gc(foreground=self.black_alloc_color)
         self.image.set_from_pixmap(self.image_pixmap, None)
@@ -382,7 +370,8 @@ class MoonActivity(activity.Activity):
         return False
 
     def draw_grid(self, compass_text):
-        """Draw Selenographic grid line data."""
+        """Draw Selenographic grid line data.
+        """
         rgc = self.image_pixmap.new_gc(foreground=self.red_alloc_color)
         bgc = self.image_pixmap.new_gc(foreground=self.blue_alloc_color)
         wgc = self.image_pixmap.new_gc(foreground=self.white_alloc_color)
@@ -426,7 +415,8 @@ class MoonActivity(activity.Activity):
         pango_layout.set_text(_("Longitude"))
         self.image_pixmap.draw_layout(rgc, 0, IMAGE_SIZE - 24, pango_layout)
 
-        # Compass <- fix string index to support multi-byte texts
+        # Compass
+        # TODO: fix string index to support multi-byte texts
         self.image_pixmap.draw_line(bgc, 45, 24, 45, 68)
         self.image_pixmap.draw_line(rgc, 22, 48, 68, 48)
         pango_layout.set_text(compass_text[0])
@@ -448,10 +438,11 @@ class MoonActivity(activity.Activity):
             self.update_moon_image_view()
 
 class DataModel():
-    """Moon phase data model and various utility methods."""
+    """Moon phase data model and various utility methods.
+    """
     
     def __init__(self):
-        """Init simple, hard coded, tupules for New, First Quarter, Full Last Quarter Moon UTC data.
+        """Init hard coded, tupules for New, First Quarter, Full Last Quarter Moon UTC data.
         
         2008 to 2018 data from http://sunearth.gsfc.nasa.gov/eclipse/phase/phasecat.html
         algorithms used in predicting the phases of the Moon and eclipses are based
@@ -464,7 +455,8 @@ class DataModel():
         arrays with an extra end character for eclipse types T=Total (Solar),
         A=Annular (Solar), H=Hybrid (Solar Annular/Total), P=Partial (Solar),
         t=Total (Lunar Umbral), p=Partial (Lunar Umbral), n=Penumbral (Lunar),
-        _=none."""
+        _=none.
+        """
         
         self.date_format = "%Y-%m-%d %H:%M"
         self.new_moon_array = ("2008-01-08 11:37_", "2008-02-07 03:44A", "2008-03-07 17:14_", "2008-04-06 03:55_", "2008-05-05 12:18_", "2008-06-03 19:23_", "2008-07-03 02:19_", "2008-08-01 10:13T", "2008-08-30 19:58_", "2008-09-29 08:12_", "2008-10-28 23:14_", "2008-11-27 16:55_", "2008-12-27 12:23_", "2009-01-26 07:55A", "2009-02-25 01:35_", "2009-03-26 16:06_", "2009-04-25 03:23_", "2009-05-24 12:11_", "2009-06-22 19:35_", "2009-07-22 02:35T", "2009-08-20 10:01_", "2009-09-18 18:44_", "2009-10-18 05:33_", "2009-11-16 19:14_", "2009-12-16 12:02_", "2010-01-15 07:11A", "2010-02-14 02:51_", "2010-03-15 21:01_", "2010-04-14 12:29_", "2010-05-14 01:04_", "2010-06-12 11:15_", "2010-07-11 19:40T", "2010-08-10 03:08_", "2010-09-08 10:30_", "2010-10-07 18:44_", "2010-11-06 04:52_", "2010-12-05 17:36_", "2011-01-04 09:03P", "2011-02-03 02:31_", "2011-03-04 20:46_", "2011-04-03 14:32_", "2011-05-03 06:51_", "2011-06-01 21:03P", "2011-07-01 08:54P", "2011-07-30 18:40_", "2011-08-29 03:04_", "2011-09-27 11:09_", "2011-10-26 19:56_", "2011-11-25 06:10P", "2011-12-24 18:06_", "2012-01-23 07:39_", "2012-02-21 22:35_", "2012-03-22 14:37_", "2012-04-21 07:18_", "2012-05-20 23:47A", "2012-06-19 15:02_", "2012-07-19 04:24_", "2012-08-17 15:54_", "2012-09-16 02:11_", "2012-10-15 12:02_", "2012-11-13 22:08T", "2012-12-13 08:42_", "2013-01-11 19:44_", "2013-02-10 07:20_", "2013-03-11 19:51_", "2013-04-10 09:35_", "2013-05-10 00:29A", "2013-06-08 15:56_", "2013-07-08 07:14_", "2013-08-06 21:51_", "2013-09-05 11:36_", "2013-10-05 00:35_", "2013-11-03 12:50H", "2013-12-03 00:22_", "2014-01-01 11:14_", "2014-01-30 21:39_", "2014-03-01 08:00_", "2014-03-30 18:45_", "2014-04-29 06:14A", "2014-05-28 18:40_", "2014-06-27 08:09_", "2014-07-26 22:42_", "2014-08-25 14:13_", "2014-09-24 06:14_", "2014-10-23 21:57P", "2014-11-22 12:32_", "2014-12-22 01:36_", "2015-01-20 13:14_", "2015-02-18 23:47_", "2015-03-20 09:36T", "2015-04-18 18:57_", "2015-05-18 04:13_", "2015-06-16 14:05_", "2015-07-16 01:24_", "2015-08-14 14:54_", "2015-09-13 06:41P", "2015-10-13 00:06_", "2015-11-11 17:47_", "2015-12-11 10:29_", "2016-01-10 01:30_", "2016-02-08 14:39_", "2016-03-09 01:54T", "2016-04-07 11:24_", "2016-05-06 19:30_", "2016-06-05 03:00_", "2016-07-04 11:01_", "2016-08-02 20:45_", "2016-09-01 09:03A", "2016-10-01 00:12_", "2016-10-30 17:38_", "2016-11-29 12:18_", "2016-12-29 06:53_", "2017-01-28 00:07_", "2017-02-26 14:58A", "2017-03-28 02:57_", "2017-04-26 12:16_", "2017-05-25 19:44_", "2017-06-24 02:31_", "2017-07-23 09:46_", "2017-08-21 18:30T", "2017-09-20 05:30_", "2017-10-19 19:12_", "2017-11-18 11:42_", "2017-12-18 06:31_", "2018-01-17 02:17_", "2018-02-15 21:05P", "2018-03-17 13:12_", "2018-04-16 01:57_", "2018-05-15 11:48_", "2018-06-13 19:43_", "2018-07-13 02:48P", "2018-08-11 09:58P", "2018-09-09 18:01_", "2018-10-09 03:47_", "2018-11-07 16:02_", "2018-12-07 07:20_")
@@ -473,7 +465,8 @@ class DataModel():
         self.last_quarter_array = ("2008-01-30 05:03", "2008-02-29 02:18", "2008-03-29 21:47", "2008-04-28 14:12", "2008-05-28 02:57", "2008-06-26 12:10", "2008-07-25 18:42", "2008-08-23 23:50", "2008-09-22 05:04", "2008-10-21 11:55", "2008-11-19 21:31", "2008-12-19 10:29", "2009-01-18 02:46", "2009-02-16 21:37", "2009-03-18 17:47", "2009-04-17 13:36", "2009-05-17 07:26", "2009-06-15 22:15", "2009-07-15 09:53", "2009-08-13 18:55", "2009-09-12 02:16", "2009-10-11 08:56", "2009-11-09 15:56", "2009-12-09 00:13", "2010-01-07 10:40", "2010-02-05 23:49", "2010-03-07 15:42", "2010-04-06 09:37", "2010-05-06 04:15", "2010-06-04 22:13", "2010-07-04 14:35", "2010-08-03 04:59", "2010-09-01 17:22", "2010-10-01 03:52", "2010-10-30 12:46", "2010-11-28 20:36", "2010-12-28 04:18", "2011-01-26 12:57", "2011-02-24 23:26", "2011-03-26 12:07", "2011-04-25 02:47", "2011-05-24 18:52", "2011-06-23 11:48", "2011-07-23 05:02", "2011-08-21 21:55", "2011-09-20 13:39", "2011-10-20 03:30", "2011-11-18 15:09", "2011-12-18 00:48", "2012-01-16 09:08", "2012-02-14 17:04", "2012-03-15 01:25", "2012-04-13 10:50", "2012-05-12 21:47", "2012-06-11 10:41", "2012-07-11 01:48", "2012-08-09 18:55", "2012-09-08 13:15", "2012-10-08 07:33", "2012-11-07 00:36", "2012-12-06 15:32", "2013-01-05 03:58", "2013-02-03 13:56", "2013-03-04 21:53", "2013-04-03 04:37", "2013-05-02 11:14", "2013-05-31 18:58", "2013-06-30 04:54", "2013-07-29 17:43", "2013-08-28 09:35", "2013-09-27 03:56", "2013-10-26 23:41", "2013-11-25 19:28", "2013-12-25 13:48", "2014-01-24 05:19", "2014-02-22 17:15", "2014-03-24 01:46", "2014-04-22 07:52", "2014-05-21 12:59", "2014-06-19 18:39", "2014-07-19 02:08", "2014-08-17 12:26", "2014-09-16 02:05", "2014-10-15 19:12", "2014-11-14 15:16", "2014-12-14 12:51", "2015-01-13 09:47", "2015-02-12 03:50", "2015-03-13 17:48", "2015-04-12 03:44", "2015-05-11 10:36", "2015-06-09 15:42", "2015-07-08 20:24", "2015-08-07 02:03", "2015-09-05 09:54", "2015-10-04 21:06", "2015-11-03 12:24", "2015-12-03 07:40", "2016-01-02 05:30", "2016-02-01 03:28", "2016-03-01 23:11", "2016-03-31 15:17", "2016-04-30 03:29", "2016-05-29 12:12", "2016-06-27 18:19", "2016-07-26 23:00", "2016-08-25 03:41", "2016-09-23 09:56", "2016-10-22 19:14", "2016-11-21 08:33", "2016-12-21 01:56", "2017-01-19 22:14", "2017-02-18 19:33", "2017-03-20 15:58", "2017-04-19 09:57", "2017-05-19 00:33", "2017-06-17 11:33", "2017-07-16 19:26", "2017-08-15 01:15", "2017-09-13 06:25", "2017-10-12 12:25", "2017-11-10 20:37", "2017-12-10 07:51", "2018-01-08 22:25", "2018-02-07 15:54", "2018-03-09 11:20", "2018-04-08 07:18", "2018-05-08 02:09", "2018-06-06 18:32", "2018-07-06 07:51", "2018-08-04 18:18", "2018-09-03 02:37", "2018-10-02 09:45", "2018-10-31 16:40", "2018-11-30 00:19", "2018-12-29 09:34")
 
     def update_moon_calculations(self, the_date):
-        """Generate all Moon data ready for display."""
+        """Generate all Moon data ready for display.
+        """
         SECONDS_PER_DAY = 86400.0
         last_new_moon_sec = self.last_new_moon_sec_at_time(the_date)
         next_new_moon_sec = self.next_new_moon_sec_at_time(the_date)
@@ -538,7 +531,8 @@ class DataModel():
             self.rise_or_set = _("Sunrise")
             
     def correct_for_tz_and_dst(self, date_sec_of_event):
-        """Time-zone and/or daylight-saving correction for a displayed event (internal data all UTC)."""
+        """Time-zone and/or daylight-saving correction (internal data is UTC).
+        """
         if time.daylight == 0 or time.localtime(date_sec_of_event)[8] == 0:
             # Time-zone correction
             return time.timezone
@@ -547,7 +541,8 @@ class DataModel():
             return time.altzone
 
     def moon_phase_name(self, phase_of_moon):
-        """Return the moon image name for a given phase value."""
+        """Return the moon image name for a given phase value.
+        """
         if phase_of_moon >= 0 and phase_of_moon < 0.025:
             return _("New Moon")
         elif phase_of_moon >= 0.025 and phase_of_moon < 0.225:
@@ -568,7 +563,8 @@ class DataModel():
             return _("New Moon")
 
     def next_full_moon_sec_at_time(self, now):
-        """Return seconds to the next Full Moon."""
+        """Return seconds to the next Full Moon.
+        """
         for date_string in self.full_moon_array:
             next = time.mktime(time.strptime(date_string[:-1], self.date_format))
             if next >= now:
@@ -576,7 +572,8 @@ class DataModel():
         return next - now
 
     def next_new_moon_sec_at_time(self, now):
-        """Return seconds to the next New Moon."""
+        """Return seconds to the next New Moon.
+        """
         for date_string in self.new_moon_array:
             next = time.mktime(time.strptime(date_string[:-1], self.date_format))
             if next >= now:
@@ -584,7 +581,8 @@ class DataModel():
         return next - now
 
     def next_quarter_moon_sec_at_time(self, now):
-        """Return seconds to the next Quater Moon phase (could be First or Last)."""
+        """Return seconds to the next Quater Moon phase (could be First or Last).
+        """
         for date_string in self.first_quarter_array:
             next1 = time.mktime(time.strptime(date_string, self.date_format))
             if next1 >= now:
@@ -597,7 +595,8 @@ class DataModel():
         return next - now
 
     def last_full_moon_sec_at_time(self, now):
-        """Return (positive) seconds since the last Full Moon."""
+        """Return (positive) seconds since the last Full Moon.
+        """
         for date_string in self.full_moon_array:
             then = time.mktime(time.strptime(date_string[:-1], self.date_format))
             if then >= now:
@@ -606,7 +605,8 @@ class DataModel():
         return now - last
 
     def last_new_moon_sec_at_time(self, now):
-        """Return (positive) seconds since the last New Moon."""
+        """Return (positive) seconds since the last New Moon.
+        """
         for date_string in self.new_moon_array:
             then = time.mktime(time.strptime(date_string[:-1], self.date_format))
             if then >= now:
@@ -615,7 +615,8 @@ class DataModel():
         return now - last
 
     def last_quarter_moon_sec_at_time(self, now):
-        """Return (positive) seconds to the last Quater Moon phase (could be First or Last)."""
+        """Return (positive) seconds to the last Quater Moon phase (could be First or Last).
+        """
         for date_string in self.first_quarter_array:
             then = time.mktime(time.strptime(date_string, self.date_format))
             if then >= now:
@@ -630,7 +631,8 @@ class DataModel():
         return now - last
 
     def lunation_at_time(self, now):
-        """Return lunation number, 0 started on Dec 18, 1922, current data set starts as 2008"""
+        """Return lunation number, 0 started on Dec 18, 1922, current data set starts as 2008
+        """
         lunation = 1051
         for date_string in self.new_moon_array:
             next = time.mktime(time.strptime(date_string[:-1], self.date_format))
@@ -640,7 +642,8 @@ class DataModel():
         return lunation
 
     def next_lunar_eclipse_sec_at_time(self, now):
-        """Return (positive) seconds to the next Lunar eclipe or -1."""
+        """Return (positive) seconds to the next Lunar eclipe or -1.
+        """
         for date_string in self.full_moon_array:
             if date_string[-1:] != "_":
                 next = time.mktime(time.strptime(date_string[:-1], self.date_format))
@@ -649,7 +652,8 @@ class DataModel():
         return -1
 
     def last_lunar_eclipse_sec_at_time(self, now):
-        """Return (positive) seconds to the last Lunar eclipe or -1."""
+        """Return (positive) seconds to the last Lunar eclipe or -1.
+        """
         last = -1
         for date_string in self.full_moon_array:
             if date_string[-1:] != "_":
@@ -663,7 +667,8 @@ class DataModel():
             return now - last
 
     def next_solar_eclipse_sec_at_time(self, now):
-        """Return (positive) seconds to the next Solar eclipe or -1."""
+        """Return (positive) seconds to the next Solar eclipe or -1.
+        """
         for date_string in self.new_moon_array:
             if date_string[-1:] != "_":
                 next = time.mktime(time.strptime(date_string[:-1], self.date_format))
