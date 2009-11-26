@@ -66,6 +66,15 @@ try:
 except (ImportError, AttributeError):
     import simplejson as json
 
+try:
+    # >= 0.86 toolbars
+    from sugar.graphics.toolbarbox import ToolbarButton, ToolbarBox
+    from sugar.activity.widgets import ActivityToolbarButton
+    from sugar.activity.widgets import StopButton
+except ImportError:
+    # <= 0.84 toolbars
+    pass
+
 IMAGE_SIZE = 726
 HALF_SIZE = IMAGE_SIZE / 2
 
@@ -89,23 +98,54 @@ class MoonActivity(activity.Activity):
         self.read_and_parse_prefs(os.environ['SUGAR_ACTIVITY_ROOT'] + '/data/defaults')
                 
         # Toolbox
-        toolbox = activity.ActivityToolbox(self)
-        view_tool_bar = gtk.Toolbar()
-        self.toggle_grid_button = ToolButton('grid-icon')
-        self.toggle_grid_button.set_tooltip(_("Toggle Grid View"))
-        self.toggle_grid_handler_id = self.toggle_grid_button.connect('clicked', self.toggle_grid_clicked)
-        view_tool_bar.insert(self.toggle_grid_button, -1)
-        self.toggle_grid_button.show()
-        self.toggle_hemisphere_button = ToolButton('hemi-icon')
-        self.toggle_hemisphere_button.set_tooltip(_("Toggle Hemisphere View"))
-        self.toggle_hemisphere_handler_id = self.toggle_hemisphere_button.connect('clicked', self.toggle_hemisphere_clicked)
-        view_tool_bar.insert(self.toggle_hemisphere_button, -1)
-        self.toggle_hemisphere_button.show()
+        try:
+            # Use new >= 0.86 toolbar design
+            self.max_participants = 1
+            toolbar_box = ToolbarBox()
+            activity_button = ActivityToolbarButton(self)
+            toolbar_box.toolbar.insert(activity_button, 0)
+            separator = gtk.SeparatorToolItem()
+            toolbar_box.toolbar.insert(separator, -1)
+            self.toggle_grid_button = ToolButton('grid-icon')
+            self.toggle_grid_button.set_tooltip(_("Toggle Grid View"))
+            self.toggle_grid_handler_id = self.toggle_grid_button.connect('clicked', self.toggle_grid_clicked)
+            toolbar_box.toolbar.insert(self.toggle_grid_button, -1)
+            self.toggle_grid_button.show()
+            self.toggle_hemisphere_button = ToolButton('hemi-icon')
+            self.toggle_hemisphere_button.set_tooltip(_("Toggle Hemisphere View"))
+            self.toggle_hemisphere_handler_id = self.toggle_hemisphere_button.connect('clicked', self.toggle_hemisphere_clicked)
+            toolbar_box.toolbar.insert(self.toggle_hemisphere_button, -1)
+            self.toggle_hemisphere_button.show()
+            separator = gtk.SeparatorToolItem()
+            separator.props.draw = False
+            separator.set_expand(True)
+            separator.show()
+            toolbar_box.toolbar.insert(separator, -1)
+            tool = StopButton(self)
+            toolbar_box.toolbar.insert(tool, -1)
+            self.set_toolbox(toolbar_box)
+            toolbar_box.show()
 
-        view_tool_bar.show()
-        toolbox.add_toolbar(_('View'), view_tool_bar)
-        self.set_toolbox(toolbox)
-        toolbox.show()
+        except NameError:
+            # Use old <= 0.84 toolbar design
+            toolbox = activity.ActivityToolbox(self)
+            view_tool_bar = gtk.Toolbar()
+            self.toggle_grid_button = ToolButton('grid-icon')
+            self.toggle_grid_button.set_tooltip(_("Toggle Grid View"))
+            self.toggle_grid_handler_id = self.toggle_grid_button.connect('clicked', self.toggle_grid_clicked)
+            view_tool_bar.insert(self.toggle_grid_button, -1)
+            self.toggle_grid_button.show()
+            self.toggle_hemisphere_button = ToolButton('hemi-icon')
+            self.toggle_hemisphere_button.set_tooltip(_("Toggle Hemisphere View"))
+            self.toggle_hemisphere_handler_id = self.toggle_hemisphere_button.connect('clicked', self.toggle_hemisphere_clicked)
+            view_tool_bar.insert(self.toggle_hemisphere_button, -1)
+            self.toggle_hemisphere_button.show()
+            view_tool_bar.show()
+            toolbox.add_toolbar(_('View'), view_tool_bar)
+            self.set_toolbox(toolbox)
+            toolbox.show()
+            activity_toolbar = toolbox.get_activity_toolbar()
+            activity_toolbar.share.props.visible = False
 
         # Create the main activity container
         self.main_view = gtk.HBox()
