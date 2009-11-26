@@ -411,22 +411,22 @@ class MoonActivity(activity.Activity):
 
         # Key text
         pango_layout.set_text(_("Latitude"))
-        self.image_pixmap.draw_layout(bgc, 0, IMAGE_SIZE - 48, pango_layout)
+        self.image_pixmap.draw_layout(bgc, 15, IMAGE_SIZE - 48 - 15, pango_layout)
         pango_layout.set_text(_("Longitude"))
-        self.image_pixmap.draw_layout(rgc, 0, IMAGE_SIZE - 24, pango_layout)
+        self.image_pixmap.draw_layout(rgc, 15, IMAGE_SIZE - 24 - 15, pango_layout)
 
         # Compass
         # TODO: fix string index to support multi-byte texts
-        self.image_pixmap.draw_line(bgc, 45, 24, 45, 68)
-        self.image_pixmap.draw_line(rgc, 22, 48, 68, 48)
+        self.image_pixmap.draw_line(bgc, 45 + 15, 24 + 15, 45 + 15, 68 + 15)
+        self.image_pixmap.draw_line(rgc, 22 + 15, 48 + 15, 68 + 15, 48 + 15)
         pango_layout.set_text(compass_text[0])
-        self.image_pixmap.draw_layout(bgc, 38, 0, pango_layout)
+        self.image_pixmap.draw_layout(bgc, 38 + 15, 15, pango_layout)
         pango_layout.set_text(compass_text[1])
-        self.image_pixmap.draw_layout(bgc, 38, 72, pango_layout)
+        self.image_pixmap.draw_layout(bgc, 38 + 15, 72 + 15, pango_layout)
         pango_layout.set_text(compass_text[2])
-        self.image_pixmap.draw_layout(rgc, 72, 36, pango_layout)
+        self.image_pixmap.draw_layout(rgc, 72 + 15, 36 + 15, pango_layout)
         pango_layout.set_text(compass_text[3])
-        self.image_pixmap.draw_layout(rgc, 0, 36, pango_layout)
+        self.image_pixmap.draw_layout(rgc, 15, 36 + 15, pango_layout)
 
     def _moon_size_allocate_cb(self, widget, allocation):
         global IMAGE_SIZE, HALF_SIZE
