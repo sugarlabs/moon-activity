@@ -35,7 +35,7 @@ msgstr "දසුන"
 msgid ""
 "Today's Moon Information\n"
 "\n"
-msgstr "අද දින හඳෙහි තොරතුරු"
+msgstr "අද දින හඳෙහි තොරතුරු\n\n"
 
 #: moon.py:219
 #, python-format
