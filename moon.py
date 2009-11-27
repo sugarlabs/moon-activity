@@ -403,6 +403,7 @@ class MoonActivity(activity.Activity):
             self.image_pixmap.draw_line(rgc, HALF_SIZE + i, 0, HALF_SIZE + i, IMAGE_SIZE)
             self.image_pixmap.draw_arc(rgc, False, int(HALF_SIZE * 0.15) + i, 0, IMAGE_SIZE - int(IMAGE_SIZE * 0.15), IMAGE_SIZE, 0, 360*64)
             self.image_pixmap.draw_arc(rgc, False, int(HALF_SIZE * 0.48) + i, 0, IMAGE_SIZE - int(IMAGE_SIZE * 0.48) , IMAGE_SIZE, 0, 360*64)
+        for i in (-1, 0, 1):
             self.image_pixmap.draw_line(bgc, 0, HALF_SIZE + i, IMAGE_SIZE, HALF_SIZE + i)
             self.image_pixmap.draw_line(bgc, int(HALF_SIZE * 0.15), int(HALF_SIZE * 0.5) + i, IMAGE_SIZE - int(HALF_SIZE * 0.15), int(HALF_SIZE * 0.5) + i)
             self.image_pixmap.draw_line(bgc, int(HALF_SIZE * 0.15), int(HALF_SIZE * 1.5) + i, IMAGE_SIZE - int(HALF_SIZE * 0.15), int(HALF_SIZE * 1.5) + i)
@@ -417,8 +418,10 @@ class MoonActivity(activity.Activity):
 
         # Compass
         # TODO: fix string index to support multi-byte texts
-        self.image_pixmap.draw_line(bgc, 45 + 15, 24 + 15, 45 + 15, 68 + 15)
-        self.image_pixmap.draw_line(rgc, 22 + 15, 48 + 15, 68 + 15, 48 + 15)
+        for i in (-1, 0, 1):
+            self.image_pixmap.draw_line(rgc, 22 + 15, 48 + 15 + i, 68 + 15, 48 + 15 + i)
+        for i in (-1, 0, 1):
+            self.image_pixmap.draw_line(bgc, 45 + 15 + i, 24 + 15, 45 + 15 + i, 68 + 15)
         pango_layout.set_text(compass_text[0])
         self.image_pixmap.draw_layout(bgc, 38 + 15, 15, pango_layout)
         pango_layout.set_text(compass_text[1])
