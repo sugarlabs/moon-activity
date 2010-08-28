@@ -4,6 +4,6 @@ activity_version = 11
 host_version = 1
 bundle_id = com.garycmartin.Moon
 icon = moon-icon
-class = moon.MoonActivity
+exec = sugar-activity moon.MoonActivity
 show_launcher = yes
 license = GPLv2+
