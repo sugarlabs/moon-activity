@@ -353,7 +353,6 @@ locale/zh_CN/activity.linfo
 locale/zh_CN/LC_MESSAGES/com.garycmartin.Moon.mo
 locale/zh_TW/activity.linfo
 locale/zh_TW/LC_MESSAGES/com.garycmartin.Moon.mo
-activity/.DS_Store
 locale/kos/activity.linfo
 locale/kos/LC_MESSAGES/com.garycmartin.Moon.mo
 locale/mg/activity.linfo
