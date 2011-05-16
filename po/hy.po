@@ -18,183 +18,219 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-01 11:54-0400\n"
-"PO-Revision-Date: 2011-01-03 23:06+0200\n"
-"Last-Translator: rubina <rubina@aua.am>\n"
+"POT-Creation-Date: 2010-12-29 00:46-0500\n"
+"PO-Revision-Date: 2011-05-15 13:04+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.3\n"
+"X-Generator: Pootle 2.0.1\n"
 
-#: activity/activity.info:2 moon.py:72
+#: activity/activity.info:2 moon.py:65
 msgid "Moon"
 msgstr "Լուսին"
 
-#: moon.py:86
+#: moon.py:89 moon.py:113
 msgid "Toggle Grid View"
-msgstr ""
+msgstr "Միացնել վանդակավոր տեսքը"
 
-#: moon.py:91
+#: moon.py:94 moon.py:118
 msgid "Toggle Hemisphere View"
-msgstr ""
+msgstr "Միացնել կիսագնդային տեսքը"
 
-#: moon.py:96
+#: moon.py:123
 msgid "View"
-msgstr ""
+msgstr "Դիտել"
 
-#: moon.py:218
+#: moon.py:257
 msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
+"Այսօրվա տեղեկատվությունը լուսնի մասին\n"
+"\n"
 
-#: moon.py:219
+#: moon.py:258
 #, python-format
 msgid ""
 "Phase:\n"
 "%s\n"
 "\n"
 msgstr ""
+"Փուլը.\n"
+"%s\n"
+"\n"
 
-#: moon.py:220
+#: moon.py:259
 #, python-format
 msgid ""
 "Julian Date:\n"
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
+"Հուլիանոսյան ամսաթիվը.\n"
+"%.2f (աստղագիտական)\n"
+"\n"
 
-#: moon.py:221
+#: moon.py:260
 #, python-format
 msgid ""
 "Age:\n"
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
+"Տարիքը.\n"
+"%(days).0f օր, %(hours).0f ժամ, %(minutes).0f րոպե\n"
+"\n"
 
-#: moon.py:222
+#: moon.py:261
 #, python-format
 msgid ""
 "Lunation:\n"
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 msgstr ""
+"Լուսնային փուլ.\n"
+"%(phase).2f%% լուսնային փուլով %(lunation)d\n"
+"\n"
 
-#: moon.py:223
+#: moon.py:262
 #, python-format
 msgid ""
 "Surface Visibility:\n"
 "%.0f%% (estimated)\n"
 "\n"
 msgstr ""
+"Մակերեսային տեսանելիություն.\n"
+"%.0f%% (ենթադրյալ)\n"
+"\n"
 
-#: moon.py:224
+#: moon.py:263
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
+"Լուսնագրական տերմինատորի երկայնությունը.\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
 
-#: moon.py:225
+#: moon.py:264
 #, python-format
 msgid ""
 "Next Full Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Հաջորդ լիալուսինը.\n"
+"%(date)s %(days).0f օր\n"
+"\n"
 
-#: moon.py:226
+#: moon.py:265
 #, python-format
 msgid ""
 "Next New Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Հաջորդ նորալուսինը.\n"
+"%(date)s %(days).0f օր\n"
+"\n"
 
-#: moon.py:227
+#: moon.py:266
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Հաջորդ լուսնային խավարումը.\n"
+"%(date)s %(days).0f օր\n"
+"\n"
 
-#: moon.py:228
+#: moon.py:267
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Հաջորդ արեւային խավարումը.\n"
+"%(date)s %(days).0f օր\n"
+"\n"
 
-#: moon.py:310
+#: moon.py:356
 msgid "SNWE"
-msgstr ""
+msgstr "SNWE"
 
-#: moon.py:313
+#: moon.py:359
 msgid "NSEW"
-msgstr ""
+msgstr "NSEW"
 
-#: moon.py:366
+#: moon.py:414
 msgid "Latitude"
-msgstr ""
+msgstr "Լայնություն"
 
-#: moon.py:368
+#: moon.py:416
 msgid "Longitude"
-msgstr ""
+msgstr "Երկայնություն"
 
-#: moon.py:465
+#: moon.py:527
 msgid "west"
-msgstr ""
+msgstr "արեւմուտք"
 
-#: moon.py:467
+#: moon.py:529
 msgid "east"
-msgstr ""
+msgstr "արեւելք"
 
-#: moon.py:470
+#: moon.py:532
 msgid "Sunset"
-msgstr ""
+msgstr "Արեւամուտ"
 
-#: moon.py:472
+#: moon.py:534
 msgid "Sunrise"
-msgstr ""
+msgstr "Արեւածագ"
 
-#: moon.py:486 moon.py:502
+#: moon.py:550 moon.py:566
 msgid "New Moon"
-msgstr ""
+msgstr "Նորալուսին"
 
-#: moon.py:488
+#: moon.py:552
 msgid "Waxing Crescent"
-msgstr ""
+msgstr "Հասունացող կիսալուսին"
 
-#: moon.py:490
+#: moon.py:554
 msgid "First Quarter"
-msgstr ""
+msgstr "Առաջին քառորդ"
 
-#: moon.py:492
+#: moon.py:556
 msgid "Waxing Gibbous"
-msgstr ""
+msgstr "Հասունացող երեք քառորդ"
 
-#: moon.py:494
+#: moon.py:558
 msgid "Full Moon"
-msgstr ""
+msgstr "Լիալուսին"
 
-#: moon.py:496
+#: moon.py:560
 msgid "Waning Gibbous"
-msgstr ""
+msgstr "Խամրող երեք քառորդ"
 
-#: moon.py:498
+#: moon.py:562
 msgid "Last Quarter"
-msgstr ""
+msgstr "Վերջին քառորդ"
 
-#: moon.py:500
+#: moon.py:564
 msgid "Waning Crescent"
-msgstr ""
+msgstr "Խամրող կիսալուսին"
