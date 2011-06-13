@@ -2,182 +2,252 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-01 11:54-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2008-03-14 16:02+0000\n"
+"PO-Revision-Date: 2011-01-25 06:44+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ht\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.1.1rc4\n"
+"Plural-Forms: nplurals=2; plural=(n !=1);\n"
+"X-Generator: Pootle 2.0.3\n"
 
-#: activity/activity.info:2 moon.py:72
+#: ../activity/activity.info:2
 msgid "Moon"
-msgstr ""
+msgstr "Lalin"
 
-#: moon.py:86
+#: ../moon.py:71
+msgid "Moon"
+msgstr "Lalin"
+
+#: ../moon.py:83
 msgid "Toggle Grid View"
-msgstr ""
+msgstr "Gade griy bouton"
 
-#: moon.py:91
+#: ../moon.py:88
 msgid "Toggle Hemisphere View"
-msgstr ""
+msgstr "Gade bouton emisfè"
 
-#: moon.py:96
+#: ../moon.py:93
+#, fuzzy
 msgid "View"
-msgstr ""
+msgstr "Gade"
 
-#: moon.py:218
+#: ../moon.py:190
 msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
+"Enfòmasyon sou lalin jodi a\n"
+"\n"
 
-#: moon.py:219
+#: ../moon.py:191
 #, python-format
 msgid ""
 "Phase:\n"
 "%s\n"
 "\n"
 msgstr ""
+"Faz:\n"
+"%s\n"
+"\n"
 
-#: moon.py:220
+#: ../moon.py:192
 #, python-format
 msgid ""
 "Julian Date:\n"
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
+"Dat Jilyan:\n"
+"%.2f (Astwonomik)\n"
+"\n"
 
-#: moon.py:221
+#: ../moon.py:193
 #, python-format
 msgid ""
 "Age:\n"
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
+"Aj:\n"
+"%(days).0f jou yo, %(hours).0f è yo, %(minutes).0f minit yo\n"
+"\n"
 
-#: moon.py:222
+#: ../moon.py:194
 #, python-format
 msgid ""
 "Lunation:\n"
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 msgstr ""
+"Linezon:\n"
+"%(phase).2f%% atravè linezon%(lunation)d\n"
+"\n"
 
-#: moon.py:223
+#: ../moon.py:195
 #, python-format
 msgid ""
 "Surface Visibility:\n"
 "%.0f%% (estimated)\n"
 "\n"
 msgstr ""
+"Sifas Vizib:\n"
+"%.0f%% (estime)\n"
+"\n"
 
-#: moon.py:224
+#: ../moon.py:196
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
+"Selenografik Lonjitid tèminal:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
 
-#: moon.py:225
+#: ../moon.py:197
 #, python-format
 msgid ""
 "Next Full Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Pwochèn plèn lin:\n"
+"%(date)s dan %(days).0f jou yo\n"
+"\n"
 
-#: moon.py:226
+#: ../moon.py:198
 #, python-format
 msgid ""
 "Next New Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Pwochèn nouvèl lin:\n"
+"%(date)s dan %(days).0f jou yo\n"
+"\n"
 
-#: moon.py:227
+#: ../moon.py:199
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"pwochèn eklips lalin:\n"
+"%(date)s dan %(days).0f jou yo\n"
+"\n"
 
-#: moon.py:228
+#: ../moon.py:200
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Pwochèn eklips solèy:\n"
+"%(date)s dan %(days).0f jou yo\n"
+"\n"
 
-#: moon.py:310
+#: ../moon.py:282
 msgid "SNWE"
-msgstr ""
+msgstr "SNWE"
 
-#: moon.py:313
+#: ../moon.py:285
 msgid "NSEW"
-msgstr ""
+msgstr "NSEW"
 
-#: moon.py:366
+#: ../moon.py:338
 msgid "Latitude"
-msgstr ""
+msgstr "Latitid"
 
-#: moon.py:368
+#: ../moon.py:340
 msgid "Longitude"
-msgstr ""
+msgstr "Lonjitid"
 
-#: moon.py:465
+#: ../moon.py:437
 msgid "west"
-msgstr ""
+msgstr "Lwès"
 
-#: moon.py:467
+#: ../moon.py:439
 msgid "east"
-msgstr ""
+msgstr "Lès"
 
-#: moon.py:470
+#: ../moon.py:442
 msgid "Sunset"
-msgstr ""
+msgstr "Solèy kouche"
 
-#: moon.py:472
+#: ../moon.py:444
 msgid "Sunrise"
-msgstr ""
+msgstr "Douvanjou"
 
-#: moon.py:486 moon.py:502
+#: ../moon.py:458 ../moon.py:474
 msgid "New Moon"
-msgstr ""
+msgstr "Nouvèl lin"
 
-#: moon.py:488
+#: ../moon.py:460
 msgid "Waxing Crescent"
-msgstr ""
+msgstr "Ap sire kwasan"
 
-#: moon.py:490
+#: ../moon.py:462
 msgid "First Quarter"
-msgstr ""
+msgstr "Premye katye"
 
-#: moon.py:492
+#: ../moon.py:464
 msgid "Waxing Gibbous"
-msgstr ""
+msgstr "Ap sire Gibbous"
 
-#: moon.py:494
+#: ../moon.py:466
 msgid "Full Moon"
-msgstr ""
+msgstr "Plèn lin"
 
-#: moon.py:496
+#: ../moon.py:468
 msgid "Waning Gibbous"
-msgstr ""
+msgstr "Ap diminye Gibbous"
 
-#: moon.py:498
+#: ../moon.py:470
 msgid "Last Quarter"
-msgstr ""
+msgstr "Dènye katye"
 
-#: moon.py:500
+#: ../moon.py:472
 msgid "Waning Crescent"
-msgstr ""
+msgstr "Ap diminye kwasan "

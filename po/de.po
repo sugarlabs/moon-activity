@@ -2,11 +2,63 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-01 11:54-0400\n"
+"POT-Creation-Date: 2011-06-04 00:30-0400\n"
 "PO-Revision-Date: 2009-09-23 19:24-0400\n"
 "Last-Translator: Markus Schlager <m.slg@gmx.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,29 +70,29 @@ msgstr ""
 "X-Generator: Pootle 1.2.1\n"
 
 # O.T.
-#: activity/activity.info:2 moon.py:72
+#: activity/activity.info:2 moon.py:65
 msgid "Moon"
 msgstr "Mond"
 
 # O.T.
-#: moon.py:86
+#: moon.py:89 moon.py:113
 msgid "Toggle Grid View"
 msgstr "Koordinatengitter ein- oder ausblenden"
 
 # O.T.: Es wird der Mond aus Sicht der Nordhalbkugel gezeigt. Umschalten bewirkt Ansicht von der Südhalbkugel und umgekehrt.
 # (Markus S.) 'Wechsle Hemisphäre'?
 # (Markus S.) war 'Umschalten auf Ansicht von anderer Hemisphäre'
-#: moon.py:91
+#: moon.py:94 moon.py:118
 msgid "Toggle Hemisphere View"
 msgstr "Hemisphäre wechseln"
 
 # O.T.
-#: moon.py:96
+#: moon.py:123
 msgid "View"
 msgstr "Ansicht"
 
 # O.T.
-#: moon.py:218
+#: moon.py:257
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -49,7 +101,7 @@ msgstr ""
 "\n"
 
 # O.T.
-#: moon.py:219
+#: moon.py:258
 #, python-format
 msgid ""
 "Phase:\n"
@@ -61,7 +113,7 @@ msgstr ""
 "\n"
 
 # O.T.
-#: moon.py:220
+#: moon.py:259
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -73,7 +125,7 @@ msgstr ""
 "\n"
 
 # O.T.
-#: moon.py:221
+#: moon.py:260
 #, python-format
 msgid ""
 "Age:\n"
@@ -85,7 +137,7 @@ msgstr ""
 "\n"
 
 # O.T.: Die Lunationen (Mondwechsel) werden in der Astronomie fortlaufend nummeriert. Die Lunation bezeichnet die Zeit von einem Neumond zum nächsten Neumond. 10% der Lunation x ist also ein zunehmender Sichelmond, 50% ist Vollmond, 90% ist ein abnehmender Sichelmond.
-#: moon.py:222
+#: moon.py:261
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -97,7 +149,7 @@ msgstr ""
 "\n"
 
 # O.T.
-#: moon.py:223
+#: moon.py:262
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -109,7 +161,7 @@ msgstr ""
 "\n"
 
 # O.T.: Der Inhalt der Variablen (westOrEast) und (riseOrSet) müsste auch übersetzt werden.
-#: moon.py:224
+#: moon.py:263
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -121,7 +173,7 @@ msgstr ""
 "\n"
 
 # O.T.: Das Datum müsste auch übersetzt werden.
-#: moon.py:225
+#: moon.py:264
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -133,7 +185,7 @@ msgstr ""
 "\n"
 
 # O.T.: Das Datum müsste auch übersetzt werden.
-#: moon.py:226
+#: moon.py:265
 #, python-format
 msgid ""
 "Next New Moon:\n"
@@ -145,7 +197,7 @@ msgstr ""
 "\n"
 
 # O.T.: Das Datum müsste auch übersetzt werden.
-#: moon.py:227
+#: moon.py:266
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
@@ -157,7 +209,7 @@ msgstr ""
 "\n"
 
 # O.T.: Das Datum müsste auch übersetzt werden.
-#: moon.py:228
+#: moon.py:267
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
@@ -169,85 +221,85 @@ msgstr ""
 "\n"
 
 # O.T.: Das sind die Buchstaben für die Himmelsrichtungen Süd, Nord, West und Ost.
-#: moon.py:310
+#: moon.py:356
 msgid "SNWE"
 msgstr "SNWO"
 
 # O.T.: Das sind die Buchstaben für die Himmelsrichtungen.
-#: moon.py:313
+#: moon.py:359
 msgid "NSEW"
 msgstr "NSOW"
 
 # O.T.
-#: moon.py:366
+#: moon.py:414
 msgid "Latitude"
 msgstr "Breite"
 
 # O.T.
-#: moon.py:368
+#: moon.py:416
 msgid "Longitude"
 msgstr "Länge"
 
 # O.T.
-#: moon.py:465
+#: moon.py:527
 msgid "west"
 msgstr "West"
 
 # O.T.
-#: moon.py:467
+#: moon.py:529
 msgid "east"
 msgstr "Ost"
 
 # O.T.
-#: moon.py:470
+#: moon.py:532
 msgid "Sunset"
 msgstr "Sonnenuntergang"
 
 # O.T.
-#: moon.py:472
+#: moon.py:534
 msgid "Sunrise"
 msgstr "Sonnenaufgang"
 
 # O.T.
-#: moon.py:486 moon.py:502
+#: moon.py:550 moon.py:566
 msgid "New Moon"
 msgstr "Neumond"
 
 # O.T.: Der Mond vor dem ersten Viertel.
 # (Markus S.) 'Zunehmende Mondsichel'? war 'Zunehmender Sichelmond'; ich orientiere mich bei den Mondphasen an 'Grundkurs Astronomie', bsv
-#: moon.py:488
+#: moon.py:552
 msgid "Waxing Crescent"
 msgstr "Zunehmende Sichel"
 
 # O.T.
-#: moon.py:490
+#: moon.py:554
 msgid "First Quarter"
 msgstr "Erstes Viertel"
 
 # O.T. Der Mond nach dem ersten Viertel, vor Vollmond.
 # (Markus S.) war 'Zunehmender Halbmond', aber das wäre 'Erstes Viertel', vgl. 'GK Astronomie', bsv
-#: moon.py:492
+#: moon.py:556
 msgid "Waxing Gibbous"
 msgstr "Zunehmender Mond"
 
 # O.T.
-#: moon.py:494
+#: moon.py:558
 msgid "Full Moon"
 msgstr "Vollmond"
 
 # O.T.: Der Mond nach Vollmond, vor dem letzten Viertel.
 # (Markus S.) war 'Abnehmender Halbmond'
-#: moon.py:496
+#: moon.py:560
 msgid "Waning Gibbous"
 msgstr "Abnehmender Mond"
 
 # O.T.
-#: moon.py:498
+#: moon.py:562
 msgid "Last Quarter"
 msgstr "Letztes Viertel"
 
 # O.T.
 # (Markus S.) 'Abnehmende Mondsichel'? War 'Abnehmender Sichelmond'
-#: moon.py:500
+#: moon.py:564
 msgid "Waning Crescent"
 msgstr "Abnehmende Sichel"

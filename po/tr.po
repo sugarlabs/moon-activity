@@ -2,11 +2,39 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-01 11:54-0400\n"
+"POT-Creation-Date: 2008-03-14 16:02+0000\n"
 "PO-Revision-Date: 2008-10-07 07:58-0400\n"
 "Last-Translator: abdullah kocabas <abdullah.kocabas@abcdizustu.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,23 +43,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.1.0rc2\n"
 
-#: activity/activity.info:2 moon.py:72
+#: ../activity/activity.info:2
 msgid "Moon"
 msgstr "Ay"
 
-#: moon.py:86
+#: ../moon.py:71
+msgid "Moon"
+msgstr "Ay"
+
+#: ../moon.py:83
 msgid "Toggle Grid View"
 msgstr "Grid Koordinatları Görünümüne Geçin"
 
-#: moon.py:91
+#: ../moon.py:88
 msgid "Toggle Hemisphere View"
 msgstr "Yarımküre Görünümüne Geçin"
 
-#: moon.py:96
+#: ../moon.py:93
 msgid "View"
 msgstr "Görünüm"
 
-#: moon.py:218
+#: ../moon.py:190
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -39,7 +71,7 @@ msgstr ""
 "Günlük Ay Bilgisi\n"
 "\n"
 
-#: moon.py:219
+#: ../moon.py:191
 #, python-format
 msgid ""
 "Phase:\n"
@@ -50,7 +82,7 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: moon.py:220
+#: ../moon.py:192
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -61,7 +93,7 @@ msgstr ""
 "%.2f (astronomik)\n"
 "\n"
 
-#: moon.py:221
+#: ../moon.py:193
 #, python-format
 msgid ""
 "Age:\n"
@@ -72,7 +104,7 @@ msgstr ""
 "%(günler).0 günler, %(saatler).0 saatler, %(dakika).0f dakikalar\n"
 "\n"
 
-#: moon.py:222
+#: ../moon.py:194
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -83,7 +115,7 @@ msgstr ""
 "%(evre).2f%% 29.5 gün boyunca %(29.5 günlük devre)d\n"
 "\n"
 
-#: moon.py:223
+#: ../moon.py:195
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -94,7 +126,7 @@ msgstr ""
 "%.0f%% (tahmini)\n"
 "\n"
 
-#: moon.py:224
+#: ../moon.py:196
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -105,7 +137,7 @@ msgstr ""
 "%(derece).1f°%(batı ya da doğu)s (%(doğma ya da batma)s)\n"
 "\n"
 
-#: moon.py:225
+#: ../moon.py:197
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -115,7 +147,7 @@ msgstr ""
 "Bir sonraki Dolunay Zamanı:\n"
 "%(tarih)s %(günler).0f günler içinde\\\n"
 
-#: moon.py:226
+#: ../moon.py:198
 #, python-format
 msgid ""
 "Next New Moon:\n"
@@ -126,7 +158,7 @@ msgstr ""
 "%(tarih)s %(günler).0f günler içinde\n"
 "\n"
 
-#: moon.py:227
+#: ../moon.py:199
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
@@ -137,7 +169,7 @@ msgstr ""
 "%(tarih)s %(günler).0f günler içinde\n"
 "\n"
 
-#: moon.py:228
+#: ../moon.py:200
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
@@ -148,66 +180,66 @@ msgstr ""
 "%(tarih)s %(günler).0f günler içinde\n"
 "\n"
 
-#: moon.py:310
+#: ../moon.py:282
 msgid "SNWE"
 msgstr "GKBD(Güney,Kuzey,Batı,Doğu)"
 
-#: moon.py:313
+#: ../moon.py:285
 msgid "NSEW"
 msgstr "KGDB(Kuzey,Güney,Doğu,Batı)"
 
-#: moon.py:366
+#: ../moon.py:338
 msgid "Latitude"
 msgstr "Enlem"
 
-#: moon.py:368
+#: ../moon.py:340
 msgid "Longitude"
 msgstr "Boylam"
 
-#: moon.py:465
+#: ../moon.py:437
 msgid "west"
 msgstr "Batı"
 
-#: moon.py:467
+#: ../moon.py:439
 msgid "east"
 msgstr "Doğu"
 
-#: moon.py:470
+#: ../moon.py:442
 msgid "Sunset"
 msgstr "Gün batımı"
 
-#: moon.py:472
+#: ../moon.py:444
 msgid "Sunrise"
 msgstr "Gündoğumu"
 
-#: moon.py:486 moon.py:502
+#: ../moon.py:458 ../moon.py:474
 msgid "New Moon"
 msgstr "Yeniay"
 
-#: moon.py:488
+#: ../moon.py:460
 msgid "Waxing Crescent"
 msgstr "Hilal"
 
-#: moon.py:490
+#: ../moon.py:462
 msgid "First Quarter"
 msgstr "İlk Çeyrek"
 
-#: moon.py:492
+#: ../moon.py:464
 msgid "Waxing Gibbous"
 msgstr "İlk Çeyrekle Dolunay Arasındaki Evre"
 
-#: moon.py:494
+#: ../moon.py:466
 msgid "Full Moon"
 msgstr "Dolunay"
 
-#: moon.py:496
+#: ../moon.py:468
 msgid "Waning Gibbous"
 msgstr "Dolunayla Son Çeyrek Arasındaki Evre"
 
-#: moon.py:498
+#: ../moon.py:470
 msgid "Last Quarter"
 msgstr "Son Çeyrek"
 
-#: moon.py:500
+#: ../moon.py:472
 msgid "Waning Crescent"
 msgstr "Gündoğumuna Yakın Görünen İnce Ay "
