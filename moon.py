@@ -336,11 +336,15 @@ class MoonActivity(activity.Activity):
                 eclipse_alpha = self.data_model.next_lunar_eclipse_sec / 7200.0 * 256
             else:
                 eclipse_alpha = min(self.data_model.next_lunar_eclipse_sec, self.data_model.last_lunar_eclipse_sec) / 7200.0 * 256
-            moon_pixbuf.composite(dark_pixbuf, 0, 0, IMAGE_SIZE, IMAGE_SIZE, 0, 0, 1, 1, gtk.gdk.INTERP_BILINEAR, 196 - eclipse_alpha / 2)
+            moon_pixbuf.composite(dark_pixbuf, 0, 0, IMAGE_SIZE, IMAGE_SIZE,
+                                  0, 0, 1, 1, gtk.gdk.INTERP_BILINEAR,
+                                  int(196 - eclipse_alpha / 2))
             self.image_pixmap.draw_pixbuf(self.gc, dark_pixbuf, 0, 0, 0, 0)
             del dark_pixbuf
             dark_pixbuf = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB, True, 8, IMAGE_SIZE, IMAGE_SIZE)
-            moon_pixbuf.composite(dark_pixbuf, 0, 0, IMAGE_SIZE, IMAGE_SIZE, 0, 0, 1, 1, gtk.gdk.INTERP_BILINEAR, eclipse_alpha)
+            moon_pixbuf.composite(dark_pixbuf, 0, 0, IMAGE_SIZE, IMAGE_SIZE,
+                                  0, 0, 1, 1, gtk.gdk.INTERP_BILINEAR,
+                                  int(eclipse_alpha))
             rgc = self.image_pixmap.new_gc(foreground=self.blue_green_mask_alloc_color, function=gtk.gdk.AND)
             self.image_pixmap.draw_rectangle(rgc, True, 0, 0, IMAGE_SIZE, IMAGE_SIZE)
             self.image_pixmap.draw_pixbuf(self.gc, dark_pixbuf, 0, 0, 0, 0)
