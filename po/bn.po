@@ -2,83 +2,133 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Loba Yeasmeen <loba@ankur.org.bd>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: honey VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-01 11:54-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2008-03-14 16:02+0000\n"
+"PO-Revision-Date: 2009-06-24 16:14-0800\n"
+"Last-Translator: Loba Yeasmeen <loba@ankur.org.bd>\n"
+"Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.1.1rc4\n"
 
-#: activity/activity.info:2 moon.py:72
+#: ../activity/activity.info:2
 msgid "Moon"
-msgstr ""
+msgstr "চাঁদ"
 
-#: moon.py:86
+#: ../moon.py:71
+msgid "Moon"
+msgstr "চাঁদ"
+
+#: ../moon.py:83
 msgid "Toggle Grid View"
-msgstr ""
+msgstr "গ্রিড ভিউ টগল করো"
 
-#: moon.py:91
+#: ../moon.py:88
 msgid "Toggle Hemisphere View"
-msgstr ""
+msgstr "গোলার্ধ ভিউ টগল করো"
 
-#: moon.py:96
+#: ../moon.py:93
 msgid "View"
-msgstr ""
+msgstr "ভিউ"
 
-#: moon.py:218
+#: ../moon.py:190
 msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
+"আজকের চাঁদের তথ্য\n"
+"\n"
 
-#: moon.py:219
+#: ../moon.py:191
 #, python-format
 msgid ""
 "Phase:\n"
 "%s\n"
 "\n"
 msgstr ""
+"পর্যায়:\n"
+"%s\n"
+"\n"
 
-#: moon.py:220
+#: ../moon.py:192
 #, python-format
 msgid ""
 "Julian Date:\n"
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
+"জুলিয়ান তারিখ:\n"
+"%.2f (astronomical)\n"
 
-#: moon.py:221
+#: ../moon.py:193
 #, python-format
 msgid ""
 "Age:\n"
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
+"বয়স:\n"
+"%(days).0f দিন, %(hours).0f ঘন্টা, %(minutes).0f মিনিট\n"
+"\n"
 
-#: moon.py:222
+#: ../moon.py:194
 #, python-format
 msgid ""
 "Lunation:\n"
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 msgstr ""
+"লুনেশন:\n"
+"%(phase).2f%% লুনেশনের মাধ্যমে %(lunation)d\n"
 
-#: moon.py:223
+#: ../moon.py:195
 #, python-format
 msgid ""
 "Surface Visibility:\n"
 "%.0f%% (estimated)\n"
 "\n"
 msgstr ""
+"পৃষ্ঠভাগের দৃশ্যমানতা:\n"
+"%.0f%% (estimated)\n"
+"\n"
 
-#: moon.py:224
+#: ../moon.py:196
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -86,98 +136,115 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:225
+#: ../moon.py:197
 #, python-format
 msgid ""
 "Next Full Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"পরবর্তী পূর্ণ চাঁদ:\n"
+"%(date)s %(days).0f দিনে\n"
 
-#: moon.py:226
+#: ../moon.py:198
 #, python-format
 msgid ""
 "Next New Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"পরবর্তী নতুন চাঁদ:\n"
+"%(date)s  %(days).0f দিনে\n"
+"\n"
 
-#: moon.py:227
+#: ../moon.py:199
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"পরবর্তী চন্দ্র গ্রহন:\n"
+"%(date)s %(days).0f দিনে\n"
+"\n"
 
-#: moon.py:228
+#: ../moon.py:200
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"পরবর্তী সূর্য গ্রহন:\n"
+"%(date)s %(days).0f দিনে\n"
+"\n"
 
-#: moon.py:310
+#: ../moon.py:282
 msgid "SNWE"
-msgstr ""
+msgstr "SNWE"
 
-#: moon.py:313
+#: ../moon.py:285
 msgid "NSEW"
-msgstr ""
+msgstr "NSEW"
 
-#: moon.py:366
+#: ../moon.py:338
 msgid "Latitude"
-msgstr ""
+msgstr "অক্ষাংশ"
 
-#: moon.py:368
+#: ../moon.py:340
 msgid "Longitude"
-msgstr ""
+msgstr "দ্রাঘিমাংশ"
 
-#: moon.py:465
+#: ../moon.py:437
 msgid "west"
-msgstr ""
+msgstr "পশ্চিম"
 
-#: moon.py:467
+#: ../moon.py:439
 msgid "east"
-msgstr ""
+msgstr "পূর্ব"
 
-#: moon.py:470
+#: ../moon.py:442
 msgid "Sunset"
-msgstr ""
+msgstr "সূর্যাস্ত"
 
-#: moon.py:472
+#: ../moon.py:444
 msgid "Sunrise"
-msgstr ""
+msgstr "সূর্যোদয়"
 
-#: moon.py:486 moon.py:502
+#: ../moon.py:458 ../moon.py:474
 msgid "New Moon"
-msgstr ""
+msgstr "নতুন চাঁদ"
 
-#: moon.py:488
+#: ../moon.py:460
+#, fuzzy
 msgid "Waxing Crescent"
-msgstr ""
+msgstr "আলোকিত অর্ধচন্দ্র"
 
-#: moon.py:490
+#: ../moon.py:462
+#, fuzzy
 msgid "First Quarter"
-msgstr ""
+msgstr "প্রথম ত্রৈমাসিক"
 
-#: moon.py:492
+# Gibbous
+#: ../moon.py:464
+#, fuzzy
 msgid "Waxing Gibbous"
-msgstr ""
+msgstr "আলোকিত"
 
-#: moon.py:494
+#: ../moon.py:466
 msgid "Full Moon"
-msgstr ""
+msgstr "পূর্ণ চাঁদ"
 
-#: moon.py:496
+# Gibbous
+#: ../moon.py:468
+#, fuzzy
 msgid "Waning Gibbous"
-msgstr ""
+msgstr "অনুজ্জ্বল"
 
-#: moon.py:498
+#: ../moon.py:470
 msgid "Last Quarter"
-msgstr ""
+msgstr "শেষ ত্রৈমাসিক"
 
-#: moon.py:500
+#: ../moon.py:472
 msgid "Waning Crescent"
-msgstr ""
+msgstr "অনুজ্জ্বল অর্ধচন্দ্র"

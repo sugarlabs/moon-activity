@@ -1,38 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # Tradução da Atividade Lua
 # Copyright (C) 2008
 # Este arquivop é distribuido sob a mesma licença que o pacote Atividade Lua
 # Gabriel Menini <gabriel.menini@gmail.com>, 2008.
-#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6\n"
-"Report-Msgid-Bugs-To: gary@garycmartin.com\n"
-"POT-Creation-Date: 2008-03-14 16:02+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-06-02 00:30-0400\n"
 "PO-Revision-Date: 2008-09-26 12:53-0300\n"
 "Last-Translator: Gabriel Menini <gabriel.menini@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <pt-BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.1.1rc4\n"
 
-#: ../activity/activity.info:2 ../moon.py:71
+#: activity/activity.info:2 moon.py:65
 msgid "Moon"
 msgstr "Lua"
 
-#: ../moon.py:83
+#: moon.py:89 moon.py:113
 msgid "Toggle Grid View"
 msgstr "Comutar para vista de grade"
 
-#: ../moon.py:88
+#: moon.py:94 moon.py:118
 msgid "Toggle Hemisphere View"
 msgstr "Comutar para vista de hemisfério"
 
-#: ../moon.py:93
+#: moon.py:123
 msgid "View"
 msgstr "Ver"
 
-#: ../moon.py:190
+#: moon.py:257
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -40,7 +68,7 @@ msgstr ""
 "Informação da Lua para hoje\n"
 "\n"
 
-#: ../moon.py:191
+#: moon.py:258
 #, python-format
 msgid ""
 "Phase:\n"
@@ -51,7 +79,7 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: ../moon.py:192
+#: moon.py:259
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -62,7 +90,7 @@ msgstr ""
 "%.2f (astronômica)\n"
 "\n"
 
-#: ../moon.py:193
+#: moon.py:260
 #, python-format
 msgid ""
 "Age:\n"
@@ -73,7 +101,7 @@ msgstr ""
 "%(days).0f dias, %(hours).0f horas, %(minutes).0f minutos\n"
 "\n"
 
-#: ../moon.py:194
+#: moon.py:261
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -84,7 +112,7 @@ msgstr ""
 "%(phase).2f%% até lunação %(lunation)d\n"
 "\n"
 
-#: ../moon.py:195
+#: moon.py:262
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -95,7 +123,7 @@ msgstr ""
 "%.0f%% (estimated)\n"
 "\n"
 
-#: ../moon.py:196
+#: moon.py:263
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -106,7 +134,7 @@ msgstr ""
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 
-#: ../moon.py:197
+#: moon.py:264
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -117,7 +145,7 @@ msgstr ""
 "%(date)s in %(days).0f dias\n"
 "\n"
 
-#: ../moon.py:198
+#: moon.py:265
 #, python-format
 msgid ""
 "Next New Moon:\n"
@@ -128,7 +156,7 @@ msgstr ""
 "%(date)s in %(days).0f dias\n"
 "\n"
 
-#: ../moon.py:199
+#: moon.py:266
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
@@ -139,7 +167,7 @@ msgstr ""
 "%(date)s in %(days).0f days\n"
 "\n"
 
-#: ../moon.py:200
+#: moon.py:267
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
@@ -150,66 +178,66 @@ msgstr ""
 "%(date)s in %(days).0f days\n"
 "\n"
 
-#: ../moon.py:282
+#: moon.py:356
 msgid "SNWE"
 msgstr "SNWE"
 
-#: ../moon.py:285
+#: moon.py:359
 msgid "NSEW"
 msgstr "NSEW"
 
-#: ../moon.py:338
+#: moon.py:414
 msgid "Latitude"
 msgstr "Latitude"
 
-#: ../moon.py:340
+#: moon.py:416
 msgid "Longitude"
 msgstr "Longitude"
 
-#: ../moon.py:437
+#: moon.py:527
 msgid "west"
 msgstr "oeste"
 
-#: ../moon.py:439
+#: moon.py:529
 msgid "east"
 msgstr "leste"
 
-#: ../moon.py:442
+#: moon.py:532
 msgid "Sunset"
 msgstr "Pôr-do-sol"
 
-#: ../moon.py:444
+#: moon.py:534
 msgid "Sunrise"
 msgstr "Nascente"
 
-#: ../moon.py:458 ../moon.py:474
+#: moon.py:550 moon.py:566
 msgid "New Moon"
 msgstr "Lua Nova"
 
-#: ../moon.py:460
+#: moon.py:552
 msgid "Waxing Crescent"
 msgstr "Para Quarto Crescente"
 
-#: ../moon.py:462
+#: moon.py:554
 msgid "First Quarter"
 msgstr "Quarto Crescente"
 
-#: ../moon.py:464
+#: moon.py:556
 msgid "Waxing Gibbous"
 msgstr "Para Lua Cheia"
 
-#: ../moon.py:466
+#: moon.py:558
 msgid "Full Moon"
 msgstr "Lua Cheia"
 
-#: ../moon.py:468
+#: moon.py:560
 msgid "Waning Gibbous"
 msgstr "Para Quarto Minguante"
 
-#: ../moon.py:470
+#: moon.py:562
 msgid "Last Quarter"
 msgstr "Quarto Minguante"
 
-#: ../moon.py:472
+#: moon.py:564
 msgid "Waning Crescent"
 msgstr "Para Lua Nova"

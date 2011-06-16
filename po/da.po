@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-14 16:02+0000\n"
+"PO-Revision-Date: 2011-04-09 16:47+0200\n"
+"Last-Translator: Aputsiaq <aj@isit.gl>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.1\n"
+
+#: ../activity/activity.info:2
+msgid "Moon"
+msgstr "Måne"
+
+#: ../moon.py:71
+msgid "Moon"
+msgstr "Måne"
+
+#: ../moon.py:83
+msgid "Toggle Grid View"
+msgstr "Skjul/vis gittervisning"
+
+#: ../moon.py:88
+msgid "Toggle Hemisphere View"
+msgstr "Skjul/vis visning af hemisfære"
+
+#: ../moon.py:93
+msgid "View"
+msgstr "Vis"
+
+#: ../moon.py:190
+msgid ""
+"Today's Moon Information\n"
+"\n"
+msgstr ""
+"Dagens måne-information\n"
+"\n"
+
+#: ../moon.py:191
+#, python-format
+msgid ""
+"Phase:\n"
+"%s\n"
+"\n"
+msgstr ""
+"Fase:\n"
+"%s\n"
+"\n"
+
+#: ../moon.py:192
+#, python-format
+msgid ""
+"Julian Date:\n"
+"%.2f (astronomical)\n"
+"\n"
+msgstr ""
+"Juliansk dato:\n"
+"%.2f (astronomisk)\n"
+"\n"
+
+#: ../moon.py:193
+#, python-format
+msgid ""
+"Age:\n"
+"%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
+"\n"
+msgstr ""
+"Alder:\n"
+"%(days).0f dage, %(hours).0f timer, %(minutes).0f minutter\n"
+"\n"
+
+#: ../moon.py:194
+#, python-format
+msgid ""
+"Lunation:\n"
+"%(phase).2f%% through lunation %(lunation)d\n"
+"\n"
+msgstr ""
+"Måneskifte:\n"
+"%(phase).2f%% gennem måneskifte %(lunation)d\n"
+"\n"
+
+#: ../moon.py:195
+#, python-format
+msgid ""
+"Surface Visibility:\n"
+"%.0f%% (estimated)\n"
+"\n"
+msgstr ""
+"Overfladens synlighed:\n"
+"%.0f%% (estimeret)\n"
+"\n"
+
+#: ../moon.py:196
+#, python-format
+msgid ""
+"Selenographic Terminator Longitude:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
+msgstr ""
+"Selenografisk længdegrad for terminator:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
+
+#: ../moon.py:197
+#, python-format
+msgid ""
+"Next Full Moon:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Næste fuldmåne:\n"
+"%(date)s i %(days).0f dage\n"
+"\n"
+
+#: ../moon.py:198
+#, python-format
+msgid ""
+"Next New Moon:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Næste nymåne:\n"
+"%(date)s i %(days).0f dage\n"
+"\n"
+
+#: ../moon.py:199
+#, python-format
+msgid ""
+"Next Lunar eclipse:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Næste måneformørkelse:\n"
+"%(date)s i %(days).0f dage\n"
+"\n"
+
+#: ../moon.py:200
+#, python-format
+msgid ""
+"Next Solar eclipse:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Næste solformørkelse:\n"
+"%(date)s i %(days).0f dage\n"
+"\n"
+
+#: ../moon.py:282
+msgid "SNWE"
+msgstr "SNVØ"
+
+#: ../moon.py:285
+msgid "NSEW"
+msgstr "NSØV"
+
+#: ../moon.py:338
+msgid "Latitude"
+msgstr "Breddegrad"
+
+#: ../moon.py:340
+msgid "Longitude"
+msgstr "Længdegrad"
+
+#: ../moon.py:437
+msgid "west"
+msgstr "vest"
+
+#: ../moon.py:439
+msgid "east"
+msgstr "øst"
+
+#: ../moon.py:442
+msgid "Sunset"
+msgstr "Solnedgang"
+
+#: ../moon.py:444
+msgid "Sunrise"
+msgstr "Solopgang"
+
+#: ../moon.py:458 ../moon.py:474
+msgid "New Moon"
+msgstr "Nymåne"
+
+#: ../moon.py:460
+msgid "Waxing Crescent"
+msgstr "Tiltagende halvmåne"
+
+#: ../moon.py:462
+msgid "First Quarter"
+msgstr "Første kvartal"
+
+#: ../moon.py:464
+msgid "Waxing Gibbous"
+msgstr "Tiltagende fuldmåne"
+
+#: ../moon.py:466
+msgid "Full Moon"
+msgstr "Fuldmåne"
+
+#: ../moon.py:468
+msgid "Waning Gibbous"
+msgstr "Aftagende fuldmåne"
+
+#: ../moon.py:470
+msgid "Last Quarter"
+msgstr "Sidste kvartal"
+
+#: ../moon.py:472
+msgid "Waning Crescent"
+msgstr "Aftagende halvmåne"
