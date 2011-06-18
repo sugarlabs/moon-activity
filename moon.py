@@ -56,6 +56,9 @@ except ImportError:
 IMAGE_SIZE = 726
 HALF_SIZE = IMAGE_SIZE / 2
 
+# TRANS: Date format for next full/new moon and next solar/lunar eclipse
+LOCALE_DATE_FORMAT = _("%c")
+
 class MoonActivity(activity.Activity):
     """Moon phase activity.
     """
@@ -261,10 +264,10 @@ class MoonActivity(activity.Activity):
         information_string += _("Lunation:\n%(phase).2f%% through lunation %(lunation)d\n\n") % {'phase':self.data_model.phase_of_moon * 100, 'lunation':self.data_model.lunation}
         information_string += _("Surface Visibility:\n%.0f%% (estimated)\n\n") % (self.data_model.percent_of_full_moon * 100)
         information_string += _(u"Selenographic Terminator Longitude:\n%(deg).1f\u00b0%(westOrEast)s (%(riseOrSet)s)\n\n") % {'deg':self.data_model.selenographic_deg, 'westOrEast':self.data_model.west_or_east, 'riseOrSet':self.data_model.rise_or_set}
-        information_string += _("Next Full Moon:\n%(date)s in %(days).0f days\n\n") % {'date':time.ctime(self.data_model.next_full_moon_date), 'days':self.data_model.days_until_full_moon}
-        information_string += _("Next New Moon:\n%(date)s in %(days).0f days\n\n") % {'date':time.ctime(self.data_model.next_new_moon_date), 'days':self.data_model.days_until_new_moon}
-        information_string += _("Next Lunar eclipse:\n%(date)s in %(days).0f days\n\n") % {'date':time.ctime(self.data_model.next_lunar_eclipse_date), 'days':self.data_model.days_until_lunar_eclipse}
-        information_string += _("Next Solar eclipse:\n%(date)s in %(days).0f days\n\n") % {'date':time.ctime(self.data_model.next_solar_eclipse_date), 'days':self.data_model.days_until_solar_eclipse}
+        information_string += _("Next Full Moon:\n%(date)s in %(days).0f days\n\n") % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_full_moon_date)), 'days':self.data_model.days_until_full_moon}
+        information_string += _("Next New Moon:\n%(date)s in %(days).0f days\n\n") % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_new_moon_date)), 'days':self.data_model.days_until_new_moon}
+        information_string += _("Next Lunar eclipse:\n%(date)s in %(days).0f days\n\n") % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_lunar_eclipse_date)), 'days':self.data_model.days_until_lunar_eclipse}
+        information_string += _("Next Solar eclipse:\n%(date)s in %(days).0f days\n\n") % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_solar_eclipse_date)), 'days':self.data_model.days_until_solar_eclipse}
         self.info.set_markup(information_string)
 
         # Calculate time to next minute cusp and set a new timer
