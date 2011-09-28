@@ -34,44 +34,48 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-14 16:02+0000\n"
-"PO-Revision-Date: 2009-05-19 02:50-0400\n"
-"Last-Translator: Mohaideen Bawa Thahraj Khan <ayashahaneem@gmail.com>\n"
+"POT-Creation-Date: 2011-07-06 00:30-0400\n"
+"PO-Revision-Date: 2011-09-28 09:43+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
-#: ../activity/activity.info:2
+#: activity/activity.info:2 moon.py:68
 msgid "Moon"
 msgstr "நிலவு"
 
-#: ../moon.py:71
-msgid "Moon"
-msgstr "நிலவு"
+#. TRANS: Date format for next full/new moon and next solar/lunar eclipse
+#: moon.py:60
+#, python-format
+msgid "%c"
+msgstr "%c"
 
-#: ../moon.py:83
+#: moon.py:92 moon.py:116
 msgid "Toggle Grid View"
 msgstr "அடைப்புப்பார்வைக்கு மாற்று"
 
-#: ../moon.py:88
+#: moon.py:97 moon.py:121
 msgid "Toggle Hemisphere View"
 msgstr "அரைப் பார்வைக்கு மாற்று"
 
-#: ../moon.py:93
+#: moon.py:126
 msgid "View"
 msgstr "பார்வை"
 
-#: ../moon.py:190
+#: moon.py:260
 msgid ""
 "Today's Moon Information\n"
 "\n"
-msgstr "இன்றைய நிலவின் தகவல் \n"
+msgstr ""
+"இன்றைய நிலவின் தகவல்\n"
+"\n"
 
-#: ../moon.py:191
+#: moon.py:261
 #, python-format
 msgid ""
 "Phase:\n"
@@ -79,10 +83,10 @@ msgid ""
 "\n"
 msgstr ""
 "கட்டம்:\n"
-"%\n"
+"%s\n"
 "\n"
 
-#: ../moon.py:192
+#: moon.py:262
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -91,21 +95,23 @@ msgid ""
 msgstr ""
 "Julian திகதி:\n"
 "%.2f (வானியல்)\n"
+"\n"
 
-#: ../moon.py:193
-#, python-format
+#: moon.py:263
+#, python-format, fuzzy
+#, python-format,
 msgid ""
 "Age:\n"
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
 "வயது:\n"
-"%(நாட்கள்). நாட்கள், %(மணித்தியாலம்). மணித்தியாலம், %(நிமிடங்கள்). "
-"நிமிடங்கள்\n"
+"%(days). நாட்கள், %(hours). மணித்தியாலம், %(minutes). நிமிடங்கள்\n"
 "\n"
 
-#: ../moon.py:194
+#: moon.py:264
 #, python-format
+#, python-format,
 msgid ""
 "Lunation:\n"
 "%(phase).2f%% through lunation %(lunation)d\n"
@@ -115,7 +121,7 @@ msgstr ""
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 
-#: ../moon.py:195
+#: moon.py:265
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -126,121 +132,126 @@ msgstr ""
 "%.0f%% (மதிப்பிடப்பட்டது)\n"
 "\n"
 
-#: ../moon.py:196
+#: moon.py:266
 #, python-format
+#, python-format,
 msgid ""
 "Selenographic Terminator Longitude:\n"
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
 "Selenographic Terminator Longitude:\n"
-"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"%(deg).1f%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 
-#: ../moon.py:197
-#, python-format
+#: moon.py:267
+#, python-format, fuzzy
+#, python-format,
 msgid ""
 "Next Full Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
 "அடுத்த முழு நிலவு:\n"
-"%(நாள்)கள் %(நாட்கள்).நாட்களின்\n"
+"%(date)கள் %(days).நாட்களின்\n"
 "\n"
 
-#: ../moon.py:198
-#, python-format
+#: moon.py:268
+#, python-format, fuzzy
+#, python-format,
 msgid ""
 "Next New Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
 "அடுத்த புதிய நிலவு:\n"
-"%(நாள்)கள் %(நாட்கள்).நாட்களின்\n"
+"%(date)s %(days).நாட்களின்\n"
 "\n"
 
-#: ../moon.py:199
-#, python-format
+#: moon.py:269
+#, python-format, fuzzy
+#, python-format,
 msgid ""
 "Next Lunar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
 "அடுத்த சந்திர கிரகணம்:\n"
-"%(நாள்)கள் %(நாட்கள்).நாட்களின்\n"
+"%(date)s %(days).நாட்களின்\n"
 "\n"
 
-#: ../moon.py:200
-#, python-format
+#: moon.py:270
+#, python-format, fuzzy
+#, python-format,
 msgid ""
 "Next Solar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
 "அடுத்த சூரிய கிரகணம்:\n"
-"%(நாள்)கள் %(நாட்கள்).நாட்களின்\n"
+"%(date)s %(days).நாட்களின்\n"
 "\n"
 
-#: ../moon.py:282
+#: moon.py:363
 msgid "SNWE"
 msgstr "மேவதெகி"
 
-#: ../moon.py:285
+#: moon.py:366
 msgid "NSEW"
 msgstr "வமேகிதெ"
 
-#: ../moon.py:338
+#: moon.py:421
 msgid "Latitude"
 msgstr "அகலாங்கு"
 
-#: ../moon.py:340
+#: moon.py:423
 msgid "Longitude"
 msgstr "நெட்டாங்கு"
 
-#: ../moon.py:437
+#: moon.py:534
 msgid "west"
 msgstr "தெற்கு"
 
-#: ../moon.py:439
+#: moon.py:536
 msgid "east"
 msgstr "கிழக்கு"
 
-#: ../moon.py:442
+#: moon.py:539
 msgid "Sunset"
 msgstr "சூரியன் மறைவு"
 
-#: ../moon.py:444
+#: moon.py:541
 msgid "Sunrise"
 msgstr "சூரிய உதயம்"
 
-#: ../moon.py:458 ../moon.py:474
+#: moon.py:557 moon.py:573
 msgid "New Moon"
 msgstr "புதிய நிலா"
 
-#: ../moon.py:460
+#: moon.py:559
 msgid "Waxing Crescent"
 msgstr "வளர் பிறை"
 
-#: ../moon.py:462
+#: moon.py:561
 msgid "First Quarter"
 msgstr "முதற் கால் பகுதி"
 
-#: ../moon.py:464
+#: moon.py:563
 msgid "Waxing Gibbous"
 msgstr "தேய் பிறை"
 
-#: ../moon.py:466
+#: moon.py:565
 msgid "Full Moon"
 msgstr "முழு நிலா"
 
-#: ../moon.py:468
+#: moon.py:567
 msgid "Waning Gibbous"
 msgstr "தேய்பிறை"
 
-#: ../moon.py:470
+#: moon.py:569
 msgid "Last Quarter"
 msgstr "இறுதி கால் பகுதி"
 
-#: ../moon.py:472
+#: moon.py:571
 msgid "Waning Crescent"
 msgstr "அரை நிலவு"
