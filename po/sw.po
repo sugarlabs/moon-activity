@@ -43,15 +43,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-07-06 00:30-0400\n"
-"PO-Revision-Date: 2011-07-20 11:32+0200\n"
-"Last-Translator: Christian <kryskaka@gmail.com>\n"
+"PO-Revision-Date: 2011-09-30 20:08+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: activity/activity.info:2 moon.py:68
 msgid "Moon"
@@ -79,7 +79,9 @@ msgstr "kuona"
 msgid ""
 "Today's Moon Information\n"
 "\n"
-msgstr "habari za mwezi leo"
+msgstr ""
+"habari za mwezi leo\n"
+"\n"
 
 #: moon.py:261
 #, python-format
@@ -101,6 +103,7 @@ msgid ""
 msgstr ""
 "tarehe ya julian:\n"
 "%.2f (angani)\n"
+"\n"
 
 #: moon.py:263
 #, python-format
@@ -110,7 +113,8 @@ msgid ""
 "\n"
 msgstr ""
 "umri:\n"
-" %(ma siku).0f Masiku, %(Saa).0f Saa, %(dakika).of dakika\n"
+"%(days).0f Masiku, %(hours).0f Saa, %(minutes).0f dakika\n"
+"\n"
 
 #: moon.py:264
 #, python-format
@@ -120,7 +124,8 @@ msgid ""
 "\n"
 msgstr ""
 "lunation:\n"
-"%(awamu).2f%%katika lunation%(lunation)d\n"
+"%(phase).2f%%katika lunation%(lunation)d\n"
+"\n"
 
 #: moon.py:265
 #, python-format
@@ -140,16 +145,17 @@ msgid ""
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
-"selenographic Terminator longitud :\n"
-"%(deg).1f%(Magharibi au mashariki)(%(kupanda au kuweka))\n"
+"Selenographic Terminator Longitud:\n"
+"%(deg).1f°%(westOrEast)s(%(riseOrSet)s)\n"
+"\n"
 
 #: moon.py:267
-#, python-format
+#, python-format, 
 msgid ""
 "Next Full Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "mwezi kamili ujao"
+msgstr ""
 
 #: moon.py:268
 #, python-format
@@ -159,7 +165,8 @@ msgid ""
 "\n"
 msgstr ""
 "mwezi kamili ujao:\n"
-"%(siku)skatika %(siku).0f siku\n"
+"%(date)s skatika %(days).0f siku\n"
+"\n"
 
 #: moon.py:269
 #, python-format
@@ -169,7 +176,7 @@ msgid ""
 "\n"
 msgstr ""
 "ecclipse mwandamo ujao:\n"
-"%(siku) katika %(siku).0f siku\n"
+"%(date)s katika %(days).0f siku\n"
 "\n"
 
 #: moon.py:270
@@ -178,7 +185,7 @@ msgid ""
 "Next Solar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "ecclipse mwandamo ujao"
+msgstr ""
 
 #: moon.py:363
 msgid "SNWE"
