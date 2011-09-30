@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-02 00:30-0400\n"
+"POT-Creation-Date: 2011-07-06 00:30-0400\n"
 "PO-Revision-Date: 2008-09-26 12:53-0300\n"
 "Last-Translator: Gabriel Menini <gabriel.menini@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <pt-BR@li.org>\n"
@@ -44,23 +44,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.1.1rc4\n"
 
-#: activity/activity.info:2 moon.py:65
+#: activity/activity.info:2 moon.py:68
 msgid "Moon"
 msgstr "Lua"
 
-#: moon.py:89 moon.py:113
+#. TRANS: Date format for next full/new moon and next solar/lunar eclipse
+#: moon.py:60
+#, python-format
+msgid "%c"
+msgstr ""
+
+#: moon.py:92 moon.py:116
 msgid "Toggle Grid View"
 msgstr "Comutar para vista de grade"
 
-#: moon.py:94 moon.py:118
+#: moon.py:97 moon.py:121
 msgid "Toggle Hemisphere View"
 msgstr "Comutar para vista de hemisfério"
 
-#: moon.py:123
+#: moon.py:126
 msgid "View"
 msgstr "Ver"
 
-#: moon.py:257
+#: moon.py:260
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -68,7 +74,7 @@ msgstr ""
 "Informação da Lua para hoje\n"
 "\n"
 
-#: moon.py:258
+#: moon.py:261
 #, python-format
 msgid ""
 "Phase:\n"
@@ -79,7 +85,7 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: moon.py:259
+#: moon.py:262
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -90,7 +96,7 @@ msgstr ""
 "%.2f (astronômica)\n"
 "\n"
 
-#: moon.py:260
+#: moon.py:263
 #, python-format
 msgid ""
 "Age:\n"
@@ -101,7 +107,7 @@ msgstr ""
 "%(days).0f dias, %(hours).0f horas, %(minutes).0f minutos\n"
 "\n"
 
-#: moon.py:261
+#: moon.py:264
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -112,7 +118,7 @@ msgstr ""
 "%(phase).2f%% até lunação %(lunation)d\n"
 "\n"
 
-#: moon.py:262
+#: moon.py:265
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -123,7 +129,7 @@ msgstr ""
 "%.0f%% (estimated)\n"
 "\n"
 
-#: moon.py:263
+#: moon.py:266
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -134,7 +140,7 @@ msgstr ""
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 
-#: moon.py:264
+#: moon.py:267
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -145,7 +151,7 @@ msgstr ""
 "%(date)s in %(days).0f dias\n"
 "\n"
 
-#: moon.py:265
+#: moon.py:268
 #, python-format
 msgid ""
 "Next New Moon:\n"
@@ -156,7 +162,7 @@ msgstr ""
 "%(date)s in %(days).0f dias\n"
 "\n"
 
-#: moon.py:266
+#: moon.py:269
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
@@ -167,7 +173,7 @@ msgstr ""
 "%(date)s in %(days).0f days\n"
 "\n"
 
-#: moon.py:267
+#: moon.py:270
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
@@ -178,66 +184,66 @@ msgstr ""
 "%(date)s in %(days).0f days\n"
 "\n"
 
-#: moon.py:356
+#: moon.py:363
 msgid "SNWE"
 msgstr "SNWE"
 
-#: moon.py:359
+#: moon.py:366
 msgid "NSEW"
 msgstr "NSEW"
 
-#: moon.py:414
+#: moon.py:421
 msgid "Latitude"
 msgstr "Latitude"
 
-#: moon.py:416
+#: moon.py:423
 msgid "Longitude"
 msgstr "Longitude"
 
-#: moon.py:527
+#: moon.py:534
 msgid "west"
 msgstr "oeste"
 
-#: moon.py:529
+#: moon.py:536
 msgid "east"
 msgstr "leste"
 
-#: moon.py:532
+#: moon.py:539
 msgid "Sunset"
 msgstr "Pôr-do-sol"
 
-#: moon.py:534
+#: moon.py:541
 msgid "Sunrise"
 msgstr "Nascente"
 
-#: moon.py:550 moon.py:566
+#: moon.py:557 moon.py:573
 msgid "New Moon"
 msgstr "Lua Nova"
 
-#: moon.py:552
+#: moon.py:559
 msgid "Waxing Crescent"
 msgstr "Para Quarto Crescente"
 
-#: moon.py:554
+#: moon.py:561
 msgid "First Quarter"
 msgstr "Quarto Crescente"
 
-#: moon.py:556
+#: moon.py:563
 msgid "Waxing Gibbous"
 msgstr "Para Lua Cheia"
 
-#: moon.py:558
+#: moon.py:565
 msgid "Full Moon"
 msgstr "Lua Cheia"
 
-#: moon.py:560
+#: moon.py:567
 msgid "Waning Gibbous"
 msgstr "Para Quarto Minguante"
 
-#: moon.py:562
+#: moon.py:569
 msgid "Last Quarter"
 msgstr "Quarto Minguante"
 
-#: moon.py:564
+#: moon.py:571
 msgid "Waning Crescent"
 msgstr "Para Lua Nova"
