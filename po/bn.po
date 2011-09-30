@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: honey VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-14 16:02+0000\n"
+"POT-Creation-Date: 2011-07-06 00:30-0400\n"
 "PO-Revision-Date: 2009-06-24 16:14-0800\n"
 "Last-Translator: Loba Yeasmeen <loba@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
@@ -47,27 +47,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.1.1rc4\n"
 
-#: ../activity/activity.info:2
+#: activity/activity.info:2 moon.py:68
 msgid "Moon"
 msgstr "চাঁদ"
 
-#: ../moon.py:71
-msgid "Moon"
-msgstr "চাঁদ"
+#. TRANS: Date format for next full/new moon and next solar/lunar eclipse
+#: moon.py:60
+#, python-format
+msgid "%c"
+msgstr ""
 
-#: ../moon.py:83
+#: moon.py:92 moon.py:116
 msgid "Toggle Grid View"
 msgstr "গ্রিড ভিউ টগল করো"
 
-#: ../moon.py:88
+#: moon.py:97 moon.py:121
 msgid "Toggle Hemisphere View"
 msgstr "গোলার্ধ ভিউ টগল করো"
 
-#: ../moon.py:93
+#: moon.py:126
 msgid "View"
 msgstr "ভিউ"
 
-#: ../moon.py:190
+#: moon.py:260
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -75,7 +77,7 @@ msgstr ""
 "আজকের চাঁদের তথ্য\n"
 "\n"
 
-#: ../moon.py:191
+#: moon.py:261
 #, python-format
 msgid ""
 "Phase:\n"
@@ -86,7 +88,7 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: ../moon.py:192
+#: moon.py:262
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -96,7 +98,7 @@ msgstr ""
 "জুলিয়ান তারিখ:\n"
 "%.2f (astronomical)\n"
 
-#: ../moon.py:193
+#: moon.py:263
 #, python-format
 msgid ""
 "Age:\n"
@@ -107,7 +109,7 @@ msgstr ""
 "%(days).0f দিন, %(hours).0f ঘন্টা, %(minutes).0f মিনিট\n"
 "\n"
 
-#: ../moon.py:194
+#: moon.py:264
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -117,7 +119,7 @@ msgstr ""
 "লুনেশন:\n"
 "%(phase).2f%% লুনেশনের মাধ্যমে %(lunation)d\n"
 
-#: ../moon.py:195
+#: moon.py:265
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -128,7 +130,7 @@ msgstr ""
 "%.0f%% (estimated)\n"
 "\n"
 
-#: ../moon.py:196
+#: moon.py:266
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -136,7 +138,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../moon.py:197
+#: moon.py:267
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -146,7 +148,7 @@ msgstr ""
 "পরবর্তী পূর্ণ চাঁদ:\n"
 "%(date)s %(days).0f দিনে\n"
 
-#: ../moon.py:198
+#: moon.py:268
 #, python-format
 msgid ""
 "Next New Moon:\n"
@@ -157,7 +159,7 @@ msgstr ""
 "%(date)s  %(days).0f দিনে\n"
 "\n"
 
-#: ../moon.py:199
+#: moon.py:269
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
@@ -168,7 +170,7 @@ msgstr ""
 "%(date)s %(days).0f দিনে\n"
 "\n"
 
-#: ../moon.py:200
+#: moon.py:270
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
@@ -179,72 +181,72 @@ msgstr ""
 "%(date)s %(days).0f দিনে\n"
 "\n"
 
-#: ../moon.py:282
+#: moon.py:363
 msgid "SNWE"
 msgstr "SNWE"
 
-#: ../moon.py:285
+#: moon.py:366
 msgid "NSEW"
 msgstr "NSEW"
 
-#: ../moon.py:338
+#: moon.py:421
 msgid "Latitude"
 msgstr "অক্ষাংশ"
 
-#: ../moon.py:340
+#: moon.py:423
 msgid "Longitude"
 msgstr "দ্রাঘিমাংশ"
 
-#: ../moon.py:437
+#: moon.py:534
 msgid "west"
 msgstr "পশ্চিম"
 
-#: ../moon.py:439
+#: moon.py:536
 msgid "east"
 msgstr "পূর্ব"
 
-#: ../moon.py:442
+#: moon.py:539
 msgid "Sunset"
 msgstr "সূর্যাস্ত"
 
-#: ../moon.py:444
+#: moon.py:541
 msgid "Sunrise"
 msgstr "সূর্যোদয়"
 
-#: ../moon.py:458 ../moon.py:474
+#: moon.py:557 moon.py:573
 msgid "New Moon"
 msgstr "নতুন চাঁদ"
 
-#: ../moon.py:460
+#: moon.py:559
 #, fuzzy
 msgid "Waxing Crescent"
 msgstr "আলোকিত অর্ধচন্দ্র"
 
-#: ../moon.py:462
+#: moon.py:561
 #, fuzzy
 msgid "First Quarter"
 msgstr "প্রথম ত্রৈমাসিক"
 
 # Gibbous
-#: ../moon.py:464
+#: moon.py:563
 #, fuzzy
 msgid "Waxing Gibbous"
 msgstr "আলোকিত"
 
-#: ../moon.py:466
+#: moon.py:565
 msgid "Full Moon"
 msgstr "পূর্ণ চাঁদ"
 
 # Gibbous
-#: ../moon.py:468
+#: moon.py:567
 #, fuzzy
 msgid "Waning Gibbous"
 msgstr "অনুজ্জ্বল"
 
-#: ../moon.py:470
+#: moon.py:569
 msgid "Last Quarter"
 msgstr "শেষ ত্রৈমাসিক"
 
-#: ../moon.py:472
+#: moon.py:571
 msgid "Waning Crescent"
 msgstr "অনুজ্জ্বল অর্ধচন্দ্র"
