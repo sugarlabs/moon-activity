@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-14 16:02+0000\n"
+"POT-Creation-Date: 2011-07-06 00:30-0400\n"
 "PO-Revision-Date: 2008-10-07 07:58-0400\n"
 "Last-Translator: abdullah kocabas <abdullah.kocabas@abcdizustu.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,27 +43,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.1.0rc2\n"
 
-#: ../activity/activity.info:2
+#: activity/activity.info:2 moon.py:68
 msgid "Moon"
 msgstr "Ay"
 
-#: ../moon.py:71
-msgid "Moon"
-msgstr "Ay"
+#. TRANS: Date format for next full/new moon and next solar/lunar eclipse
+#: moon.py:60
+#, python-format
+msgid "%c"
+msgstr ""
 
-#: ../moon.py:83
+#: moon.py:92 moon.py:116
 msgid "Toggle Grid View"
 msgstr "Grid Koordinatları Görünümüne Geçin"
 
-#: ../moon.py:88
+#: moon.py:97 moon.py:121
 msgid "Toggle Hemisphere View"
 msgstr "Yarımküre Görünümüne Geçin"
 
-#: ../moon.py:93
+#: moon.py:126
 msgid "View"
 msgstr "Görünüm"
 
-#: ../moon.py:190
+#: moon.py:260
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -71,7 +73,7 @@ msgstr ""
 "Günlük Ay Bilgisi\n"
 "\n"
 
-#: ../moon.py:191
+#: moon.py:261
 #, python-format
 msgid ""
 "Phase:\n"
@@ -82,7 +84,7 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: ../moon.py:192
+#: moon.py:262
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -93,7 +95,7 @@ msgstr ""
 "%.2f (astronomik)\n"
 "\n"
 
-#: ../moon.py:193
+#: moon.py:263
 #, python-format
 msgid ""
 "Age:\n"
@@ -104,7 +106,7 @@ msgstr ""
 "%(günler).0 günler, %(saatler).0 saatler, %(dakika).0f dakikalar\n"
 "\n"
 
-#: ../moon.py:194
+#: moon.py:264
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -115,7 +117,7 @@ msgstr ""
 "%(evre).2f%% 29.5 gün boyunca %(29.5 günlük devre)d\n"
 "\n"
 
-#: ../moon.py:195
+#: moon.py:265
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -126,7 +128,7 @@ msgstr ""
 "%.0f%% (tahmini)\n"
 "\n"
 
-#: ../moon.py:196
+#: moon.py:266
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -137,7 +139,7 @@ msgstr ""
 "%(derece).1f°%(batı ya da doğu)s (%(doğma ya da batma)s)\n"
 "\n"
 
-#: ../moon.py:197
+#: moon.py:267
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -147,7 +149,7 @@ msgstr ""
 "Bir sonraki Dolunay Zamanı:\n"
 "%(tarih)s %(günler).0f günler içinde\\\n"
 
-#: ../moon.py:198
+#: moon.py:268
 #, python-format
 msgid ""
 "Next New Moon:\n"
@@ -158,7 +160,7 @@ msgstr ""
 "%(tarih)s %(günler).0f günler içinde\n"
 "\n"
 
-#: ../moon.py:199
+#: moon.py:269
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
@@ -169,7 +171,7 @@ msgstr ""
 "%(tarih)s %(günler).0f günler içinde\n"
 "\n"
 
-#: ../moon.py:200
+#: moon.py:270
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
@@ -180,66 +182,66 @@ msgstr ""
 "%(tarih)s %(günler).0f günler içinde\n"
 "\n"
 
-#: ../moon.py:282
+#: moon.py:363
 msgid "SNWE"
 msgstr "GKBD(Güney,Kuzey,Batı,Doğu)"
 
-#: ../moon.py:285
+#: moon.py:366
 msgid "NSEW"
 msgstr "KGDB(Kuzey,Güney,Doğu,Batı)"
 
-#: ../moon.py:338
+#: moon.py:421
 msgid "Latitude"
 msgstr "Enlem"
 
-#: ../moon.py:340
+#: moon.py:423
 msgid "Longitude"
 msgstr "Boylam"
 
-#: ../moon.py:437
+#: moon.py:534
 msgid "west"
 msgstr "Batı"
 
-#: ../moon.py:439
+#: moon.py:536
 msgid "east"
 msgstr "Doğu"
 
-#: ../moon.py:442
+#: moon.py:539
 msgid "Sunset"
 msgstr "Gün batımı"
 
-#: ../moon.py:444
+#: moon.py:541
 msgid "Sunrise"
 msgstr "Gündoğumu"
 
-#: ../moon.py:458 ../moon.py:474
+#: moon.py:557 moon.py:573
 msgid "New Moon"
 msgstr "Yeniay"
 
-#: ../moon.py:460
+#: moon.py:559
 msgid "Waxing Crescent"
 msgstr "Hilal"
 
-#: ../moon.py:462
+#: moon.py:561
 msgid "First Quarter"
 msgstr "İlk Çeyrek"
 
-#: ../moon.py:464
+#: moon.py:563
 msgid "Waxing Gibbous"
 msgstr "İlk Çeyrekle Dolunay Arasındaki Evre"
 
-#: ../moon.py:466
+#: moon.py:565
 msgid "Full Moon"
 msgstr "Dolunay"
 
-#: ../moon.py:468
+#: moon.py:567
 msgid "Waning Gibbous"
 msgstr "Dolunayla Son Çeyrek Arasındaki Evre"
 
-#: ../moon.py:470
+#: moon.py:569
 msgid "Last Quarter"
 msgstr "Son Çeyrek"
 
-#: ../moon.py:472
+#: moon.py:571
 msgid "Waning Crescent"
 msgstr "Gündoğumuna Yakın Görünen İnce Ay "
