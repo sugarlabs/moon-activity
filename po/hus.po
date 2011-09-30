@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-07-06 00:30-0400\n"
-"PO-Revision-Date: 2011-08-26 17:09+0200\n"
+"PO-Revision-Date: 2011-08-29 03:48+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hus\n"
@@ -29,11 +29,11 @@ msgstr "%c"
 
 #: moon.py:92 moon.py:116
 msgid "Toggle Grid View"
-msgstr "ka jalk'onchij in wal"
+msgstr "Ka jalk'onchij in wal"
 
 #: moon.py:97 moon.py:121
 msgid "Toggle Hemisphere View"
-msgstr "ka jalk'unchij in wal hemisferio"
+msgstr "Ka jalk'unchij in wal hemisferio"
 
 #: moon.py:126
 msgid "View"
@@ -44,7 +44,7 @@ msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
-"olchixtaláb kal a its' kabal xowe'\n"
+"Olchixtaláb kal a its' kabal xowe'\n"
 "\n"
 
 #: moon.py:261
@@ -54,7 +54,7 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
-"puweníb\n"
+"Puweníb\n"
 "%s\n"
 "\n"
 
@@ -65,7 +65,7 @@ msgid ""
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
-"ajum k'ijchaj Juliana:\n"
+"Ajum k'ijchaj Juliana:\n"
 "%.2f(astronomical)\n"
 "\n"
 
@@ -81,7 +81,8 @@ msgstr ""
 "\n"
 
 #: moon.py:264
-#, python-format, 
+#, python-format
+#, python-format,
 msgid ""
 "Lunation:\n"
 "%(phase).2f%% through lunation %(lunation)d\n"
@@ -120,7 +121,7 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
-"xi ta'tal an t'uchat its':\n"
+"Xi ta'tal an t'uchat its':\n"
 "%(date)s en %(days).0f días\n"
 "\n"
 
@@ -131,7 +132,7 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
-"xi ta'tal a it its':\n"
+"Xi ta'tal a it its':\n"
 "%(date)s en %(days).0f días\n"
 "\n"
 
@@ -153,7 +154,7 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
-"xi ta'tal k'apab a k'ijchaj':\n"
+"Xi ta'tal k'apab a k'ijchaj':\n"
 "%(date)s en %(days).0f días\n"
 "\n"
 
@@ -175,7 +176,7 @@ msgstr "Nakel an tsabál"
 
 #: moon.py:534
 msgid "west"
-msgstr "Otsel kijchaj"
+msgstr "otsel kijchaj"
 
 #: moon.py:536
 msgid "east"
@@ -183,11 +184,11 @@ msgstr "kalel k'ijchaj"
 
 #: moon.py:539
 msgid "Sunset"
-msgstr "u k'wabab"
+msgstr "U k'wabab"
 
 #: moon.py:541
 msgid "Sunrise"
-msgstr "kálel"
+msgstr "Kálel"
 
 #: moon.py:557 moon.py:573
 msgid "New Moon"
@@ -195,7 +196,7 @@ msgstr "It a its'"
 
 #: moon.py:559
 msgid "Waxing Crescent"
-msgstr "tejwa' a It its'"
+msgstr "Tejwa' a It its'"
 
 #: moon.py:561
 msgid "First Quarter"
@@ -203,15 +204,15 @@ msgstr "Ts'ejel chudhel a its'"
 
 #: moon.py:563
 msgid "Waxing Gibbous"
-msgstr "ts'ejel kidhab chudhel a its'"
+msgstr "Ts'ejel kidhab chudhel a its'"
 
 #: moon.py:565
 msgid "Full Moon"
-msgstr "t'uchat its'"
+msgstr "T'uchat its'"
 
 #: moon.py:567
 msgid "Waning Gibbous"
-msgstr "ts'ejel kidháb a chudhel a its'"
+msgstr "Ts'ejel kidháb a chudhel a its'"
 
 #: moon.py:569
 msgid "Last Quarter"
@@ -219,4 +220,4 @@ msgstr "Ts'ejel chudhel a its'"
 
 #: moon.py:571
 msgid "Waning Crescent"
-msgstr "tsiptimel a its'"
+msgstr "Tsiptimel a its'"
