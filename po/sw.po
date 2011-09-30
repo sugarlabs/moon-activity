@@ -42,8 +42,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-14 16:02+0000\n"
-"PO-Revision-Date: 2011-04-24 13:10+0200\n"
+"POT-Creation-Date: 2011-07-06 00:30-0400\n"
+"PO-Revision-Date: 2011-07-20 11:32+0200\n"
 "Last-Translator: Christian <kryskaka@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sw\n"
@@ -53,33 +53,35 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.1\n"
 
-#: ../activity/activity.info:2
+#: activity/activity.info:2 moon.py:68
 msgid "Moon"
 msgstr "mwezi"
 
-#: ../moon.py:71
-msgid "Moon"
-msgstr "mwezi"
+#. TRANS: Date format for next full/new moon and next solar/lunar eclipse
+#: moon.py:60
+#, python-format
+msgid "%c"
+msgstr ""
 
-#: ../moon.py:83
+#: moon.py:92 moon.py:116
 msgid "Toggle Grid View"
 msgstr "kugeuza mtazamo wa gridi"
 
-#: ../moon.py:88
+#: moon.py:97 moon.py:121
 msgid "Toggle Hemisphere View"
 msgstr "kugeuza mtazamo wa ulimwengu"
 
-#: ../moon.py:93
+#: moon.py:126
 msgid "View"
 msgstr "kuona"
 
-#: ../moon.py:190
+#: moon.py:260
 msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr "habari za mwezi leo"
 
-#: ../moon.py:191
+#: moon.py:261
 #, python-format
 msgid ""
 "Phase:\n"
@@ -90,7 +92,7 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: ../moon.py:192
+#: moon.py:262
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -100,7 +102,7 @@ msgstr ""
 "tarehe ya julian:\n"
 "%.2f (angani)\n"
 
-#: ../moon.py:193
+#: moon.py:263
 #, python-format
 msgid ""
 "Age:\n"
@@ -110,7 +112,7 @@ msgstr ""
 "umri:\n"
 " %(ma siku).0f Masiku, %(Saa).0f Saa, %(dakika).of dakika\n"
 
-#: ../moon.py:194
+#: moon.py:264
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -120,7 +122,7 @@ msgstr ""
 "lunation:\n"
 "%(awamu).2f%%katika lunation%(lunation)d\n"
 
-#: ../moon.py:195
+#: moon.py:265
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -131,15 +133,17 @@ msgstr ""
 " or Kuonesha uso:\n"
 "%.0f %%(inakadiriwa)\n"
 
-#: ../moon.py:196
+#: moon.py:266
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
+"selenographic Terminator longitud :\n"
+"%(deg).1f%(Magharibi au mashariki)(%(kupanda au kuweka))\n"
 
-#: ../moon.py:197
+#: moon.py:267
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -147,7 +151,7 @@ msgid ""
 "\n"
 msgstr "mwezi kamili ujao"
 
-#: ../moon.py:198
+#: moon.py:268
 #, python-format
 msgid ""
 "Next New Moon:\n"
@@ -157,7 +161,7 @@ msgstr ""
 "mwezi kamili ujao:\n"
 "%(siku)skatika %(siku).0f siku\n"
 
-#: ../moon.py:199
+#: moon.py:269
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
@@ -168,7 +172,7 @@ msgstr ""
 "%(siku) katika %(siku).0f siku\n"
 "\n"
 
-#: ../moon.py:200
+#: moon.py:270
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
@@ -176,66 +180,66 @@ msgid ""
 "\n"
 msgstr "ecclipse mwandamo ujao"
 
-#: ../moon.py:282
+#: moon.py:363
 msgid "SNWE"
-msgstr ""
+msgstr "SNWE"
 
-#: ../moon.py:285
+#: moon.py:366
 msgid "NSEW"
-msgstr ""
+msgstr "NSEW"
 
-#: ../moon.py:338
+#: moon.py:421
 msgid "Latitude"
 msgstr "latitude"
 
-#: ../moon.py:340
+#: moon.py:423
 msgid "Longitude"
 msgstr "longitude"
 
-#: ../moon.py:437
+#: moon.py:534
 msgid "west"
 msgstr "magarhibi"
 
-#: ../moon.py:439
+#: moon.py:536
 msgid "east"
 msgstr "mashariki"
 
-#: ../moon.py:442
+#: moon.py:539
 msgid "Sunset"
 msgstr "sunset"
 
-#: ../moon.py:444
+#: moon.py:541
 msgid "Sunrise"
 msgstr "jua"
 
-#: ../moon.py:458 ../moon.py:474
+#: moon.py:557 moon.py:573
 msgid "New Moon"
 msgstr "mwezi mpya"
 
-#: ../moon.py:460
+#: moon.py:559
 msgid "Waxing Crescent"
 msgstr "mng\"aro mpevu"
 
-#: ../moon.py:462
+#: moon.py:561
 msgid "First Quarter"
 msgstr "robo ya kwanza"
 
-#: ../moon.py:464
+#: moon.py:563
 msgid "Waxing Gibbous"
 msgstr "mng\"aro gibbous"
 
-#: ../moon.py:466
+#: moon.py:565
 msgid "Full Moon"
 msgstr "mwezi kamili"
 
-#: ../moon.py:468
+#: moon.py:567
 msgid "Waning Gibbous"
 msgstr "waning gibbous"
 
-#: ../moon.py:470
+#: moon.py:569
 msgid "Last Quarter"
 msgstr "robo ya mwisho"
 
-#: ../moon.py:472
+#: moon.py:571
 msgid "Waning Crescent"
 msgstr "mng\"aro mpevu"
