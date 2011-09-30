@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-14 16:02+0000\n"
+"POT-Creation-Date: 2011-07-06 00:30-0400\n"
 "PO-Revision-Date: 2010-02-07 03:15+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: <ru@li.org>\n"
@@ -46,27 +46,29 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.0.1\n"
 
-#: ../activity/activity.info:2
+#: activity/activity.info:2 moon.py:68
 msgid "Moon"
 msgstr "Луна"
 
-#: ../moon.py:71
-msgid "Moon"
-msgstr "Луна"
+#. TRANS: Date format for next full/new moon and next solar/lunar eclipse
+#: moon.py:60
+#, python-format
+msgid "%c"
+msgstr ""
 
-#: ../moon.py:83
+#: moon.py:92 moon.py:116
 msgid "Toggle Grid View"
 msgstr "Вкл/Выкл сетку"
 
-#: ../moon.py:88
+#: moon.py:97 moon.py:121
 msgid "Toggle Hemisphere View"
 msgstr "Вкл/Выкл полушария"
 
-#: ../moon.py:93
+#: moon.py:126
 msgid "View"
 msgstr "Смотреть"
 
-#: ../moon.py:190
+#: moon.py:260
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -74,7 +76,7 @@ msgstr ""
 "Сегодняшняя информация о Луне\n"
 "\n"
 
-#: ../moon.py:191
+#: moon.py:261
 #, python-format
 msgid ""
 "Phase:\n"
@@ -85,7 +87,7 @@ msgstr ""
 "%s \n"
 "\n"
 
-#: ../moon.py:192
+#: moon.py:262
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -96,7 +98,7 @@ msgstr ""
 "%.2f (astronomical)\n"
 "\n"
 
-#: ../moon.py:193
+#: moon.py:263
 #, python-format
 msgid ""
 "Age:\n"
@@ -104,7 +106,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../moon.py:194
+#: moon.py:264
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -112,7 +114,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../moon.py:195
+#: moon.py:265
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -120,7 +122,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../moon.py:196
+#: moon.py:266
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -128,7 +130,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../moon.py:197
+#: moon.py:267
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -139,7 +141,7 @@ msgstr ""
 "%(date)s in %(days).0f days\n"
 "\n"
 
-#: ../moon.py:198
+#: moon.py:268
 #, python-format
 #, fuzzy
 msgid ""
@@ -151,7 +153,7 @@ msgstr ""
 "%(date)s in %(days).0f days\n"
 "\n"
 
-#: ../moon.py:199
+#: moon.py:269
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
@@ -162,7 +164,7 @@ msgstr ""
 "%(date)s in %(days).0f days\n"
 "\n"
 
-#: ../moon.py:200
+#: moon.py:270
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
@@ -173,66 +175,66 @@ msgstr ""
 "%(date)s in %(days).0f days\n"
 "\n"
 
-#: ../moon.py:282
+#: moon.py:363
 msgid "SNWE"
 msgstr ""
 
-#: ../moon.py:285
+#: moon.py:366
 msgid "NSEW"
 msgstr ""
 
-#: ../moon.py:338
+#: moon.py:421
 msgid "Latitude"
 msgstr ""
 
-#: ../moon.py:340
+#: moon.py:423
 msgid "Longitude"
 msgstr ""
 
-#: ../moon.py:437
+#: moon.py:534
 msgid "west"
 msgstr "запад"
 
-#: ../moon.py:439
+#: moon.py:536
 msgid "east"
 msgstr "восток"
 
-#: ../moon.py:442
+#: moon.py:539
 msgid "Sunset"
 msgstr "Закат"
 
-#: ../moon.py:444
+#: moon.py:541
 msgid "Sunrise"
 msgstr "Восход"
 
-#: ../moon.py:458 ../moon.py:474
+#: moon.py:557 moon.py:573
 msgid "New Moon"
 msgstr "Новая Луна"
 
-#: ../moon.py:460
+#: moon.py:559
 msgid "Waxing Crescent"
 msgstr ""
 
-#: ../moon.py:462
+#: moon.py:561
 msgid "First Quarter"
 msgstr "Первая четверть"
 
-#: ../moon.py:464
+#: moon.py:563
 msgid "Waxing Gibbous"
 msgstr ""
 
-#: ../moon.py:466
+#: moon.py:565
 msgid "Full Moon"
 msgstr "Полная Луна"
 
-#: ../moon.py:468
+#: moon.py:567
 msgid "Waning Gibbous"
 msgstr ""
 
-#: ../moon.py:470
+#: moon.py:569
 msgid "Last Quarter"
 msgstr "Последняя четверть"
 
-#: ../moon.py:472
+#: moon.py:571
 msgid "Waning Crescent"
 msgstr ""
