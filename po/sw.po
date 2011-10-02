@@ -79,7 +79,8 @@ msgstr "kuona"
 msgid ""
 "Today's Moon Information\n"
 "\n"
-msgstr "habari za mwezi leo"
+msgstr "habari za mwezi leo\n"
+"\n"
 
 #: moon.py:261
 #, python-format
@@ -149,7 +150,7 @@ msgid ""
 "Next Full Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "mwezi kamili ujao"
+msgstr ""
 
 #: moon.py:268
 #, python-format
@@ -178,7 +179,7 @@ msgid ""
 "Next Solar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "ecclipse mwandamo ujao"
+msgstr ""
 
 #: moon.py:363
 msgid "SNWE"
