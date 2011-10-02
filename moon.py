@@ -32,7 +32,6 @@ network connection is needed.
 import gtk
 import gobject
 from sugar.activity import activity
-#from sugar.graphics.toolbutton import ToolButton
 from sugar.graphics.toggletoolbutton import ToggleToolButton
 from gettext import gettext as _
 import math
