@@ -32,7 +32,8 @@ network connection is needed.
 import gtk
 import gobject
 from sugar.activity import activity
-from sugar.graphics.toolbutton import ToolButton
+#from sugar.graphics.toolbutton import ToolButton
+from sugar.graphics.toggletoolbutton import ToggleToolButton
 from gettext import gettext as _
 import math
 import time
@@ -88,13 +89,15 @@ class MoonActivity(activity.Activity):
             toolbar_box.toolbar.insert(activity_button, 0)
             separator = gtk.SeparatorToolItem()
             toolbar_box.toolbar.insert(separator, -1)
-            self.toggle_grid_button = ToolButton('grid-icon')
+            self.toggle_grid_button = ToggleToolButton('grid-icon')
             self.toggle_grid_button.set_tooltip(_("Toggle Grid View"))
+            self.toggle_grid_button.set_active(self.show_grid)
             self.toggle_grid_handler_id = self.toggle_grid_button.connect('clicked', self.toggle_grid_clicked)
             toolbar_box.toolbar.insert(self.toggle_grid_button, -1)
             self.toggle_grid_button.show()
-            self.toggle_hemisphere_button = ToolButton('hemi-icon')
+            self.toggle_hemisphere_button = ToggleToolButton('hemi-icon')
             self.toggle_hemisphere_button.set_tooltip(_("Toggle Hemisphere View"))
+            self.toggle_hemisphere_button.set_active(self.hemisphere_view == 'south')
             self.toggle_hemisphere_handler_id = self.toggle_hemisphere_button.connect('clicked', self.toggle_hemisphere_clicked)
             toolbar_box.toolbar.insert(self.toggle_hemisphere_button, -1)
             self.toggle_hemisphere_button.show()
@@ -112,13 +115,15 @@ class MoonActivity(activity.Activity):
             # Use old <= 0.84 toolbar design
             toolbox = activity.ActivityToolbox(self)
             view_tool_bar = gtk.Toolbar()
-            self.toggle_grid_button = ToolButton('grid-icon')
+            self.toggle_grid_button = ToggleToolButton('grid-icon')
             self.toggle_grid_button.set_tooltip(_("Toggle Grid View"))
+            self.toggle_grid_button.set_active(self.show_grid)
             self.toggle_grid_handler_id = self.toggle_grid_button.connect('clicked', self.toggle_grid_clicked)
             view_tool_bar.insert(self.toggle_grid_button, -1)
             self.toggle_grid_button.show()
-            self.toggle_hemisphere_button = ToolButton('hemi-icon')
+            self.toggle_hemisphere_button = ToggleToolButton('hemi-icon')
             self.toggle_hemisphere_button.set_tooltip(_("Toggle Hemisphere View"))
+            self.toggle_hemisphere_button.set_active(self.hemisphere_view == 'south')
             self.toggle_hemisphere_handler_id = self.toggle_hemisphere_button.connect('clicked', self.toggle_hemisphere_clicked)
             view_tool_bar.insert(self.toggle_hemisphere_button, -1)
             self.toggle_hemisphere_button.show()
@@ -167,8 +172,6 @@ class MoonActivity(activity.Activity):
         self.data_model = DataModel()
 
         # Generate first set of views for display and kick off their timers
-        self.toggle_grid_button.handler_block(self.toggle_grid_handler_id)
-        self.toggle_hemisphere_button.handler_block(self.toggle_hemisphere_handler_id)
         self.update_text_information_view()
         self.update_moon_image_view()
 
@@ -227,7 +230,8 @@ class MoonActivity(activity.Activity):
             self.show_grid = False
         else:
             self.show_grid = True
-        self.block_view_buttons_during_update()
+        gobject.source_remove(self.update_moon_image_timeout)
+        self.update_moon_image_view()
 
     def toggle_hemisphere_clicked(self, widget):
         """Respond to toolbar button to change viewing hemisphere.
@@ -236,22 +240,9 @@ class MoonActivity(activity.Activity):
             self.hemisphere_view = 'south'
         else:
             self.hemisphere_view = 'north'
-        self.block_view_buttons_during_update()
-
-    def block_view_buttons_during_update(self):
-        """Disable view buttons while updating image to prevent multi-clicks.
-        """
-        self.toggle_grid_button.handler_block(self.toggle_grid_handler_id)
-        self.toggle_hemisphere_button.handler_block(self.toggle_hemisphere_handler_id)
         gobject.source_remove(self.update_moon_image_timeout)
         self.update_moon_image_view()
 
-    def unblock_view_update_buttons(self):
-        """Reactivate view button after updating image, stops multi-clicks.
-        """
-        self.toggle_grid_button.handler_unblock(self.toggle_grid_handler_id)
-        self.toggle_hemisphere_button.handler_unblock(self.toggle_hemisphere_handler_id)
-        
     def update_text_information_view(self):
         """Generate Moon data and update text based information view.
         """
@@ -370,9 +361,6 @@ class MoonActivity(activity.Activity):
         # Update the Moon image in another 5min
         self.update_moon_image_timeout = gobject.timeout_add(300000, self.update_moon_image_view)
         
-        # Delay before view buttons can be clicked again (blocked to stop repeat clicks)
-        gobject.timeout_add(50, self.unblock_view_update_buttons)
-
         # Stop this timer running
         return False
 
