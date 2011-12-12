@@ -35,8 +35,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-07-06 00:30-0400\n"
-"PO-Revision-Date: 2009-12-22 10:58-0400\n"
-"Last-Translator: Chris Leonard <cjl@laptop.org>\n"
+"PO-Revision-Date: 2011-12-08 21:24+0200\n"
+"Last-Translator: FRKS <frks@frks.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -44,25 +44,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: activity/activity.info:2 moon.py:68
 msgid "Moon"
-msgstr ""
+msgstr "Księżyc"
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
 #, python-format
 msgid "%c"
-msgstr ""
+msgstr "%c"
 
 #: moon.py:92 moon.py:116
 msgid "Toggle Grid View"
-msgstr ""
+msgstr "Widok siatki"
 
 #: moon.py:97 moon.py:121
 msgid "Toggle Hemisphere View"
-msgstr ""
+msgstr "Widok półkuli"
 
 #: moon.py:126
 msgid "View"
@@ -73,6 +73,8 @@ msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
+"Dzisiejsza informacja o księżycu\n"
+"\n"
 
 #: moon.py:261
 #, python-format
@@ -81,30 +83,43 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"Faza:\n"
+"%s\n"
+"\n"
 
 #: moon.py:262
-#, python-format
+#, python-format, 
 msgid ""
 "Julian Date:\n"
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
+"Data juliańska: \n"
+"%.2f (astronomiczna)\n"
+"\n"
 
 #: moon.py:263
-#, python-format
+#, python-format, 
 msgid ""
 "Age:\n"
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
+"Wiek:\n"
+"%(days).0f dni, %(hours).0f godzin, %(minutes).0f minut\n"
+"\n"
 
+# http://pl.wikipedia.org/wiki/Lunacja
 #: moon.py:264
-#, python-format
+#, python-format, 
 msgid ""
 "Lunation:\n"
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 msgstr ""
+"Lunacia:\n"
+"%(phase).2f%% do lunacji %(lunation)d\n"
+"\n"
 
 #: moon.py:265
 #, python-format
@@ -113,14 +128,21 @@ msgid ""
 "%.0f%% (estimated)\n"
 "\n"
 msgstr ""
+"Widoczność powierzchni:\n"
+"%.0f%% (estimated)\n"
+"\n"
 
+# http://pl.wikipedia.org/wiki/Terminator_(astronomia)
 #: moon.py:266
-#, python-format
+#, python-format, 
 msgid ""
 "Selenographic Terminator Longitude:\n"
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
+"Współrzędne długości geograficznej terminatora księżycowego:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
 
 #: moon.py:267
 #, python-format
@@ -129,6 +151,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Następna Pełnia Księżyca:\n"
+"%(date)s za %(days).0f dni\n"
+"\n"
 
 #: moon.py:268
 #, python-format
@@ -137,6 +162,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Następny Nów Księżyca:\n"
+"%(date)s za %(days).0f dni\n"
+"\n"
 
 #: moon.py:269
 #, python-format
@@ -145,6 +173,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Następne zaćmienie Księżyca\n"
+"%(date)s za %(days).0f dni\n"
+"\n"
 
 #: moon.py:270
 #, python-format
@@ -153,67 +184,70 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Następne zaćmienie Słońca:\n"
+"%(date)s za %(days).0f dni\n"
+"\n"
 
 #: moon.py:363
 msgid "SNWE"
-msgstr ""
+msgstr "PdPnZW"
 
 #: moon.py:366
 msgid "NSEW"
-msgstr ""
+msgstr "PnPdWZ"
 
 #: moon.py:421
 msgid "Latitude"
-msgstr ""
+msgstr "Szerokość"
 
 #: moon.py:423
 msgid "Longitude"
-msgstr ""
+msgstr "Długość"
 
 #: moon.py:534
 msgid "west"
-msgstr ""
+msgstr "zachód"
 
 #: moon.py:536
 msgid "east"
-msgstr ""
+msgstr "wschód"
 
 #: moon.py:539
 msgid "Sunset"
-msgstr ""
+msgstr "Zachód Słońca"
 
 #: moon.py:541
 msgid "Sunrise"
-msgstr ""
+msgstr "Wschód Słońca"
 
 #: moon.py:557 moon.py:573
 msgid "New Moon"
-msgstr ""
+msgstr "Księżyc w Nowiu"
 
 #: moon.py:559
 msgid "Waxing Crescent"
-msgstr ""
+msgstr "Wzrastający Sierp"
 
 #: moon.py:561
 msgid "First Quarter"
-msgstr ""
+msgstr "Pierwsza Kwadra"
 
 #: moon.py:563
 msgid "Waxing Gibbous"
-msgstr ""
+msgstr "Poszerzony Księżyc"
 
 #: moon.py:565
 msgid "Full Moon"
-msgstr ""
+msgstr "Pełnia Księżyca"
 
 #: moon.py:567
 msgid "Waning Gibbous"
-msgstr ""
+msgstr "Garbaty Księżyc"
 
 #: moon.py:569
 msgid "Last Quarter"
-msgstr ""
+msgstr "Ostatnia Kwadra"
 
 #: moon.py:571
 msgid "Waning Crescent"
-msgstr ""
+msgstr "Ubywający Sierp"
