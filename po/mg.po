@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-06 00:30-0400\n"
+"POT-Creation-Date: 2012-02-15 00:32-0500\n"
 "PO-Revision-Date: 2009-05-23 06:43-0400\n"
 "Last-Translator: dina garnier oeliarisoa <dina.garnier.oeliarisoa@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,19 +55,19 @@ msgstr "Volana"
 msgid "%c"
 msgstr ""
 
-#: moon.py:92 moon.py:116
+#: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
 msgstr ""
 
-#: moon.py:97 moon.py:121
+#: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
 msgstr ""
 
-#: moon.py:126
+#: moon.py:130
 msgid "View"
 msgstr ""
 
-#: moon.py:260
+#: moon.py:250
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -75,7 +75,7 @@ msgstr ""
 "Vaovao avy amin'ny volana androany\n"
 "\n"
 
-#: moon.py:261
+#: moon.py:251
 #, python-format
 msgid ""
 "Phase:\n"
@@ -83,7 +83,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:262
+#: moon.py:252
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -91,7 +91,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:263
+#: moon.py:253
 #, python-format
 msgid ""
 "Age:\n"
@@ -102,7 +102,7 @@ msgstr ""
 "%(andro).amin'ny andro, %(ora).amin'ny ora, %(minitra).amin'ny minitra\n"
 "\n"
 
-#: moon.py:264
+#: moon.py:254
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -110,7 +110,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:265
+#: moon.py:255
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -118,7 +118,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:266
+#: moon.py:256
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -126,7 +126,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:267
+#: moon.py:257
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -137,7 +137,7 @@ msgstr ""
 "%(daty)s in %(andro).amin'ny andro\n"
 "\n"
 
-#: moon.py:268
+#: moon.py:258
 #, python-format
 #, fuzzy
 msgid ""
@@ -149,7 +149,7 @@ msgstr ""
 "%(daty)s in %(andro).amin'ny andro\n"
 "\n"
 
-#: moon.py:269
+#: moon.py:259
 #, python-format
 #, fuzzy
 msgid ""
@@ -161,7 +161,7 @@ msgstr ""
 "%(daty)s in %(andro).amin'ny andro\n"
 "\n"
 
-#: moon.py:270
+#: moon.py:260
 #, python-format
 #, fuzzy
 msgid ""
@@ -173,66 +173,66 @@ msgstr ""
 "%(daty)s in %(andro).amin'ny andro\n"
 "\n"
 
-#: moon.py:363
+#: moon.py:353
 msgid "SNWE"
 msgstr ""
 
-#: moon.py:366
+#: moon.py:356
 msgid "NSEW"
 msgstr ""
 
-#: moon.py:421
+#: moon.py:408
 msgid "Latitude"
 msgstr ""
 
-#: moon.py:423
+#: moon.py:410
 msgid "Longitude"
 msgstr ""
 
-#: moon.py:534
+#: moon.py:521
 msgid "west"
 msgstr "andrefana"
 
-#: moon.py:536
+#: moon.py:523
 msgid "east"
 msgstr "atsinanana"
 
-#: moon.py:539
+#: moon.py:526
 msgid "Sunset"
 msgstr ""
 
-#: moon.py:541
+#: moon.py:528
 msgid "Sunrise"
 msgstr ""
 
-#: moon.py:557 moon.py:573
+#: moon.py:544 moon.py:560
 msgid "New Moon"
 msgstr ""
 
-#: moon.py:559
+#: moon.py:546
 msgid "Waxing Crescent"
 msgstr ""
 
-#: moon.py:561
+#: moon.py:548
 msgid "First Quarter"
 msgstr ""
 
-#: moon.py:563
+#: moon.py:550
 msgid "Waxing Gibbous"
 msgstr ""
 
-#: moon.py:565
+#: moon.py:552
 msgid "Full Moon"
 msgstr "Diavolana"
 
-#: moon.py:567
+#: moon.py:554
 msgid "Waning Gibbous"
 msgstr ""
 
-#: moon.py:569
+#: moon.py:556
 msgid "Last Quarter"
 msgstr ""
 
-#: moon.py:571
+#: moon.py:558
 msgid "Waning Crescent"
 msgstr ""

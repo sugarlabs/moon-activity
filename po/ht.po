@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-06 00:30-0400\n"
+"POT-Creation-Date: 2012-02-15 00:32-0500\n"
 "PO-Revision-Date: 2011-08-10 06:01+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,20 +59,20 @@ msgstr "Lalin"
 msgid "%c"
 msgstr ""
 
-#: moon.py:92 moon.py:116
+#: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
 msgstr "Gade griy bouton"
 
-#: moon.py:97 moon.py:121
+#: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
 msgstr "Gade bouton emisfè"
 
-#: moon.py:126
+#: moon.py:130
 #, fuzzy
 msgid "View"
 msgstr "Gade"
 
-#: moon.py:260
+#: moon.py:250
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -80,7 +80,7 @@ msgstr ""
 "Enfòmasyon sou lalin jodi a\n"
 "\n"
 
-#: moon.py:261
+#: moon.py:251
 #, python-format
 msgid ""
 "Phase:\n"
@@ -91,7 +91,7 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: moon.py:262
+#: moon.py:252
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -102,7 +102,7 @@ msgstr ""
 "%.2f (Astwonomik)\n"
 "\n"
 
-#: moon.py:263
+#: moon.py:253
 #, python-format
 msgid ""
 "Age:\n"
@@ -113,7 +113,7 @@ msgstr ""
 "%(days).0f jou yo, %(hours).0f è yo, %(minutes).0f minit yo\n"
 "\n"
 
-#: moon.py:264
+#: moon.py:254
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -124,7 +124,7 @@ msgstr ""
 "%(phase).2f%% atravè linezon%(lunation)d\n"
 "\n"
 
-#: moon.py:265
+#: moon.py:255
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -135,7 +135,7 @@ msgstr ""
 "%.0f%% (estime)\n"
 "\n"
 
-#: moon.py:266
+#: moon.py:256
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -146,7 +146,7 @@ msgstr ""
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 
-#: moon.py:267
+#: moon.py:257
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -157,7 +157,7 @@ msgstr ""
 "%(date)s dan %(days).0f jou yo\n"
 "\n"
 
-#: moon.py:268
+#: moon.py:258
 #, python-format
 msgid ""
 "Next New Moon:\n"
@@ -168,7 +168,7 @@ msgstr ""
 "%(date)s dan %(days).0f jou yo\n"
 "\n"
 
-#: moon.py:269
+#: moon.py:259
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
@@ -179,7 +179,7 @@ msgstr ""
 "%(date)s dan %(days).0f jou yo\n"
 "\n"
 
-#: moon.py:270
+#: moon.py:260
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
@@ -190,66 +190,66 @@ msgstr ""
 "%(date)s dan %(days).0f jou yo\n"
 "\n"
 
-#: moon.py:363
+#: moon.py:353
 msgid "SNWE"
 msgstr "SNWE"
 
-#: moon.py:366
+#: moon.py:356
 msgid "NSEW"
 msgstr "NSEW"
 
-#: moon.py:421
+#: moon.py:408
 msgid "Latitude"
 msgstr "Latitid"
 
-#: moon.py:423
+#: moon.py:410
 msgid "Longitude"
 msgstr "Lonjitid"
 
-#: moon.py:534
+#: moon.py:521
 msgid "west"
 msgstr "Lwès"
 
-#: moon.py:536
+#: moon.py:523
 msgid "east"
 msgstr "Lès"
 
-#: moon.py:539
+#: moon.py:526
 msgid "Sunset"
 msgstr "Solèy kouche"
 
-#: moon.py:541
+#: moon.py:528
 msgid "Sunrise"
 msgstr "Douvanjou"
 
-#: moon.py:557 moon.py:573
+#: moon.py:544 moon.py:560
 msgid "New Moon"
 msgstr "Nouvèl lin"
 
-#: moon.py:559
+#: moon.py:546
 msgid "Waxing Crescent"
 msgstr "Ap sire kwasan"
 
-#: moon.py:561
+#: moon.py:548
 msgid "First Quarter"
 msgstr "Premye katye"
 
-#: moon.py:563
+#: moon.py:550
 msgid "Waxing Gibbous"
 msgstr "Ap sire Gibbous"
 
-#: moon.py:565
+#: moon.py:552
 msgid "Full Moon"
 msgstr "Plèn lin"
 
-#: moon.py:567
+#: moon.py:554
 msgid "Waning Gibbous"
 msgstr "Ap diminye Gibbous"
 
-#: moon.py:569
+#: moon.py:556
 msgid "Last Quarter"
 msgstr "Dènye katye"
 
-#: moon.py:571
+#: moon.py:558
 msgid "Waning Crescent"
 msgstr "Ap diminye kwasan"

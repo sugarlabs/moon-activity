@@ -58,7 +58,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-06 00:30-0400\n"
+"POT-Creation-Date: 2012-02-15 00:32-0500\n"
 "PO-Revision-Date: 2011-08-12 11:57+0200\n"
 "Last-Translator: Markus <m.slg@gmx.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,24 +81,24 @@ msgid "%c"
 msgstr "%c"
 
 # O.T.
-#: moon.py:92 moon.py:116
+#: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
 msgstr "Koordinatengitter ein- oder ausblenden"
 
 # O.T.: Es wird der Mond aus Sicht der Nordhalbkugel gezeigt. Umschalten bewirkt Ansicht von der Südhalbkugel und umgekehrt.
 # (Markus S.) 'Wechsle Hemisphäre'?
 # (Markus S.) war 'Umschalten auf Ansicht von anderer Hemisphäre'
-#: moon.py:97 moon.py:121
+#: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
 msgstr "Hemisphäre wechseln"
 
 # O.T.
-#: moon.py:126
+#: moon.py:130
 msgid "View"
 msgstr "Ansicht"
 
 # O.T.
-#: moon.py:260
+#: moon.py:250
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -107,7 +107,7 @@ msgstr ""
 "\n"
 
 # O.T.
-#: moon.py:261
+#: moon.py:251
 #, python-format
 msgid ""
 "Phase:\n"
@@ -119,7 +119,7 @@ msgstr ""
 "\n"
 
 # O.T.
-#: moon.py:262
+#: moon.py:252
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -131,7 +131,7 @@ msgstr ""
 "\n"
 
 # O.T.
-#: moon.py:263
+#: moon.py:253
 #, python-format
 msgid ""
 "Age:\n"
@@ -143,7 +143,7 @@ msgstr ""
 "\n"
 
 # O.T.: Die Lunationen (Mondwechsel) werden in der Astronomie fortlaufend nummeriert. Die Lunation bezeichnet die Zeit von einem Neumond zum nächsten Neumond. 10% der Lunation x ist also ein zunehmender Sichelmond, 50% ist Vollmond, 90% ist ein abnehmender Sichelmond.
-#: moon.py:264
+#: moon.py:254
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -155,7 +155,7 @@ msgstr ""
 "\n"
 
 # O.T.
-#: moon.py:265
+#: moon.py:255
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -167,7 +167,7 @@ msgstr ""
 "\n"
 
 # O.T.: Der Inhalt der Variablen (westOrEast) und (riseOrSet) müsste auch übersetzt werden.
-#: moon.py:266
+#: moon.py:256
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -179,7 +179,7 @@ msgstr ""
 "\n"
 
 # O.T.: Das Datum müsste auch übersetzt werden.
-#: moon.py:267
+#: moon.py:257
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -191,7 +191,7 @@ msgstr ""
 "\n"
 
 # O.T.: Das Datum müsste auch übersetzt werden.
-#: moon.py:268
+#: moon.py:258
 #, python-format
 msgid ""
 "Next New Moon:\n"
@@ -203,7 +203,7 @@ msgstr ""
 "\n"
 
 # O.T.: Das Datum müsste auch übersetzt werden.
-#: moon.py:269
+#: moon.py:259
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
@@ -215,7 +215,7 @@ msgstr ""
 "\n"
 
 # O.T.: Das Datum müsste auch übersetzt werden.
-#: moon.py:270
+#: moon.py:260
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
@@ -227,85 +227,85 @@ msgstr ""
 "\n"
 
 # O.T.: Das sind die Buchstaben für die Himmelsrichtungen Süd, Nord, West und Ost.
-#: moon.py:363
+#: moon.py:353
 msgid "SNWE"
 msgstr "SNWO"
 
 # O.T.: Das sind die Buchstaben für die Himmelsrichtungen.
-#: moon.py:366
+#: moon.py:356
 msgid "NSEW"
 msgstr "NSOW"
 
 # O.T.
-#: moon.py:421
+#: moon.py:408
 msgid "Latitude"
 msgstr "Breite"
 
 # O.T.
-#: moon.py:423
+#: moon.py:410
 msgid "Longitude"
 msgstr "Länge"
 
 # O.T.
-#: moon.py:534
+#: moon.py:521
 msgid "west"
 msgstr "West"
 
 # O.T.
-#: moon.py:536
+#: moon.py:523
 msgid "east"
 msgstr "Ost"
 
 # O.T.
-#: moon.py:539
+#: moon.py:526
 msgid "Sunset"
 msgstr "Sonnenuntergang"
 
 # O.T.
-#: moon.py:541
+#: moon.py:528
 msgid "Sunrise"
 msgstr "Sonnenaufgang"
 
 # O.T.
-#: moon.py:557 moon.py:573
+#: moon.py:544 moon.py:560
 msgid "New Moon"
 msgstr "Neumond"
 
 # O.T.: Der Mond vor dem ersten Viertel.
 # (Markus S.) 'Zunehmende Mondsichel'? war 'Zunehmender Sichelmond'; ich orientiere mich bei den Mondphasen an 'Grundkurs Astronomie', bsv
-#: moon.py:559
+#: moon.py:546
 msgid "Waxing Crescent"
 msgstr "Zunehmende Sichel"
 
 # O.T.
-#: moon.py:561
+#: moon.py:548
 msgid "First Quarter"
 msgstr "Erstes Viertel"
 
 # O.T. Der Mond nach dem ersten Viertel, vor Vollmond.
 # (Markus S.) war 'Zunehmender Halbmond', aber das wäre 'Erstes Viertel', vgl. 'GK Astronomie', bsv
-#: moon.py:563
+#: moon.py:550
 msgid "Waxing Gibbous"
 msgstr "Zunehmender Mond"
 
 # O.T.
-#: moon.py:565
+#: moon.py:552
 msgid "Full Moon"
 msgstr "Vollmond"
 
 # O.T.: Der Mond nach Vollmond, vor dem letzten Viertel.
 # (Markus S.) war 'Abnehmender Halbmond'
-#: moon.py:567
+#: moon.py:554
 msgid "Waning Gibbous"
 msgstr "Abnehmender Mond"
 
 # O.T.
-#: moon.py:569
+#: moon.py:556
 msgid "Last Quarter"
 msgstr "Letztes Viertel"
 
 # O.T.
 # (Markus S.) 'Abnehmende Mondsichel'? War 'Abnehmender Sichelmond'
-#: moon.py:571
+#: moon.py:558
 msgid "Waning Crescent"
 msgstr "Abnehmende Sichel"

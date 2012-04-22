@@ -34,8 +34,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-06 00:30-0400\n"
-"PO-Revision-Date: 2011-09-28 09:43+0200\n"
+"POT-Creation-Date: 2012-02-15 00:32-0500\n"
+"PO-Revision-Date: 2012-03-28 17:08+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ta\n"
@@ -55,19 +55,19 @@ msgstr "நிலவு"
 msgid "%c"
 msgstr "%c"
 
-#: moon.py:92 moon.py:116
+#: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
 msgstr "அடைப்புப்பார்வைக்கு மாற்று"
 
-#: moon.py:97 moon.py:121
+#: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
 msgstr "அரைப் பார்வைக்கு மாற்று"
 
-#: moon.py:126
+#: moon.py:130
 msgid "View"
 msgstr "பார்வை"
 
-#: moon.py:260
+#: moon.py:250
 msgid ""
 "Today's Moon Information\n"
 "\n"
@@ -75,7 +75,7 @@ msgstr ""
 "இன்றைய நிலவின் தகவல்\n"
 "\n"
 
-#: moon.py:261
+#: moon.py:251
 #, python-format
 msgid ""
 "Phase:\n"
@@ -86,7 +86,7 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: moon.py:262
+#: moon.py:252
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -97,7 +97,8 @@ msgstr ""
 "%.2f (வானியல்)\n"
 "\n"
 
-#: moon.py:263
+#: moon.py:253
+#, python-format
 #, python-format, fuzzy
 #, python-format,
 msgid ""
@@ -106,11 +107,12 @@ msgid ""
 "\n"
 msgstr ""
 "வயது:\n"
-"%(days). நாட்கள், %(hours). மணித்தியாலம், %(minutes). நிமிடங்கள்\n"
+"%(days).0f நாட்கள், %(hours).0f மணித்தியாலம், %(minutes).0f நிமிடங்கள்\n"
 "\n"
 
-#: moon.py:264
+#: moon.py:254
 #, python-format
+#, python-format, fuzzy
 #, python-format,
 msgid ""
 "Lunation:\n"
@@ -121,7 +123,7 @@ msgstr ""
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 
-#: moon.py:265
+#: moon.py:255
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -132,7 +134,7 @@ msgstr ""
 "%.0f%% (மதிப்பிடப்பட்டது)\n"
 "\n"
 
-#: moon.py:266
+#: moon.py:256
 #, python-format
 #, python-format,
 msgid ""
@@ -144,7 +146,8 @@ msgstr ""
 "%(deg).1f%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 
-#: moon.py:267
+#: moon.py:257
+#, python-format
 #, python-format, fuzzy
 #, python-format,
 msgid ""
@@ -153,10 +156,11 @@ msgid ""
 "\n"
 msgstr ""
 "அடுத்த முழு நிலவு:\n"
-"%(date)கள் %(days).நாட்களின்\n"
+"%(date)s கள் %(days).0f நாட்களின்\n"
 "\n"
 
-#: moon.py:268
+#: moon.py:258
+#, python-format
 #, python-format, fuzzy
 #, python-format,
 msgid ""
@@ -165,10 +169,11 @@ msgid ""
 "\n"
 msgstr ""
 "அடுத்த புதிய நிலவு:\n"
-"%(date)s %(days).நாட்களின்\n"
+"%(date)s %(days).0f நாட்களின்\n"
 "\n"
 
-#: moon.py:269
+#: moon.py:259
+#, python-format
 #, python-format, fuzzy
 #, python-format,
 msgid ""
@@ -177,10 +182,11 @@ msgid ""
 "\n"
 msgstr ""
 "அடுத்த சந்திர கிரகணம்:\n"
-"%(date)s %(days).நாட்களின்\n"
+"%(date)s %(days).0f நாட்களின்\n"
 "\n"
 
-#: moon.py:270
+#: moon.py:260
+#, python-format
 #, python-format, fuzzy
 #, python-format,
 msgid ""
@@ -189,69 +195,69 @@ msgid ""
 "\n"
 msgstr ""
 "அடுத்த சூரிய கிரகணம்:\n"
-"%(date)s %(days).நாட்களின்\n"
+"%(date)s %(days).0f நாட்களின்\n"
 "\n"
 
-#: moon.py:363
+#: moon.py:353
 msgid "SNWE"
 msgstr "மேவதெகி"
 
-#: moon.py:366
+#: moon.py:356
 msgid "NSEW"
 msgstr "வமேகிதெ"
 
-#: moon.py:421
+#: moon.py:408
 msgid "Latitude"
 msgstr "அகலாங்கு"
 
-#: moon.py:423
+#: moon.py:410
 msgid "Longitude"
 msgstr "நெட்டாங்கு"
 
-#: moon.py:534
+#: moon.py:521
 msgid "west"
 msgstr "தெற்கு"
 
-#: moon.py:536
+#: moon.py:523
 msgid "east"
 msgstr "கிழக்கு"
 
-#: moon.py:539
+#: moon.py:526
 msgid "Sunset"
 msgstr "சூரியன் மறைவு"
 
-#: moon.py:541
+#: moon.py:528
 msgid "Sunrise"
 msgstr "சூரிய உதயம்"
 
-#: moon.py:557 moon.py:573
+#: moon.py:544 moon.py:560
 msgid "New Moon"
 msgstr "புதிய நிலா"
 
-#: moon.py:559
+#: moon.py:546
 msgid "Waxing Crescent"
 msgstr "வளர் பிறை"
 
-#: moon.py:561
+#: moon.py:548
 msgid "First Quarter"
 msgstr "முதற் கால் பகுதி"
 
-#: moon.py:563
+#: moon.py:550
 msgid "Waxing Gibbous"
 msgstr "தேய் பிறை"
 
-#: moon.py:565
+#: moon.py:552
 msgid "Full Moon"
 msgstr "முழு நிலா"
 
-#: moon.py:567
+#: moon.py:554
 msgid "Waning Gibbous"
 msgstr "தேய்பிறை"
 
-#: moon.py:569
+#: moon.py:556
 msgid "Last Quarter"
 msgstr "இறுதி கால் பகுதி"
 
-#: moon.py:571
+#: moon.py:558
 msgid "Waning Crescent"
 msgstr "அரை நிலவு"

@@ -34,8 +34,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-06 00:30-0400\n"
-"PO-Revision-Date: 2011-06-20 16:24+0200\n"
+"POT-Creation-Date: 2012-02-15 00:32-0500\n"
+"PO-Revision-Date: 2012-04-05 22:55+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ps\n"
@@ -43,7 +43,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: activity/activity.info:2 moon.py:68
 msgid "Moon"
@@ -55,25 +55,27 @@ msgstr "سپوږمۍ"
 msgid "%c"
 msgstr ""
 
-#: moon.py:92 moon.py:116
+#: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
 msgstr "د ټوګل جال کتنه"
 
-#: moon.py:97 moon.py:121
+#: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
 msgstr "د ټوګل نیمځمکغوندارې کتنه"
 
-#: moon.py:126
+#: moon.py:130
 msgid "View"
 msgstr "کتنه"
 
-#: moon.py:260
+#: moon.py:250
 msgid ""
 "Today's Moon Information\n"
 "\n"
-msgstr "د نن د سپوږمۍ معلومات\n"
+msgstr ""
+"د نن د سپوږمۍ معلومات\n"
+"\n"
 
-#: moon.py:261
+#: moon.py:251
 #, python-format
 msgid ""
 "Phase:\n"
@@ -84,7 +86,7 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: moon.py:262
+#: moon.py:252
 #, python-format
 #, python-format, fuzzy
 msgid ""
@@ -96,34 +98,40 @@ msgstr ""
 "%.2f  (د ستورو)\n"
 "\n"
 
-#: moon.py:263
+#: moon.py:253
 #, python-format
 #, python-format, fuzzy
 msgid ""
 "Age:\n"
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
-msgstr "عمر:(ورځې).‌له ورځو٬ (ساعتونه). له ساعتونو٬ (دقیقې). له دقیقې\n"
+msgstr ""
+"عمر:(ورځې).‌له ورځو٬ (ساعتونه). له ساعتونو٬ (دقیقې). له دقیقې\n"
+"\n"
 
-#: moon.py:264
+#: moon.py:254
 #, python-format
 #, python-format, fuzzy
 msgid ""
 "Lunation:\n"
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
-msgstr "د سپوږمۍ وخت:(پېر). ۲ف د سپوږمۍ د وخت په واسطه (د سپوږمۍ وخت)\n"
+msgstr ""
+"د سپوږمۍ وخت:(پېر). ۲ف د سپوږمۍ د وخت په واسطه (د سپوږمۍ وخت)\n"
+"\n"
 
-#: moon.py:265
+#: moon.py:255
 #, python-format
 #, python-format, fuzzy
 msgid ""
 "Surface Visibility:\n"
 "%.0f%% (estimated)\n"
 "\n"
-msgstr "د سطحې لیدنه: له (تخمین شوی)\n"
+msgstr ""
+"د سطحې لیدنه: له (تخمین شوی)\n"
+"\n"
 
-#: moon.py:266
+#: moon.py:256
 #, python-format
 #, python-format, fuzzy
 msgid ""
@@ -135,102 +143,110 @@ msgstr ""
 "پرېوتل)s)\n"
 "\n"
 
-#: moon.py:267
+#: moon.py:257
 #, python-format
 #, python-format, fuzzy
 msgid ""
 "Next Full Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "راتلونکې پوره سپوږمۍ:ورځ(ې) په (ورځو). له ورځو\n"
+msgstr ""
+"راتلونکې پوره سپوږمۍ:ورځ(ې) په (ورځو). له ورځو\n"
+"\n"
 
-#: moon.py:268
+#: moon.py:258
 #, python-format
 #, python-format, fuzzy
 msgid ""
 "Next New Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "راتلونکې نوې سپوږمۍ:ورځ(ې) په (ورځو). له ورځو\n"
+msgstr ""
+"راتلونکې نوې سپوږمۍ:ورځ(ې) په (ورځو). له ورځو\n"
+"\n"
 
-#: moon.py:269
+#: moon.py:259
 #, python-format
 #, python-format, fuzzy
 msgid ""
 "Next Lunar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "د لمر راتلونکی کسوف:ورځ(ې) په (ورځو). له ورځو\n"
+msgstr ""
+"د لمر راتلونکی کسوف:ورځ(ې) په (ورځو). له ورځو\n"
+"\n"
 
-#: moon.py:270
+#: moon.py:260
 #, python-format
 #, python-format, fuzzy
 msgid ""
 "Next Solar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "د سپوږمۍ راتلونکی کسوف:ورځ(ې) په (ورځو). له ورځو\n"
+msgstr ""
+"د سپوږمۍ راتلونکی کسوف:ورځ(ې) په (ورځو). له ورځو\n"
+"\n"
 
-#: moon.py:363
+#: moon.py:353
 msgid "SNWE"
 msgstr "SNWE"
 
-#: moon.py:366
+#: moon.py:356
 msgid "NSEW"
 msgstr "NSEW"
 
-#: moon.py:421
+#: moon.py:408
 msgid "Latitude"
 msgstr "د ځمکې سطحه"
 
-#: moon.py:423
+#: moon.py:410
 msgid "Longitude"
 msgstr "د ځمکې اوږدوالی"
 
-#: moon.py:534
+#: moon.py:521
 msgid "west"
 msgstr "لویدیځ"
 
-#: moon.py:536
+#: moon.py:523
 msgid "east"
 msgstr "ختیځ"
 
-#: moon.py:539
+#: moon.py:526
 msgid "Sunset"
 msgstr "لمرپرېواته"
 
-#: moon.py:541
+#: moon.py:528
 msgid "Sunrise"
 msgstr "لمرخاته"
 
-#: moon.py:557 moon.py:573
+#: moon.py:544 moon.py:560
 msgid "New Moon"
 msgstr "نوې میاشت"
 
-#: moon.py:559
+#: moon.py:546
 msgid "Waxing Crescent"
 msgstr "مومېدونې میاشت"
 
-#: moon.py:561
+#: moon.py:548
 msgid "First Quarter"
 msgstr "لومړنۍ برخه"
 
-#: moon.py:563
+#: moon.py:550
 msgid "Waxing Gibbous"
 msgstr "نیمه مومېدونې میاشت"
 
-#: moon.py:565
+#: moon.py:552
 msgid "Full Moon"
 msgstr "پوره میاشت"
 
-#: moon.py:567
+#: moon.py:554
 msgid "Waning Gibbous"
 msgstr "تلونکې نیمه میاشت"
 
-#: moon.py:569
+#: moon.py:556
 msgid "Last Quarter"
 msgstr "اخري برخه"
 
-#: moon.py:571
+#: moon.py:558
 msgid "Waning Crescent"
 msgstr "تلونکې میاشت"
