@@ -247,7 +247,8 @@ class MoonActivity(activity.Activity):
         """
         self.data_model.update_moon_calculations(time.time())
         information_string = ""
-        information_string += _("Today's Moon Information\n\n")
+        information_string += _("Today's Moon Information\n\n")[:-2]
+        information_string += ":\n%s\n\n" % (time.strftime(LOCALE_DATE_FORMAT))
         information_string += _("Phase:\n%s\n\n") % (self.data_model.moon_phase_name(self.data_model.phase_of_moon))
         information_string += _("Julian Date:\n%.2f (astronomical)\n\n") % (self.data_model.julian_date)
         information_string += _("Age:\n%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n\n") % {'days':self.data_model.days_old, 'hours':self.data_model.hours_old, 'minutes':self.data_model.minutes_old}
