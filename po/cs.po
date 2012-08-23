@@ -39,7 +39,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-15 00:32-0500\n"
-"PO-Revision-Date: 2011-03-18 05:56+0200\n"
+"PO-Revision-Date: 2012-07-08 08:44+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cs\n"
@@ -47,35 +47,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: activity/activity.info:2 moon.py:68
 msgid "Moon"
-msgstr ""
+msgstr "Měsíc"
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
 #, python-format
 msgid "%c"
-msgstr ""
+msgstr "%c"
 
 #: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
-msgstr ""
+msgstr "Přepnout zobrazení mřížky"
 
 #: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
-msgstr ""
+msgstr "Přepnout zobrazení polokoule"
 
 #: moon.py:130
 msgid "View"
-msgstr "Prohlédnout"
+msgstr "Zobrazit"
 
 #: moon.py:250
 msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
+"Dnešní informace o měsíci\n"
+"\n"
 
 #: moon.py:251
 #, python-format
@@ -84,6 +86,9 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"Fáze:\n"
+"%s\n"
+"\n"
 
 #: moon.py:252
 #, python-format
@@ -92,6 +97,9 @@ msgid ""
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
+"Juliánské datum:\n"
+"%.2f (astronomických)\n"
+"\n"
 
 #: moon.py:253
 #, python-format
@@ -100,6 +108,9 @@ msgid ""
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
+"Stáří:\n"
+"%(days).0f dnů, %(hours).0f hodin, %(minutes).0f minut\n"
+"\n"
 
 #: moon.py:254
 #, python-format
@@ -108,6 +119,9 @@ msgid ""
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 msgstr ""
+"Doba oběhu:\n"
+"%(phase).2f%% přes synodický měsíc %(lunation)d\n"
+"\n"
 
 #: moon.py:255
 #, python-format
@@ -116,6 +130,9 @@ msgid ""
 "%.0f%% (estimated)\n"
 "\n"
 msgstr ""
+"Viditelnost povrchu:\n"
+"%.0f%% (odhadem)\n"
+"\n"
 
 #: moon.py:256
 #, python-format
@@ -124,6 +141,9 @@ msgid ""
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
+"Selenografické souřadnice:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
 
 #: moon.py:257
 #, python-format
@@ -132,6 +152,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Další úplněk:\n"
+"%(date)s za %(days).0f dnů\n"
+"\n"
 
 #: moon.py:258
 #, python-format
@@ -140,6 +163,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Další nový měsíc:\n"
+"%(date)s za %(days).0f dnů\n"
+"\n"
 
 #: moon.py:259
 #, python-format
@@ -148,6 +174,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Příští zatmění měsíce:\n"
+"%(date)s za %(days).0f dnů\n"
+"\n"
 
 #: moon.py:260
 #, python-format
@@ -156,67 +185,70 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Příští zatmění slunce:\n"
+"%(date)s za %(days).0f days\n"
+"\n"
 
 #: moon.py:353
 msgid "SNWE"
-msgstr ""
+msgstr "JSZV"
 
 #: moon.py:356
 msgid "NSEW"
-msgstr ""
+msgstr "SJVZ"
 
 #: moon.py:408
 msgid "Latitude"
-msgstr ""
+msgstr "Zeměpisná šířka"
 
 #: moon.py:410
 msgid "Longitude"
-msgstr ""
+msgstr "Zeměpisná délka"
 
 #: moon.py:521
 msgid "west"
-msgstr ""
+msgstr "západ"
 
 #: moon.py:523
 msgid "east"
-msgstr ""
+msgstr "východ"
 
 #: moon.py:526
 msgid "Sunset"
-msgstr ""
+msgstr "Západ slunce"
 
 #: moon.py:528
 msgid "Sunrise"
-msgstr ""
+msgstr "Východ slunce"
 
 #: moon.py:544 moon.py:560
 msgid "New Moon"
-msgstr ""
+msgstr "Novoluní"
 
 #: moon.py:546
 msgid "Waxing Crescent"
-msgstr ""
+msgstr "Dorůstající srpek"
 
 #: moon.py:548
 msgid "First Quarter"
-msgstr ""
+msgstr "První čtvrťina"
 
 #: moon.py:550
 msgid "Waxing Gibbous"
-msgstr ""
+msgstr "Dorůstající vypoklý"
 
 #: moon.py:552
 msgid "Full Moon"
-msgstr ""
+msgstr "Úplněk"
 
 #: moon.py:554
 msgid "Waning Gibbous"
-msgstr ""
+msgstr "Ubývající vypouklý"
 
 #: moon.py:556
 msgid "Last Quarter"
-msgstr ""
+msgstr "Poslední čtvrtina"
 
 #: moon.py:558
 msgid "Waning Crescent"
-msgstr ""
+msgstr "Ubývající srpek"
