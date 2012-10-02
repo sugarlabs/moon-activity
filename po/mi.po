@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-15 00:32-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.7.0\n"
+
+#: activity/activity.info:2 moon.py:68
+msgid "Moon"
+msgstr "Te Marama"
+
+#. TRANS: Date format for next full/new moon and next solar/lunar eclipse
+#: moon.py:60
+#, python-format
+msgid "%c"
+msgstr "%c"
+
+#: moon.py:92 moon.py:118
+msgid "Toggle Grid View"
+msgstr "Takahuri Tiro Mātiti"
+
+#: moon.py:98 moon.py:124
+msgid "Toggle Hemisphere View"
+msgstr "Takahuri Tiro Kōpae"
+
+#: moon.py:130
+msgid "View"
+msgstr "Tiro"
+
+#: moon.py:250
+msgid ""
+"Today's Moon Information\n"
+"\n"
+msgstr ""
+"Mōhiohio Marama mō tēnei rā\n"
+"\n"
+
+#: moon.py:251
+#, python-format
+msgid ""
+"Phase:\n"
+"%s\n"
+"\n"
+msgstr ""
+"Mata:\n"
+"ngā %s\n"
+"\n"
+
+#: moon.py:252
+#, python-format
+msgid ""
+"Julian Date:\n"
+"%.2f (astronomical)\n"
+"\n"
+msgstr ""
+"Rā Julian:\n"
+"%.2f (tātai arorangi)\n"
+"\n"
+
+#: moon.py:253
+#, python-format
+#, python-format, fuzzy
+msgid ""
+"Age:\n"
+"%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
+"\n"
+msgstr ""
+"Roanga:\n"
+"%(days).0f rā, %(hours).0f hours, %(minutes).0f ngā meneti\n"
+"\n"
+
+#: moon.py:254
+#, python-format
+#, python-format, fuzzy
+msgid ""
+"Lunation:\n"
+"%(phase).2f%% through lunation %(lunation)d\n"
+"\n"
+msgstr ""
+"Lunation:\n"
+"%(phase).2f%% mā te kaupeka %(lunation)d\n"
+"\n"
+
+#: moon.py:255
+#, python-format
+msgid ""
+"Surface Visibility:\n"
+"%.0f%% (estimated)\n"
+"\n"
+msgstr ""
+
+#: moon.py:256
+#, python-format
+msgid ""
+"Selenographic Terminator Longitude:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
+msgstr ""
+"Hekenga Whāroa Wehengapō:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
+
+#: moon.py:257
+#, python-format
+msgid ""
+"Next Full Moon:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Rākaunui E Heke Mai:\n"
+"%(date)s i %(days).0f ngā rangi\n"
+"\n"
+
+#: moon.py:258
+#, python-format
+msgid ""
+"Next New Moon:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Kōwhiti E Heke Mai:\n"
+"%(date)s i %(days).0f ngā rangi\n"
+"\n"
+
+#: moon.py:259
+#, python-format
+msgid ""
+"Next Lunar eclipse:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Āraitanga kōwhiti E Heke Mai:\n"
+"%(date)s i %(days).0f ngā rangi\n"
+"\n"
+
+#: moon.py:260
+#, python-format
+msgid ""
+"Next Solar eclipse:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Āraitanga o Tamanuiterā E Heke Mai:\n"
+"%(date)s i %(days).0f ngā rangi\n"
+"\n"
+
+#: moon.py:353
+msgid "SNWE"
+msgstr "SNWE"
+
+#: moon.py:356
+msgid "NSEW"
+msgstr "NSEW"
+
+#: moon.py:408
+msgid "Latitude"
+msgstr "Ahopae"
+
+#: moon.py:410
+msgid "Longitude"
+msgstr "Ahopou"
+
+#: moon.py:521
+msgid "west"
+msgstr "hauāuru"
+
+#: moon.py:523
+msgid "east"
+msgstr "rāwhiti"
+
+#: moon.py:526
+msgid "Sunset"
+msgstr "Tōnga o te Rā"
+
+#: moon.py:528
+msgid "Sunrise"
+msgstr "Whitinga o te Rā"
+
+#: moon.py:544 moon.py:560
+msgid "New Moon"
+msgstr "Kōwhiti"
+
+#: moon.py:546
+msgid "Waxing Crescent"
+msgstr ""
+
+#: moon.py:548
+msgid "First Quarter"
+msgstr "Hauwhātanga Tuatahi"
+
+#: moon.py:550
+msgid "Waxing Gibbous"
+msgstr ""
+
+#: moon.py:552
+msgid "Full Moon"
+msgstr "Rākaunui"
+
+#: moon.py:554
+msgid "Waning Gibbous"
+msgstr ""
+
+#: moon.py:556
+msgid "Last Quarter"
+msgstr "Hauwhātanga Whakamutunga"
+
+#: moon.py:558
+msgid "Waning Crescent"
+msgstr ""
+
+#, python-format
+#~ msgid ""
+#~ "Kitenga Mata:\n"
+#~ "%.0f%% (estimated)\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Surface Visibility:\n"
+#~ "%.0f%% (estimated)\n"
+#~ "\n"
