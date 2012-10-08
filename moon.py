@@ -134,10 +134,20 @@ class MoonActivity(activity.Activity):
             activity_toolbar.share.props.visible = False
 
         # Create the main activity container
-        self.main_view = gtk.HBox()
+        is_landscape = self.is_landscape_orientation()
+        if is_landscape:
+            self.main_view = gtk.HBox()
+        else:
+            self.main_view = gtk.VBox()
 
         # Create event box to hold Moon image (so I can set background color)
         self.event_box = gtk.EventBox()
+
+        if is_landscape:
+            self.event_box.set_size_request(int(gtk.gdk.screen_width() / 1.80), -1)
+        else:
+            self.event_box.set_size_request(-1, int(gtk.gdk.screen_height() / 1.60))
+
         colormap = gtk.gdk.colormap_get_system()
         self.black_alloc_color = colormap.alloc_color('black')
         self.white_alloc_color = colormap.alloc_color('white')
@@ -150,7 +160,9 @@ class MoonActivity(activity.Activity):
         # Create the Moon image widget
         self.image = gtk.Image()
         self.event_box.add(self.image)
-        self.main_view.pack_end(self.event_box)
+
+        if is_landscape:
+            self.main_view.pack_end(self.event_box, expand=False)
         
         # Moon base image for sacaling to final image
         self.moon_stamp = gtk.gdk.pixbuf_new_from_file("moon.jpg")
@@ -159,20 +171,35 @@ class MoonActivity(activity.Activity):
         info_scroll = gtk.ScrolledWindow()
         info_scroll.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
         info_scroll.set_size_request(-1, -1)
-        self.info_panel = gtk.VBox()
+
+        if is_landscape:
+            self.info_panel = gtk.VBox()
+        else:
+            self.info_panel = gtk.HBox()
+
         self.info_panel.set_border_width(10)
         self.info = gtk.Label()
         self.info.set_justify(gtk.JUSTIFY_LEFT)
-        self.info_panel.pack_start(self.info, False, False, 0)
+        self.info.set_alignment(0.0, 0.0)
+        self.info_panel.pack_start(self.info, expand=False)
+        self.info2 = gtk.Label()
+        self.info2.set_justify(gtk.JUSTIFY_LEFT)
+        self.info2.set_alignment(0.0, 0.0)
+        self.info_panel.pack_start(self.info2, True, True, 20)
         info_scroll.add_with_viewport(self.info_panel)
-        self.main_view.pack_start(info_scroll, False, False, 0)
+
+        if is_landscape:
+            self.main_view.pack_start(info_scroll, expand=True)
+        else:
+            self.main_view.pack_start(self.event_box, expand=False)
+            self.main_view.pack_start(info_scroll, expand=True)
 
         # Create Moon data model
         self.data_model = DataModel()
 
-        # Generate first set of views for display and kick off their timers
+        # Generate first view for text and kick off image update timer
         self.update_text_information_view()
-        self.update_moon_image_view()
+        self.update_moon_image_timeout = gobject.timeout_add(300000, self.update_moon_image_view)
 
         # Display everything
         self.info.show()
@@ -182,6 +209,13 @@ class MoonActivity(activity.Activity):
         self.main_view.show()
         self.set_canvas(self.main_view)
         self.show_all()
+
+    def is_landscape_orientation(self):
+        """Return True of in landscape, False for portrait orientation.
+        """
+        if gtk.gdk.screen_width() > gtk.gdk.screen_height():
+            return True
+        return False
 
     def read_and_parse_prefs(self, file_path):
         """Parse and set preference data from a given file.
@@ -245,20 +279,21 @@ class MoonActivity(activity.Activity):
         """Generate Moon data and update text based information view.
         """
         self.data_model.update_moon_calculations(time.time())
-        information_string = ""
-        information_string += _("Today's Moon Information\n\n")[:-2]
+        information_string = _("Today's Moon Information\n\n")[:-2]
         information_string += ":\n%s\n\n" % (time.strftime(LOCALE_DATE_FORMAT))
-        information_string += _("Phase:\n%s\n\n") % (self.data_model.moon_phase_name(self.data_model.phase_of_moon))
+        information_string += (_("Phase:\n%s\n\n") % (self.data_model.moon_phase_name(self.data_model.phase_of_moon))).replace("\n", " ", 1)
         information_string += _("Julian Date:\n%.2f (astronomical)\n\n") % (self.data_model.julian_date)
-        information_string += _("Age:\n%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n\n") % {'days':self.data_model.days_old, 'hours':self.data_model.hours_old, 'minutes':self.data_model.minutes_old}
+        information_string += (_("Age:\n%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n\n") % {'days':self.data_model.days_old, 'hours':self.data_model.hours_old, 'minutes':self.data_model.minutes_old}).replace("\n", " ", 1)
         information_string += _("Lunation:\n%(phase).2f%% through lunation %(lunation)d\n\n") % {'phase':self.data_model.phase_of_moon * 100, 'lunation':self.data_model.lunation}
-        information_string += _("Surface Visibility:\n%.0f%% (estimated)\n\n") % (self.data_model.percent_of_full_moon * 100)
-        information_string += _(u"Selenographic Terminator Longitude:\n%(deg).1f\u00b0%(westOrEast)s (%(riseOrSet)s)\n\n") % {'deg':self.data_model.selenographic_deg, 'westOrEast':self.data_model.west_or_east, 'riseOrSet':self.data_model.rise_or_set}
+        information_string += (_("Surface Visibility:\n%.0f%% (estimated)\n\n")[:-2] % (self.data_model.percent_of_full_moon * 100)).replace("\n", " ", 1)
+        self.info.set_markup(information_string)
+
+        information_string = _(u"Selenographic Terminator Longitude:\n%(deg).1f\u00b0%(westOrEast)s (%(riseOrSet)s)\n\n") % {'deg':self.data_model.selenographic_deg, 'westOrEast':self.data_model.west_or_east, 'riseOrSet':self.data_model.rise_or_set}
         information_string += _("Next Full Moon:\n%(date)s in %(days).0f days\n\n") % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_full_moon_date)), 'days':self.data_model.days_until_full_moon}
         information_string += _("Next New Moon:\n%(date)s in %(days).0f days\n\n") % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_new_moon_date)), 'days':self.data_model.days_until_new_moon}
         information_string += _("Next Lunar eclipse:\n%(date)s in %(days).0f days\n\n") % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_lunar_eclipse_date)), 'days':self.data_model.days_until_lunar_eclipse}
         information_string += _("Next Solar eclipse:\n%(date)s in %(days).0f days\n\n")[:-2] % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_solar_eclipse_date)), 'days':self.data_model.days_until_solar_eclipse}
-        self.info.set_markup(information_string)
+        self.info2.set_markup(information_string)
 
         # Calculate time to next minute cusp and set a new timer
         ms_to_next_min_cusp = (60 - time.gmtime()[5]) * 1000
@@ -270,6 +305,7 @@ class MoonActivity(activity.Activity):
     def update_moon_image_view(self):
         """Update Moon image view using last cached Moon data.
         """
+        print "IMAGE_SIZE", IMAGE_SIZE
         self.image_pixmap = gtk.gdk.Pixmap(self.window, IMAGE_SIZE, IMAGE_SIZE)
         self.gc = self.image_pixmap.new_gc(foreground=self.black_alloc_color)
         self.image.set_from_pixmap(self.image_pixmap, None)
@@ -427,10 +463,10 @@ class MoonActivity(activity.Activity):
 
     def _moon_size_allocate_cb(self, widget, allocation):
         global IMAGE_SIZE, HALF_SIZE
-        new_size = min(allocation.width, allocation.height)
+        new_size = min(allocation.width, allocation.height) - 30
 
         if new_size != IMAGE_SIZE:
-            IMAGE_SIZE = min(allocation.width, allocation.height)
+            IMAGE_SIZE = new_size
             HALF_SIZE = IMAGE_SIZE / 2
             self.update_moon_image_view()
 
