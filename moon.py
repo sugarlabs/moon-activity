@@ -201,7 +201,6 @@ class MoonActivity(activity.Activity):
         """Read state from datastore.
         """
         self.read_and_parse_prefs(file_path)
-        self.block_view_buttons_during_update()
         
     def write_file(self, file_path):
         """Write state to journal datastore and to persistent file system.
