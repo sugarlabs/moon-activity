@@ -1,7 +1,7 @@
 [Activity]
 name = Moon
 summary = For all those interested in the moon! See the different phases of the moon, latitudes and longtiutdes and impress all by "predicting" the next full moon!
-activity_version = 14
+activity_version = 15
 host_version = 1
 bundle_id = com.garycmartin.Moon
 icon = moon-icon
