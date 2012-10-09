@@ -133,73 +133,71 @@ class MoonActivity(activity.Activity):
             activity_toolbar = toolbox.get_activity_toolbar()
             activity_toolbar.share.props.visible = False
 
-        # Create the main activity container
-        is_landscape = self.is_landscape_orientation()
-        if is_landscape:
-            self.main_view = gtk.HBox()
-        else:
-            self.main_view = gtk.VBox()
-
-        # Create event box to hold Moon image (so I can set background color)
-        self.event_box = gtk.EventBox()
-
-        if is_landscape:
-            self.event_box.set_size_request(int(gtk.gdk.screen_width() / 1.80), -1)
-        else:
-            self.event_box.set_size_request(-1, int(gtk.gdk.screen_height() / 1.60))
-
+        # Items we don't have to do every redraw
         colormap = gtk.gdk.colormap_get_system()
         self.black_alloc_color = colormap.alloc_color('black')
         self.white_alloc_color = colormap.alloc_color('white')
         self.blue_green_mask_alloc_color = colormap.alloc_color('#F00')
         self.red_alloc_color = colormap.alloc_color('#F20')
         self.blue_alloc_color = colormap.alloc_color('#04F')
-        self.event_box.modify_bg(gtk.STATE_NORMAL, self.black_alloc_color)
-        self.event_box.connect('size-allocate', self._moon_size_allocate_cb)
-        
+        self.moon_stamp = gtk.gdk.pixbuf_new_from_file("moon.jpg")
+        self.image_size_cache = -1
+
+        # Build main layout manually for the first pass
+        self.build_main_layout_cb()
+
+        # Watch for signal that the screen changed size (landscape vs. portrait)
+        gtk.gdk.screen_get_default().connect('size-changed', self.build_main_layout_cb)
+
+    def build_main_layout_cb(self, widget=None, data=None):
+        """Create main layout respecting landscape or portrait orientation.
+        """
+
+        # Create event box to hold Moon image (so I can set background color)
+        info_scroll = gtk.ScrolledWindow()
+        self.event_box = gtk.EventBox()
+
+        # Create the main activity layout
+        if self.is_landscape_orientation():
+            self.main_view = gtk.HBox()
+            self.info_panel = gtk.VBox()
+            self.event_box.set_size_request(int(gtk.gdk.screen_width() / 1.70), -1)
+            self.main_view.pack_end(self.event_box, False)
+            self.main_view.pack_start(info_scroll, True)
+        else:
+            self.main_view = gtk.VBox()
+            self.info_panel = gtk.HBox()
+            self.event_box.set_size_request(-1, int(gtk.gdk.screen_height() / 1.60))
+            self.main_view.pack_start(self.event_box, False)
+            self.main_view.pack_start(info_scroll, True)
+
         # Create the Moon image widget
         self.image = gtk.Image()
         self.event_box.add(self.image)
-
-        if is_landscape:
-            self.main_view.pack_end(self.event_box, expand=False)
-        
-        # Moon base image for sacaling to final image
-        self.moon_stamp = gtk.gdk.pixbuf_new_from_file("moon.jpg")
+        self.event_box.modify_bg(gtk.STATE_NORMAL, self.black_alloc_color)
+        self.event_box.connect('size-allocate', self._moon_size_allocate_cb)
 
         # Create scrolling Moon information panel
-        info_scroll = gtk.ScrolledWindow()
         info_scroll.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
         info_scroll.set_size_request(-1, -1)
-
-        if is_landscape:
-            self.info_panel = gtk.VBox()
-        else:
-            self.info_panel = gtk.HBox()
 
         self.info_panel.set_border_width(10)
         self.info = gtk.Label()
         self.info.set_justify(gtk.JUSTIFY_LEFT)
         self.info.set_alignment(0.0, 0.0)
-        self.info_panel.pack_start(self.info, expand=False)
+        self.info_panel.pack_start(self.info, False)
         self.info2 = gtk.Label()
         self.info2.set_justify(gtk.JUSTIFY_LEFT)
         self.info2.set_alignment(0.0, 0.0)
-        self.info_panel.pack_start(self.info2, True, True, 20)
+        self.info_panel.pack_start(self.info2, True, True, 10)
         info_scroll.add_with_viewport(self.info_panel)
-
-        if is_landscape:
-            self.main_view.pack_start(info_scroll, expand=True)
-        else:
-            self.main_view.pack_start(self.event_box, expand=False)
-            self.main_view.pack_start(info_scroll, expand=True)
 
         # Create Moon data model
         self.data_model = DataModel()
 
         # Generate first view for text and kick off image update timer
         self.update_text_information_view()
-        self.update_moon_image_timeout = gobject.timeout_add(300000, self.update_moon_image_view)
+        self.update_moon_image_view()
 
         # Display everything
         self.info.show()
@@ -305,7 +303,6 @@ class MoonActivity(activity.Activity):
     def update_moon_image_view(self):
         """Update Moon image view using last cached Moon data.
         """
-        print "IMAGE_SIZE", IMAGE_SIZE
         self.image_pixmap = gtk.gdk.Pixmap(self.window, IMAGE_SIZE, IMAGE_SIZE)
         self.gc = self.image_pixmap.new_gc(foreground=self.black_alloc_color)
         self.image.set_from_pixmap(self.image_pixmap, None)
@@ -463,10 +460,11 @@ class MoonActivity(activity.Activity):
 
     def _moon_size_allocate_cb(self, widget, allocation):
         global IMAGE_SIZE, HALF_SIZE
-        new_size = min(allocation.width, allocation.height) - 30
+        size = min(allocation.width, allocation.height) - 30
 
-        if new_size != IMAGE_SIZE:
-            IMAGE_SIZE = new_size
+        if size != IMAGE_SIZE and size != self.image_size_cache:
+            self.image_size_cache = size
+            IMAGE_SIZE = size
             HALF_SIZE = IMAGE_SIZE / 2
             self.update_moon_image_view()
 
