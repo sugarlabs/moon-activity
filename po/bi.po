@@ -6,12 +6,40 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-03 00:33-0400\n"
+"POT-Creation-Date: 2011-07-06 00:30-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,17 +48,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.1.1rc4\n"
 
-#. TRANS: "name" option from activity.info file
-#: moon.py:68
+#: activity/activity.info:2 moon.py:68
 msgid "Moon"
-msgstr ""
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid ""
-"For all those interested in the moon! See the different phases of the moon, "
-"latitudes and longtiutdes and impress all by \"predicting\" the next full "
-"moon!"
 msgstr ""
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
@@ -39,25 +58,25 @@ msgstr ""
 msgid "%c"
 msgstr ""
 
-#: moon.py:92 moon.py:118
+#: moon.py:92 moon.py:116
 msgid "Toggle Grid View"
 msgstr ""
 
-#: moon.py:98 moon.py:124
+#: moon.py:97 moon.py:121
 msgid "Toggle Hemisphere View"
 msgstr ""
 
-#: moon.py:130
+#: moon.py:126
 msgid "View"
 msgstr ""
 
-#: moon.py:250
+#: moon.py:260
 msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
 
-#: moon.py:252
+#: moon.py:261
 #, python-format
 msgid ""
 "Phase:\n"
@@ -65,7 +84,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:253
+#: moon.py:262
 #, python-format
 msgid ""
 "Julian Date:\n"
@@ -73,7 +92,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:254
+#: moon.py:263
 #, python-format
 msgid ""
 "Age:\n"
@@ -81,7 +100,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:255
+#: moon.py:264
 #, python-format
 msgid ""
 "Lunation:\n"
@@ -89,7 +108,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:256
+#: moon.py:265
 #, python-format
 msgid ""
 "Surface Visibility:\n"
@@ -97,7 +116,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:257
+#: moon.py:266
 #, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
@@ -105,7 +124,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:258
+#: moon.py:267
 #, python-format
 msgid ""
 "Next Full Moon:\n"
@@ -113,7 +132,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:259
+#: moon.py:268
 #, python-format
 msgid ""
 "Next New Moon:\n"
@@ -121,7 +140,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:260
+#: moon.py:269
 #, python-format
 msgid ""
 "Next Lunar eclipse:\n"
@@ -129,7 +148,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:261
+#: moon.py:270
 #, python-format
 msgid ""
 "Next Solar eclipse:\n"
@@ -137,66 +156,66 @@ msgid ""
 "\n"
 msgstr ""
 
-#: moon.py:354
+#: moon.py:363
 msgid "SNWE"
 msgstr ""
 
-#: moon.py:357
+#: moon.py:366
 msgid "NSEW"
 msgstr ""
 
-#: moon.py:409
+#: moon.py:421
 msgid "Latitude"
 msgstr ""
 
-#: moon.py:411
+#: moon.py:423
 msgid "Longitude"
 msgstr ""
 
-#: moon.py:522
+#: moon.py:534
 msgid "west"
 msgstr ""
 
-#: moon.py:524
+#: moon.py:536
 msgid "east"
 msgstr ""
 
-#: moon.py:527
+#: moon.py:539
 msgid "Sunset"
 msgstr ""
 
-#: moon.py:529
+#: moon.py:541
 msgid "Sunrise"
 msgstr ""
 
-#: moon.py:545 moon.py:561
+#: moon.py:557 moon.py:573
 msgid "New Moon"
 msgstr ""
 
-#: moon.py:547
+#: moon.py:559
 msgid "Waxing Crescent"
 msgstr ""
 
-#: moon.py:549
+#: moon.py:561
 msgid "First Quarter"
 msgstr ""
 
-#: moon.py:551
+#: moon.py:563
 msgid "Waxing Gibbous"
 msgstr ""
 
-#: moon.py:553
+#: moon.py:565
 msgid "Full Moon"
 msgstr ""
 
-#: moon.py:555
+#: moon.py:567
 msgid "Waning Gibbous"
 msgstr ""
 
-#: moon.py:557
+#: moon.py:569
 msgid "Last Quarter"
 msgstr ""
 
-#: moon.py:559
+#: moon.py:571
 msgid "Waning Crescent"
 msgstr ""
