@@ -39,7 +39,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: 2011-11-04 09:57+0200\n"
+"PO-Revision-Date: 2012-11-10 15:56+0200\n"
 "Last-Translator: whe <heppew@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nl\n"
@@ -61,6 +61,9 @@ msgid ""
 "latitudes and longtiutdes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
+"Voor iedereen die in de maan geïnteresseerd is! Bekijk de verscillende fasen "
+"van de maan, kleincirkels en meridianen en maak indruk op iedereen door je "
+"\"voorspelling\" van de volgende volle maan!"
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
