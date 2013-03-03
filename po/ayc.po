@@ -7,10 +7,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: 2011-11-24 04:48+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2013-03-01 19:46+0200\n"
+"Last-Translator: EdgarQuispeChambi <quispedgar@yahoo.es>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: aym\n"
+"Language: ayc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +20,7 @@ msgstr ""
 #. TRANS: "name" option from activity.info file
 #: moon.py:68
 msgid "Moon"
-msgstr ""
+msgstr "Phaxsi"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
@@ -29,21 +29,24 @@ msgid ""
 "latitudes and longtiutdes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
+"¡Phaxsiru wayusiri taqi jaqinakataki! Phaxsina maya maya pachanakapa uñjma, "
+"qawayanakapa ampstanaka ukhamata taqiru musphayma \"kunjanisa\" jutiri urt'a "
+"uru."
 
 #  "%c"
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
 #, python-format
 msgid "%c"
-msgstr "%c"
+msgstr "%c chimpu"
 
 #: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
-msgstr ""
+msgstr "Grilla pacha chimpu uñjäwi jaqtaña"
 
 #: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
-msgstr ""
+msgstr "Hemisferio uñjäwiru jaqtaña"
 
 #  "Ver"
 #: moon.py:130
@@ -55,6 +58,8 @@ msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
+"Phaxsi tuqita yatiyäwi jichhürutaki\n"
+"\n"
 
 #: moon.py:252
 #, python-format
@@ -63,6 +68,9 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"Pacha:\n"
+"%s\n"
+"\n"
 
 #: moon.py:253
 #, python-format
@@ -71,6 +79,9 @@ msgid ""
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
+"Pacha chimpu Juliana:\n"
+"%.2f (astronómical)\n"
+"\n"
 
 #: moon.py:254
 #, python-format
@@ -79,6 +90,9 @@ msgid ""
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
+"Mara chimpu:\n"
+"%(days).0f días, %(hours).0f horas, %(minutes).0f minutos\n"
+"\n"
 
 #: moon.py:255
 #, python-format
@@ -87,6 +101,9 @@ msgid ""
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 msgstr ""
+"Phaxsi pacha chimpu:\n"
+"%(phase).2f%% phaxsi pacha chimpukama %(lunation)d\n"
+"\n"
 
 #: moon.py:256
 #, python-format
@@ -95,6 +112,9 @@ msgid ""
 "%.0f%% (estimated)\n"
 "\n"
 msgstr ""
+"Uraqi pacha uñjäwi:\n"
+"%.0f%% (estimada)\n"
+"\n"
 
 #: moon.py:257
 #, python-format
@@ -103,6 +123,9 @@ msgid ""
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
+"Terminador selenográfico phaxsi ampsta tañapa:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
 
 #: moon.py:258
 #, python-format
@@ -111,6 +134,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Jutiri phaxsi urt'a:\n"
+"%(date)s en %(days).0f días\n"
+"\n"
 
 #: moon.py:259
 #, python-format
@@ -119,6 +145,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Jutiri phaxsi jayri:\n"
+"%(date)s en %(days).0f días\n"
+"\n"
 
 #: moon.py:260
 #, python-format
@@ -127,6 +156,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Jutiri phaxsi usuntäwi:\n"
+"%(date)s en %(days).0f días\n"
+"\n"
 
 #: moon.py:261
 #, python-format
@@ -135,67 +167,70 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Jutiri Inti usuntäwi:\n"
+"%(date)s en %(days).0f días\n"
+"\n"
 
 #: moon.py:354
 msgid "SNWE"
-msgstr ""
+msgstr "SNWE chimpu"
 
 #: moon.py:357
 msgid "NSEW"
-msgstr ""
+msgstr "NSEW chimpu"
 
 #: moon.py:409
 msgid "Latitude"
-msgstr ""
+msgstr "Qawaya"
 
 #: moon.py:411
 msgid "Longitude"
-msgstr ""
+msgstr "Ampsta"
 
 #: moon.py:522
 msgid "west"
-msgstr ""
+msgstr "Inti Jalanta"
 
 #: moon.py:524
 msgid "east"
-msgstr ""
+msgstr "Inti Jalsu"
 
 #: moon.py:527
 msgid "Sunset"
-msgstr ""
+msgstr "Uchasiwa"
 
 #: moon.py:529
 msgid "Sunrise"
-msgstr ""
+msgstr "Mistu"
 
 #: moon.py:545 moon.py:561
 msgid "New Moon"
-msgstr ""
+msgstr "Jayri phaxsi"
 
 #: moon.py:547
 msgid "Waxing Crescent"
-msgstr ""
+msgstr "Qhana Jayri Phaxsi"
 
 #: moon.py:549
 msgid "First Quarter"
-msgstr ""
+msgstr "Urt'a Sunaqi Phaxsi"
 
 #: moon.py:551
 msgid "Waxing Gibbous"
-msgstr ""
+msgstr "Urt'a Wawa Phaxsi"
 
 #: moon.py:553
 msgid "Full Moon"
-msgstr ""
+msgstr "Urt'a Phaxsi"
 
 #: moon.py:555
 msgid "Waning Gibbous"
-msgstr ""
+msgstr "Jayri Wawa Phaxsi"
 
 #: moon.py:557
 msgid "Last Quarter"
-msgstr ""
+msgstr "Jayri Sunaqi Phaxsi"
 
 #: moon.py:559
 msgid "Waning Crescent"
-msgstr ""
+msgstr "Jayri Sunaqi Phaxsi"
