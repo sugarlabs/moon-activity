@@ -58,6 +58,15 @@ except ImportError:
 
 IMAGE_SIZE = 726
 HALF_SIZE = IMAGE_SIZE / 2
+ECLIPSE_TYPES = {
+    'T' : _('Total'),
+    'A' : _('Annular'),
+    'H' : _('Hybrid'),
+    'P' : _('Partial'),
+    't' : _('Total'),
+    'p' : _('Partial'),
+    'n' : _('Penumbral')
+}
 
 # TRANS: Date format for next full/new moon and next solar/lunar eclipse
 LOCALE_DATE_FORMAT = _("%c")
@@ -303,8 +312,8 @@ class MoonActivity(activity.Activity):
         information_string = _(u"Selenographic Terminator Longitude:\n%(deg).1f\u00b0%(westOrEast)s (%(riseOrSet)s)\n\n") % {'deg':self.data_model.selenographic_deg, 'westOrEast':self.data_model.west_or_east, 'riseOrSet':self.data_model.rise_or_set}
         information_string += _("Next Full Moon:\n%(date)s in %(days).0f days\n\n") % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_full_moon_date)), 'days':self.data_model.days_until_full_moon}
         information_string += _("Next New Moon:\n%(date)s in %(days).0f days\n\n") % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_new_moon_date)), 'days':self.data_model.days_until_new_moon}
-        information_string += _("Next Lunar eclipse:\n%(date)s in %(days).0f days\n\n") % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_lunar_eclipse_date)), 'days':self.data_model.days_until_lunar_eclipse}
-        information_string += _("Next Solar eclipse:\n%(date)s in %(days).0f days\n\n")[:-2] % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_solar_eclipse_date)), 'days':self.data_model.days_until_solar_eclipse}
+        information_string += _("Next (%(eclipse_type)s) Lunar eclipse:\n%(date)s in %(days).0f days\n\n") % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_lunar_eclipse_date)), 'days':self.data_model.days_until_lunar_eclipse, 'eclipse_type':ECLIPSE_TYPES[self.data_model.next_lunar_eclipse_type]}
+        information_string += _("Next (%(eclipse_type)s) Solar eclipse:\n%(date)s in %(days).0f days\n\n")[:-2] % {'date':time.strftime(LOCALE_DATE_FORMAT, time.localtime(self.data_model.next_solar_eclipse_date)), 'days':self.data_model.days_until_solar_eclipse, 'eclipse_type':ECLIPSE_TYPES[self.data_model.next_solar_eclipse_type]}
         self.info2.set_markup(information_string)
 
         # Calculate time to next minute cusp and set a new timer
@@ -587,9 +596,9 @@ class DataModel():
         self.next_full_moon_date = the_date + next_full_moon_sec - self.correct_for_tz_and_dst(the_date + next_full_moon_sec)
         
         # Eclipse information
-        self.next_lunar_eclipse_sec = self.next_lunar_eclipse_sec_at_time(the_date)
-        self.next_solar_eclipse_sec = self.next_solar_eclipse_sec_at_time(the_date)
-        self.last_lunar_eclipse_sec = self.last_lunar_eclipse_sec_at_time(the_date)
+        self.next_lunar_eclipse_sec, self.next_lunar_eclipse_type = self.next_lunar_eclipse_sec_at_time(the_date)
+        self.next_solar_eclipse_sec, self.next_solar_eclipse_type = self.next_solar_eclipse_sec_at_time(the_date)
+        self.last_lunar_eclipse_sec, self.last_lunar_eclipse_type = self.last_lunar_eclipse_sec_at_time(the_date)
         self.days_until_lunar_eclipse = self.next_lunar_eclipse_sec / SECONDS_PER_DAY
         self.next_lunar_eclipse_date = the_date + self.next_lunar_eclipse_sec - self.correct_for_tz_and_dst(the_date + self.next_lunar_eclipse_sec)
         self.days_until_solar_eclipse = self.next_solar_eclipse_sec / SECONDS_PER_DAY
@@ -734,7 +743,7 @@ class DataModel():
             if date_string[-1:] != "_":
                 next = time.mktime(time.strptime(date_string[:-1], self.date_format))
                 if next >= now:
-                    return next - now
+                    return next - now, date_string[-1:]
         return -1
 
     def last_lunar_eclipse_sec_at_time(self, now):
@@ -743,6 +752,7 @@ class DataModel():
         last = -1
         for date_string in self.full_moon_array:
             if date_string[-1:] != "_":
+                eclipse_type = date_string[-1:]
                 then = time.mktime(time.strptime(date_string[:-1], self.date_format))
                 if then >= now:
                     break
@@ -750,7 +760,7 @@ class DataModel():
         if last == -1:
             return -1
         else:
-            return now - last
+            return now - last, type
 
     def next_solar_eclipse_sec_at_time(self, now):
         """Return (positive) seconds to the next Solar eclipe or -1.
@@ -759,5 +769,5 @@ class DataModel():
             if date_string[-1:] != "_":
                 next = time.mktime(time.strptime(date_string[:-1], self.date_format))
                 if next >= now:
-                    return next - now
+                    return next - now, date_string[-1:]
         return -1
