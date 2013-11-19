@@ -33,6 +33,9 @@ import gtk
 import gobject
 from sugar.activity import activity
 from sugar.graphics.toggletoolbutton import ToggleToolButton
+from sugar.graphics.toolbutton import ToolButton
+from sugar import profile
+from sugar.datastore import datastore
 from gettext import gettext as _
 import math
 import time
@@ -100,11 +103,19 @@ class MoonActivity(activity.Activity):
             self.toggle_hemisphere_handler_id = self.toggle_hemisphere_button.connect('clicked', self.toggle_hemisphere_clicked)
             toolbar_box.toolbar.insert(self.toggle_hemisphere_button, -1)
             self.toggle_hemisphere_button.show()
+
+            self.image_button = ToolButton('save-image')
+            self.image_button.set_tooltip(_("Save As Image"))
+            self.image_button.connect('clicked', self.save_image)
+            toolbar_box.toolbar.insert(self.image_button, -1)
+            self.image_button.show()
+
             separator = gtk.SeparatorToolItem()
             separator.props.draw = False
             separator.set_expand(True)
             separator.show()
             toolbar_box.toolbar.insert(separator, -1)
+
             tool = StopButton(self)
             toolbar_box.toolbar.insert(tool, -1)
             self.set_toolbox(toolbar_box)
@@ -126,6 +137,13 @@ class MoonActivity(activity.Activity):
             self.toggle_hemisphere_handler_id = self.toggle_hemisphere_button.connect('clicked', self.toggle_hemisphere_clicked)
             view_tool_bar.insert(self.toggle_hemisphere_button, -1)
             self.toggle_hemisphere_button.show()
+
+            self.image_button = ToolButton('save-image')
+            self.image_button.set_tooltip(_("Save As Image"))
+            self.image_button.connect('clicked', self.save_image)
+            toolbar_box.toolbar.insert(self.image_button, -1)
+            self.image_button.show()
+
             view_tool_bar.show()
             toolbox.add_toolbar(_('View'), view_tool_bar)
             self.set_toolbox(toolbox)
@@ -467,6 +485,47 @@ class MoonActivity(activity.Activity):
             IMAGE_SIZE = size
             HALF_SIZE = IMAGE_SIZE / 2
             self.update_moon_image_view()
+
+    def save_image(self, widget):
+        """
+        Save the curren phase to image and show alert
+        """
+
+        w, h = self.get_size()
+        pixbuf = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB, False, 8,
+                    int(w / 1.70), h - 55)
+
+        shot = pixbuf.get_from_drawable(self.window, self.get_colormap(),
+                    w - int(w / 1.70), 55, 0, 0, int(w / 1.70), h - 55)
+
+        path = os.path.join(activity.get_activity_root(), "instance",
+            "shot.png")
+
+        shot.save(path, "png")
+        journal_entry = datastore.create()
+        journal_entry.metadata['title'] = "%s %s" % \
+            (self.metadata['title'], _("Image"))
+        journal_entry.metadata['icon-color'] = profile.get_color().to_string()
+        journal_entry.metadata['mime_type'] = "image/png"
+        journal_entry.set_file_path(path)
+        datastore.write(journal_entry)
+        journal_entry.destroy()
+
+        # Alert
+        HAS_ALERT = False
+        try:
+            from sugar.graphics.alert import NotifyAlert
+            HAS_ALERT = True
+        except:
+            pass
+
+        if HAS_ALERT:
+            alert = NotifyAlert(5)
+            alert.props.title=_('Image saved')
+            alert.props.msg = _('The current phase image has been saved to journal')
+            alert.connect('response', lambda x, y: self.remove_alert(x))
+            self.add_alert(alert)
+
 
 class DataModel():
     """Moon phase data model and various utility methods.
