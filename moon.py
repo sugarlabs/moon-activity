@@ -521,8 +521,8 @@ class MoonActivity(activity.Activity):
 
         if HAS_ALERT:
             alert = NotifyAlert(5)
-            alert.props.title=_('Image saved')
-            alert.props.msg = _('The current phase image has been saved to journal')
+            alert.props.title =_('Image saved')
+            alert.props.msg = _('An image of the current phase of the moon has been saved to the Journal')
             alert.connect('response', lambda x, y: self.remove_alert(x))
             self.add_alert(alert)
 
