@@ -35,15 +35,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: 2011-07-15 03:59+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2013-11-27 07:42+0200\n"
+"Last-Translator: Ganesh <ganesh.ghimire@olenepal.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #. TRANS: "name" option from activity.info file
 #: moon.py:68
@@ -57,12 +57,14 @@ msgid ""
 "latitudes and longtiutdes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
+"चन्द्रमामा रूचि राख्नेहरू सबैका लागि ! चन्द्रमाको भिन्न भिन्न अवस्थाहरू हेर, "
+"अक्षांश, देशान्तर र आउने पूर्णिमाको भविश्यवाणी गर्दै सबैलाई प्रभावित पार !"
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
 #, python-format
 msgid "%c"
-msgstr ""
+msgstr "%c"
 
 #: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
@@ -233,7 +235,6 @@ msgid "New Moon"
 msgstr "नयाँ चन्द्रमा"
 
 #: moon.py:547
-#, fuzzy
 msgid "Waxing Crescent"
 msgstr "Waxing Crescent"
 
@@ -242,7 +243,6 @@ msgid "First Quarter"
 msgstr "पहिलो चरण"
 
 #: moon.py:551
-#, fuzzy
 msgid "Waxing Gibbous"
 msgstr "Waxing Gibbous"
 
@@ -251,7 +251,6 @@ msgid "Full Moon"
 msgstr "पूर्णिमा"
 
 #: moon.py:555
-#, fuzzy
 msgid "Waning Gibbous"
 msgstr "Waning Gibbous"
 
@@ -260,6 +259,5 @@ msgid "Last Quarter"
 msgstr "अन्तिम चरण"
 
 #: moon.py:559
-#, fuzzy
 msgid "Waning Crescent"
 msgstr "Waning Crescent"
