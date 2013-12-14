@@ -35,7 +35,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: 2012-04-12 23:56+0200\n"
+"PO-Revision-Date: 2013-12-14 17:37+0200\n"
 "Last-Translator: Eduardo H. <hoboprimate@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
@@ -57,6 +57,9 @@ msgid ""
 "latitudes and longtiutdes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
+"Para todos aqueles interessados na lua! Vê as diferentes fases da lua, "
+"latitudes e longitudes e impressiona todos ao \"preveres\" a próxima lua "
+"cheia!"
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
