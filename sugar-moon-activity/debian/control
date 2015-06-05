@@ -1,0 +1,45 @@
+Source: sugar-moon-activity
+Section: x11
+Priority: optional
+Maintainer: Debian Sugar Team <pkg-sugar-devel@lists.alioth.debian.org>
+Uploaders: Jonas Smedegaard <dr@jones.dk>,
+ Gonzalo Odiard <godiard@gmail.com>
+Build-Depends: cdbs (>= 0.4.97~),
+ devscripts,
+ debhelper,
+ dh-buildinfo,
+ python,
+ python-sugar-0.98,
+ python-sugar-toolkit-0.98,
+ unzip
+Standards-Version: 3.9.6
+Vcs-Git: https://github.com/godiard/moon-activity.git
+Vcs-Browser: https://github.com/godiard/moon-activity.git
+Homepage: http://wiki.sugarlabs.org/go/Activities/Moon
+XS-Python-Version: all
+
+Package: sugar-moon-activity
+Architecture: all
+Depends: ${shlibs:Depends},
+ ${python:Depends},
+ ${cdbs:Depends},
+ ${misc:Depends}
+Recommends: ${cdbs:Recommends}
+Provides: ${python:Provides},
+ ${cdbs:Provides}
+Conflicts: ${cdbs:Conflicts}
+Replaces: ${cdbs:Replaces}
+Description: Sugar Learning Platform - moon activity
+ Sugar Learning Platform promotes collaborative learning through Sugar
+ Activities that encourage critical thinking, the heart of a quality
+ education.  Designed from the ground up especially for children, Sugar
+ offers an alternative to traditional “office-desktop” software.
+ .
+ Learner applications in Sugar are called Activities.  They are software
+ packages that automatically save your work - producing specific
+ instances of the Activity that can be resumed at a later time.  Many
+ Activities support learner collaboration, where multiple learners may
+ be invited to join a collective Activity session.
+ .
+ Moon activity show the Moon image with the actual phase and information
+ about upcming eclipse and other astronomical data.

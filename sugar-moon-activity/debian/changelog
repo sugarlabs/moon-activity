@@ -1,0 +1,5 @@
+sugar-moon-activity (17-0~godiard1) UNRELEASED; urgency=low
+
+  * Initial version for Debian.
+
+ -- Debian Sugar Team <pkg-sugar-devel@lists.alioth.debian.org>  Fri, 05 Jun 2015 12:08:07 -0300
