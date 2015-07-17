@@ -5,11 +5,11 @@ Source: http://download.sugarlabs.org/sources/honey/Moon/
 
 Files: moon.py
 Copyright: n
-License: GPLv2+
+License: GPL-2
 
 Files: *
 Copyright: Gonzalo Odiard
-License: GPLv2+
+License: GPL-2
  
  Copyright (C) 2015 Gonzalo Odiard
  

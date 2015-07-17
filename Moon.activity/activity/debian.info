@@ -1,6 +1,6 @@
 [Package]
 name = sugar-moon-activity
-version = 0~godiard1
+version = 1~godiard1
 vcs-git = https://github.com/godiard/moon-activity.git
 vcs-browser = https://github.com/godiard/moon-activity.git
 primary_branch = debian-packaging

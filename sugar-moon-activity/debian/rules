@@ -40,4 +40,3 @@ CDBS_BUILD_DEPENDS_class_python-sugar_sugar = python-sugar-0.98, python-sugar-to
 
 # Needed (always/often/seldom) at runtime
 CDBS_DEPENDS_$(pkg) = python, python-gobject-2, python-gtk2, python-cairo, python-sugar-0.98, python-sugar-toolkit-0.98
-CDBS_RECOMMENDS_$(pkg) +=, sugar-$(DEB_SUGAR_PRIMARY_BRANCH)-icon-theme | sugar-icon-theme
