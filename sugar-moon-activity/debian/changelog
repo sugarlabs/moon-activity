@@ -1,5 +1,5 @@
-sugar-moon-activity (17-1~godiard1) UNRELEASED; urgency=low
+sugar-moon-activity (17-2~godiard1) UNRELEASED; urgency=low
 
   * Initial version for Debian.
 
- -- Debian Sugar Team <pkg-sugar-devel@lists.alioth.debian.org>  Fri, 17 Jul 2015 08:36:25 -0300
+ -- Debian Sugar Team <pkg-sugar-devel@lists.alioth.debian.org>  Sat, 18 Jul 2015 23:02:08 -0300

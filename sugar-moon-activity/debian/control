@@ -9,8 +9,8 @@ Build-Depends: cdbs (>= 0.4.97~),
  debhelper,
  dh-buildinfo,
  python,
- python-sugar-0.98,
- python-sugar-toolkit-0.98,
+ python-sugar,
+ python-sugar-toolkit,
  unzip
 Standards-Version: 3.9.6
 Vcs-Git: https://github.com/godiard/moon-activity.git
