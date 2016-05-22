@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-03 00:33-0400\n"
+"PO-Revision-Date: 2016-04-25 09:12+0000\n"
+"Last-Translator: Robert <rbuj@fedoraproject.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1461575523.000000\n"
+
+#. TRANS: "name" option from activity.info file
+#: moon.py:68
+msgid "Moon"
+msgstr "Lluna"
+
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid ""
+"For all those interested in the moon! See the different phases of the moon, "
+"latitudes and longtiutdes and impress all by \"predicting\" the next full "
+"moon!"
+msgstr ""
+"Per a tots aquells que estiguin interessats amb la Lluna! Veure les "
+"diferents fases de la Lluna, les latituds i les longituds i impressionar a "
+"tothom amb la «predicció» de la propera Lluna plena!"
+
+#. TRANS: Date format for next full/new moon and next solar/lunar eclipse
+#: moon.py:60
+#, python-format
+msgid "%c"
+msgstr "%c"
+
+#: moon.py:92 moon.py:118
+msgid "Toggle Grid View"
+msgstr "Canvia a la visualització de la quadrícula"
+
+#: moon.py:98 moon.py:124
+msgid "Toggle Hemisphere View"
+msgstr "Canvia a la visualització de l'hemisferi"
+
+#: moon.py:130
+msgid "View"
+msgstr "Visualitza"
+
+#: moon.py:250
+msgid ""
+"Today's Moon Information\n"
+"\n"
+msgstr ""
+"Informació de la Lluna d'avui\n"
+"\n"
+
+#: moon.py:252
+#, python-format
+msgid ""
+"Phase:\n"
+"%s\n"
+"\n"
+msgstr ""
+"Fase:\n"
+"%s\n"
+"\n"
+
+#: moon.py:253
+#, python-format
+msgid ""
+"Julian Date:\n"
+"%.2f (astronomical)\n"
+"\n"
+msgstr ""
+"Dia julià:\n"
+"%.2f (astronòmic)\n"
+"\n"
+
+#: moon.py:254
+#, python-format
+msgid ""
+"Age:\n"
+"%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
+"\n"
+msgstr ""
+"Envelliment:\n"
+"%(days).0f dies, %(hours).0f hores, %(minutes).0f minuts\n"
+"\n"
+
+#: moon.py:255
+#, python-format
+msgid ""
+"Lunation:\n"
+"%(phase).2f%% through lunation %(lunation)d\n"
+"\n"
+msgstr ""
+"Lluna nova:\n"
+"%(phase).2f%% fins a la Lluna nova %(lunation)d\n"
+"\n"
+
+#: moon.py:256
+#, python-format
+msgid ""
+"Surface Visibility:\n"
+"%.0f%% (estimated)\n"
+"\n"
+msgstr ""
+"Superfície visible:\n"
+"%.0f%% (aproximació)\n"
+"\n"
+
+#: moon.py:257
+#, python-format
+msgid ""
+"Selenographic Terminator Longitude:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
+msgstr ""
+"Colongitud selenogràfica:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
+
+#: moon.py:258
+#, python-format
+msgid ""
+"Next Full Moon:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Pròxima Lluna plena:\n"
+"%(date)s en %(days).0f dies\n"
+"\n"
+
+#: moon.py:259
+#, python-format
+msgid ""
+"Next New Moon:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Pròxima Lluna nova:\n"
+"%(date)s en %(days).0f dies\n"
+"\n"
+
+#: moon.py:260
+#, python-format
+msgid ""
+"Next Lunar eclipse:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Pròxim eclipse de Lluna:\n"
+"%(date)s en %(days).0f dies\n"
+"\n"
+
+#: moon.py:261
+#, python-format
+msgid ""
+"Next Solar eclipse:\n"
+"%(date)s in %(days).0f days\n"
+"\n"
+msgstr ""
+"Pròxim eclipse de Sol:\n"
+"%(date)s en %(days).0f dies\n"
+"\n"
+
+#: moon.py:354
+msgid "SNWE"
+msgstr "SNOE"
+
+#: moon.py:357
+msgid "NSEW"
+msgstr "NSEO"
+
+#: moon.py:409
+msgid "Latitude"
+msgstr "Latitud"
+
+#: moon.py:411
+msgid "Longitude"
+msgstr "Longitud"
+
+#: moon.py:522
+msgid "west"
+msgstr "oest"
+
+#: moon.py:524
+msgid "east"
+msgstr "est"
+
+#: moon.py:527
+msgid "Sunset"
+msgstr "Posta de sol"
+
+#: moon.py:529
+msgid "Sunrise"
+msgstr "Sortida del sol"
+
+#: moon.py:545 moon.py:561
+msgid "New Moon"
+msgstr "Lluna Nova"
+
+#: moon.py:547
+msgid "Waxing Crescent"
+msgstr "Lluna nova visible"
+
+#: moon.py:549
+msgid "First Quarter"
+msgstr "Quart creixent"
+
+#: moon.py:551
+msgid "Waxing Gibbous"
+msgstr "Lluna gibosa creixent"
+
+#: moon.py:553
+msgid "Full Moon"
+msgstr "Lluna Plena"
+
+#: moon.py:555
+msgid "Waning Gibbous"
+msgstr "Lluna gibosa minvant"
+
+#: moon.py:557
+msgid "Last Quarter"
+msgstr "Quart minvant"
+
+#: moon.py:559
+msgid "Waning Crescent"
+msgstr "Lluna minvant"
