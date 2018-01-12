@@ -71,10 +71,6 @@ class MoonActivity(activity.Activity):
         self.set_title(_("Moon"))
         
         # Defaults (Resume priority, persistent file secondary, fall-back hardcoded)
-        if handle.object_id == None:
-            print "Launched from home."
-        else:
-            print "Journal resume."
         self.hemisphere_view = 'north'
         self.show_grid = False
         self.activity_state = {}
