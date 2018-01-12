@@ -35,15 +35,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: 2010-03-22 23:31+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2016-12-25 15:04+0000\n"
+"Last-Translator: yatinmaan <yatinmaan1@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.3\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1482678266.000000\n"
 
 #. TRANS: "name" option from activity.info file
 #: moon.py:68
@@ -57,24 +58,26 @@ msgid ""
 "latitudes and longtiutdes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
+"सभी चाँद में रुचि रखने वालों के लिए! चांद के विभिन्न रूप, अक्षांश और देशांतर "
+"देखिए, और \"भविष्यवाणी\" कर अगले पूर्णिमा से करे सभी को आश्चर्यचकित!"
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
 #, python-format
 msgid "%c"
-msgstr ""
+msgstr "%c"
 
 #: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
-msgstr "ग्रिड दृश्य टॉगल करें"
+msgstr "वर्ग दृश्य में परिवर्तित करें"
 
 #: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
-msgstr "अर्धगोल दृश्य टॉगल करें"
+msgstr "अर्धगोल दृश्य में परिवर्तित करें"
 
 #: moon.py:130
 msgid "View"
-msgstr "दृश्य"
+msgstr "दिखाए"
 
 #: moon.py:250
 msgid ""
@@ -124,8 +127,8 @@ msgid ""
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 msgstr ""
-"ल्यूनेशन:\n"
-"%(phase).2f%% ल्यूनेशन द्वारा %(lunation)d\n"
+"चांद्रमास:\n"
+"%(phase).2f%% चांद्रमास द्वारा %(lunation)d\n"
 "\n"
 
 #: moon.py:256
@@ -146,7 +149,7 @@ msgid ""
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
-"सेलेनोग्राफिक टर्मिनेटर लाँगीट्यूड:\n"
+"चन्द्रालखिक समापक देशान्तर:\n"
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 
@@ -236,7 +239,7 @@ msgstr "बढ़ता अर्धचन्द्र"
 
 #: moon.py:549
 msgid "First Quarter"
-msgstr "प्रथम पखवाड़ा"
+msgstr "प्रथम चौथाई"
 
 #: moon.py:551
 msgid "Waxing Gibbous"
@@ -252,7 +255,7 @@ msgstr "घटता चन्द्र"
 
 #: moon.py:557
 msgid "Last Quarter"
-msgstr "अंतिम पखवाड़ा"
+msgstr "अंतिम चौथाई"
 
 #: moon.py:559
 msgid "Waning Crescent"

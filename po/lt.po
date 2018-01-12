@@ -2,32 +2,37 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2017-11-12 20:16+0000\n"
+"Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1510517814.000000\n"
 
 #. TRANS: "name" option from activity.info file
 #: moon.py:68
 msgid "Moon"
-msgstr ""
+msgstr "Mėnulis"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid ""
 "For all those interested in the moon! See the different phases of the moon, "
-"latitudes and longtiutdes and impress all by \"predicting\" the next full "
+"latitudes and longitudes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
+"Besidomintiems mėnuliu! Matykite įvairias mėnulio fazes, platumas bei "
+"ilgumas ir padarykite kitiems įspūdį, \"nuspėdami\" kitą pilnatį."
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
@@ -37,11 +42,11 @@ msgstr ""
 
 #: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
-msgstr ""
+msgstr "Perjungti tinklelio rodinį"
 
 #: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
-msgstr ""
+msgstr "Perjungti pusrutulių rodinį"
 
 #: moon.py:130
 msgid "View"
@@ -52,14 +57,19 @@ msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
+"Šiandienos mėnulio informacija\n"
+"\n"
 
 #: moon.py:252
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Phase:\n"
 "%s\n"
 "\n"
 msgstr ""
+"Fazė:\n"
+"%s\n"
+"\n"
 
 #: moon.py:253
 #, python-format
@@ -68,6 +78,9 @@ msgid ""
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
+"Julijaus data:\n"
+"%.2f (astronominė)\n"
+"\n"
 
 #: moon.py:254
 #, python-format
@@ -76,6 +89,9 @@ msgid ""
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
+"Amžius:\n"
+"%(days).0f dienų, %(hours).0f valandų, %(minutes).0f minučių\n"
+"\n"
 
 #: moon.py:255
 #, python-format
@@ -108,6 +124,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Kita pilnatis:\n"
+"%(date)s po %(days).0f dienų\n"
+"\n"
 
 #: moon.py:259
 #, python-format
@@ -116,6 +135,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Kita jaunatis:\n"
+"%(date)s po %(days).0f dienų\n"
+"\n"
 
 #: moon.py:260
 #, python-format
@@ -124,6 +146,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Kitas mėnulio užtemimas:\n"
+"%(date)s po %(days).0f dienų\n"
+"\n"
 
 #: moon.py:261
 #, python-format
@@ -132,10 +157,13 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Kitas Saulės užtemimas:\n"
+"%(date)s po %(days).0f dienų\n"
+"\n"
 
 #: moon.py:354
 msgid "SNWE"
-msgstr ""
+msgstr "ŠPVR"
 
 #: moon.py:357
 msgid "NSEW"
@@ -143,56 +171,56 @@ msgstr ""
 
 #: moon.py:409
 msgid "Latitude"
-msgstr ""
+msgstr "Platuma"
 
 #: moon.py:411
 msgid "Longitude"
-msgstr ""
+msgstr "Ilguma"
 
 #: moon.py:522
 msgid "west"
-msgstr ""
+msgstr "vakarai"
 
 #: moon.py:524
 msgid "east"
-msgstr ""
+msgstr "rytai"
 
 #: moon.py:527
 msgid "Sunset"
-msgstr ""
+msgstr "Saulėlydis"
 
 #: moon.py:529
 msgid "Sunrise"
-msgstr ""
+msgstr "Saulėtekis"
 
 #: moon.py:545 moon.py:561
 msgid "New Moon"
-msgstr ""
+msgstr "Jaunatis (Naujas mėnulis)"
 
 #: moon.py:547
 msgid "Waxing Crescent"
-msgstr ""
+msgstr "Jaunatis (Pilnėjantis mėnulis)"
 
 #: moon.py:549
 msgid "First Quarter"
-msgstr ""
+msgstr "Priešpilnis (Pirmo ketvirčio mėnulis)"
 
 #: moon.py:551
 msgid "Waxing Gibbous"
-msgstr ""
+msgstr "Priešpilnis (Pilnėjantis kuprotas mėnulis)"
 
 #: moon.py:553
 msgid "Full Moon"
-msgstr ""
+msgstr "Pilnatis (Pilnas mėnulis)"
 
 #: moon.py:555
 msgid "Waning Gibbous"
-msgstr ""
+msgstr "Pilnatis (Dylantis kuprotas mėnulis)"
 
 #: moon.py:557
 msgid "Last Quarter"
-msgstr ""
+msgstr "Delčia (Paskutinio ketvirčio mėnulis)"
 
 #: moon.py:559
 msgid "Waning Crescent"
-msgstr ""
+msgstr "Delčia (Dylantis mėnulis)"

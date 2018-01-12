@@ -59,7 +59,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: 2011-08-12 11:57+0200\n"
+"PO-Revision-Date: 2016-04-09 18:23+0000\n"
 "Last-Translator: Markus <m.slg@gmx.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -67,7 +67,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1460226209.000000\n"
 
 # O.T.
 #. TRANS: "name" option from activity.info file
@@ -82,6 +83,9 @@ msgid ""
 "latitudes and longtiutdes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
+"Für all jene, die sich für den Mond interessieren! Beobachte die "
+"verschiedenen Mondphasen, Breiten- und Längengrade und beeindrucke alle "
+"damit, dass du den nächsten Vollmond \"vorhersagen\" kannst!"
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60

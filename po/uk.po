@@ -2,76 +2,63 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2017-04-26 18:24+0000\n"
+"Last-Translator: yurchor <yurchor@ukr.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.6.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1493231040.000000\n"
 
 #. TRANS: "name" option from activity.info file
 #: moon.py:68
 msgid "Moon"
-msgstr ""
+msgstr "Місяць"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid ""
 "For all those interested in the moon! See the different phases of the moon, "
-"latitudes and longtiutdes and impress all by \"predicting\" the next full "
+"latitudes and longitudes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
+"Для усіх, хто цікавиться фазами Місяця! Спостерігайте за різними фазами "
+"Місяця, широтами і довготами та вражайте усіх, «передбачаючи» повню!"
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
 #, python-format
 msgid "%c"
-msgstr ""
+msgstr "%c"
 
 #: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
-msgstr ""
+msgstr "Увімкнути/Вимкнути перегляд сітки"
 
 #: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
-msgstr ""
+msgstr "Увімкнути/Вимкнути перегляд півсфери"
 
 #: moon.py:130
 msgid "View"
-msgstr ""
+msgstr "Перегляд"
 
 #: moon.py:250
 msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
+"Сьогоднішні дані щодо Місяця\n"
+"\n"
 
 #: moon.py:252
 #, python-format
@@ -80,6 +67,9 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"Фаза:\n"
+"%s\n"
+"\n"
 
 #: moon.py:253
 #, python-format
@@ -88,6 +78,9 @@ msgid ""
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
+"Юліанська дата:\n"
+"%.2f (астрономічна)\n"
+"\n"
 
 #: moon.py:254
 #, python-format
@@ -96,6 +89,9 @@ msgid ""
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
+"Вік:\n"
+"%(days).0f днів, %(hours).0f годин, %(minutes).0f хвилин\n"
+"\n"
 
 #: moon.py:255
 #, python-format
@@ -104,6 +100,9 @@ msgid ""
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
 msgstr ""
+"Лунація:\n"
+"%(phase).2f%% через лунацію %(lunation)d\n"
+"\n"
 
 #: moon.py:256
 #, python-format
@@ -112,6 +111,9 @@ msgid ""
 "%.0f%% (estimated)\n"
 "\n"
 msgstr ""
+"Видимість поверхні:\n"
+"%.0f%% (оцінка)\n"
+"\n"
 
 #: moon.py:257
 #, python-format
@@ -120,6 +122,9 @@ msgid ""
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
 msgstr ""
+"Довгота селенографічного термінатора:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
 
 #: moon.py:258
 #, python-format
@@ -128,6 +133,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Наступний повний місяць:\n"
+"%(date)s за %(days).0f днів\n"
+"\n"
 
 #: moon.py:259
 #, python-format
@@ -136,6 +144,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Наступний новий місяць:\n"
+"%(date)s за %(days).0f днів\n"
+"\n"
 
 #: moon.py:260
 #, python-format
@@ -144,6 +155,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Наступне місячне затемнення:\n"
+"%(date)s за %(days).0f днів\n"
+"\n"
 
 #: moon.py:261
 #, python-format
@@ -152,67 +166,70 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Наступне сонячне затемнення:\n"
+"%(date)s за %(days).0f днів\n"
+"\n"
 
 #: moon.py:354
 msgid "SNWE"
-msgstr ""
+msgstr "SNWE"
 
 #: moon.py:357
 msgid "NSEW"
-msgstr ""
+msgstr "NSEW"
 
 #: moon.py:409
 msgid "Latitude"
-msgstr ""
+msgstr "Широта"
 
 #: moon.py:411
 msgid "Longitude"
-msgstr ""
+msgstr "Довгота"
 
 #: moon.py:522
 msgid "west"
-msgstr ""
+msgstr "захід"
 
 #: moon.py:524
 msgid "east"
-msgstr ""
+msgstr "схід"
 
 #: moon.py:527
 msgid "Sunset"
-msgstr ""
+msgstr "Захід"
 
 #: moon.py:529
 msgid "Sunrise"
-msgstr ""
+msgstr "Схід сонця"
 
 #: moon.py:545 moon.py:561
 msgid "New Moon"
-msgstr ""
+msgstr "Новий місяць"
 
 #: moon.py:547
 msgid "Waxing Crescent"
-msgstr ""
+msgstr "Молодий місяць"
 
 #: moon.py:549
 msgid "First Quarter"
-msgstr ""
+msgstr "Перша чверть"
 
 #: moon.py:551
 msgid "Waxing Gibbous"
-msgstr ""
+msgstr "Між першою чвертю та повним"
 
 #: moon.py:553
 msgid "Full Moon"
-msgstr ""
+msgstr "Повний місяць"
 
 #: moon.py:555
 msgid "Waning Gibbous"
-msgstr ""
+msgstr "Між повним місяцем та третьою чвертю"
 
 #: moon.py:557
 msgid "Last Quarter"
-msgstr ""
+msgstr "Остання чверть"
 
 #: moon.py:559
 msgid "Waning Crescent"
-msgstr ""
+msgstr "Між третьою чвертю та новим місяцем"

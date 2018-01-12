@@ -7,21 +7,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: 2017-03-18 22:01+0000\n"
+"PO-Revision-Date: 2017-03-28 02:56+0000\n"
 "Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fa\n"
+"Language: ach\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1489874500.000000\n"
+"X-POOTLE-MTIME: 1490669801.000000\n"
 
 #. TRANS: "name" option from activity.info file
 #: moon.py:68
 msgid "Moon"
-msgstr "ماه"
+msgstr "Dwe"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
@@ -30,8 +30,8 @@ msgid ""
 "latitudes and longitudes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
-"برای تمام کسانی که به ماه علاقه دارند! مراحل مختلف ماه، عرض و طول جغرافیایی "
-"را مشاهده کنید و تحت تاثیر پیش بینی ماه کامل قرار بگیرید."
+"Pi jo matye ki miti i dwe! Nen kit kwon dwe mapatpat, alokaloka me pinyci "
+"cukuru gin weng kun ''ibyeko'' en malubo kore ki i dwe weng!"
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
@@ -41,176 +41,194 @@ msgstr "%c"
 
 #: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
-msgstr "نمای شبکه ضامن (لولا)"
+msgstr "Roo kit ma Layin neno kwede"
 
 #: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
-msgstr "نمای نیم کره ضامن (لولا)"
+msgstr "Roo kit neno me Romrom me wilobo"
 
 #: moon.py:130
 msgid "View"
-msgstr "چشم انداز"
+msgstr "Nen odoco"
 
 #: moon.py:250
 msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
-"نما\n"
+"Ngec Ikom Dwe Matin\n"
 "\n"
 
 #: moon.py:252
 #, python-format
-#, fuzzy, python-format
 msgid ""
 "Phase:\n"
 "%s\n"
 "\n"
 msgstr ""
-"فاز:\n"
-"s%\n"
+"Kare mukene:\n"
+"%s\n"
+"\n"
 
 #: moon.py:253
 #, python-format
-#, fuzzy, python-format
 msgid ""
 "Julian Date:\n"
 "%.2f (astronomical)\n"
 "\n"
-msgstr "تاریخ جولیان (علم نجوم)"
+msgstr ""
+"Nino dwe pa Julian:\n"
+"%.2f (wel ngec madwong)\n"
+"\n"
 
 #: moon.py:254
 #, python-format
-#, fuzzy, python-format
 msgid ""
 "Age:\n"
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
-msgstr "دوره: روزها، ساعت ها، دقایق"
+msgstr ""
+"Mwaka:\n"
+"%(days).0f nino mapol, %(hours).0f caa mapol, %(minutes).0f dakika mapol\n"
+"\n"
 
 #: moon.py:255
 #, python-format
-#, fuzzy, python-format
 msgid ""
 "Lunation:\n"
 "%(phase).2f%% through lunation %(lunation)d\n"
 "\n"
-msgstr "یک ماه قمری: فاز در طول یک ماه قمری"
+msgstr ""
+"Kare matero i dwe moni:\n"
+"%(phase).2f%% kun beo ki kare mooni %(lunation)d\n"
+"\n"
 
 #: moon.py:256
 #, python-format
-#, fuzzy, python-format
 msgid ""
 "Surface Visibility:\n"
 "%.0f%% (estimated)\n"
 "\n"
-msgstr "درصد دید سطحی (تقریبی)"
+msgstr ""
+"Wange Manongo ne yot:\n"
+"%.0f%% (kibyeko welle)\n"
+"\n"
 
 #: moon.py:257
 #, python-format
-#, fuzzy, python-format
 msgid ""
 "Selenographic Terminator Longitude:\n"
 "%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
 "\n"
-msgstr "طول جغرافیایی پایانی سلنوگرافیک (درجه). ۱٪ (غرب یا شرق)، (طلوع یا غروب)"
+msgstr ""
+"Mako cal pi Labal Pimo bor piny:\n"
+"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
+"\n"
 
 #: moon.py:258
 #, python-format
-#, fuzzy, python-format
 msgid ""
 "Next Full Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "ماه کامل بعدی: ٪(تاریخ) در ٪ (روز)"
+msgstr ""
+"Wang dwe weng Malubo kore:\n"
+"%(date)s i %(days).0f nino mapol\n"
+"\n"
 
 #: moon.py:259
 #, python-format
-#, fuzzy, python-format
 msgid ""
 "Next New Moon:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "ماه جدید بعدی: درصد (تاریخ) در درصد (روزها)"
+msgstr ""
+"Dwe Manyen Malubo kore:\n"
+"%(date)s i %(days).0f nino mapol\n"
+"\n"
 
 #: moon.py:260
 #, python-format
-#, fuzzy, python-format
 msgid ""
 "Next Lunar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "ماه گرفتگی بعدی"
+msgstr ""
+"Wang dwe Malubo kore:\n"
+"%(date)s i %(days).0f nino mapol\n"
+"\n"
 
 #: moon.py:261
 #, python-format
-#, fuzzy, python-format
 msgid ""
 "Next Solar eclipse:\n"
 "%(date)s in %(days).0f days\n"
 "\n"
-msgstr "خورشید گرفتگی بعدی (کسوف)"
+msgstr ""
+"Alokaloka pa sola me wang dwe Malubo kore:\n"
+"%(date)s i %(days).0f nino mapol\n"
+"\n"
 
 #: moon.py:354
 msgid "SNWE"
-msgstr "جنوب شمال غرب شرق"
+msgstr "SNWE"
 
 #: moon.py:357
 msgid "NSEW"
-msgstr "شمال جنوب شرق غرب"
+msgstr "NSEW"
 
 #: moon.py:409
 msgid "Latitude"
-msgstr "عرض جغرافیایی"
+msgstr "Tung piny ki tung malo"
 
 #: moon.py:411
 msgid "Longitude"
-msgstr "طول جغرافیایی"
+msgstr "Tung wok ceng ki poto ceng"
 
 #: moon.py:522
 msgid "west"
-msgstr "غرب"
+msgstr "tung ku poto ceng"
 
 #: moon.py:524
 msgid "east"
-msgstr "شرق"
+msgstr "tung wok ceng"
 
 #: moon.py:527
 msgid "Sunset"
-msgstr "غروب"
+msgstr "Potoceng"
 
 #: moon.py:529
 msgid "Sunrise"
-msgstr "طلوع خورشید"
+msgstr "Wokceng"
 
 #: moon.py:545 moon.py:561
 msgid "New Moon"
-msgstr "ماه نو"
+msgstr "Dwe Manyen"
 
 #: moon.py:547
 msgid "Waxing Crescent"
-msgstr "ضبط هلال ماه"
+msgstr "Crescent Matye ki wara"
 
 #: moon.py:549
 msgid "First Quarter"
-msgstr "سه ماهه اول"
+msgstr "Akwota Mukwongo"
 
 #: moon.py:551
 msgid "Waxing Gibbous"
-msgstr "مرحله ای از ماه بین فاز یک چهارم و ماه کامل"
+msgstr "Wang Dwe Mumake calo wara"
 
 #: moon.py:553
 msgid "Full Moon"
-msgstr "ماه کامل"
+msgstr "Dwe Weng mupong"
 
 #: moon.py:555
 msgid "Waning Gibbous"
-msgstr "مرحله ای از ماه بین ماه کامل و ماه سه چهارم "
+msgstr "Gibbous matye kaciko"
 
 #: moon.py:557
 msgid "Last Quarter"
-msgstr "سه ماهه آخر"
+msgstr "Akwota ma Ogiko"
 
 #: moon.py:559
 msgid "Waning Crescent"
-msgstr "هلال ماه آخر ماه"
+msgstr "Crescent matye Kaciko"

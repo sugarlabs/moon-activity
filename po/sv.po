@@ -35,15 +35,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: 2010-02-12 06:21+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2017-03-26 13:14+0000\n"
+"Last-Translator: Anders <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1490534091.000000\n"
 
 #. TRANS: "name" option from activity.info file
 #: moon.py:68
@@ -57,12 +58,14 @@ msgid ""
 "latitudes and longtiutdes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
+"För alla som är intresserade av månen! Se månens olika faser, latituder och "
+"longituder och imponera på alla genom att \"förutse\" nästa fullmåne!"
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
 #, python-format
 msgid "%c"
-msgstr ""
+msgstr "%c"
 
 #: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
@@ -158,7 +161,7 @@ msgid ""
 "\n"
 msgstr ""
 "Nästa fullmåne:\n"
-"%(date)s in %(days).0f dagar\n"
+"%(date)s om %(days).0f dagar\n"
 "\n"
 
 #: moon.py:259
@@ -169,7 +172,7 @@ msgid ""
 "\n"
 msgstr ""
 "Nästa nymåne:\n"
-"%(date)s in %(days).0f dagar\n"
+"%(date)s om %(days).0f dagar\n"
 "\n"
 
 #: moon.py:260
@@ -180,7 +183,7 @@ msgid ""
 "\n"
 msgstr ""
 "Nästa månförmörkelse:\n"
-"%(date)s in %(days).0f dagar\n"
+"%(date)s om %(days).0f dagar\n"
 "\n"
 
 #: moon.py:261
@@ -191,7 +194,7 @@ msgid ""
 "\n"
 msgstr ""
 "Nästa solförmörkelse:\n"
-"%(date)s in %(days).0f dagar\n"
+"%(date)s om %(days).0f dagar\n"
 "\n"
 
 #: moon.py:354
@@ -200,7 +203,7 @@ msgstr "SNVÖ"
 
 #: moon.py:357
 msgid "NSEW"
-msgstr "NSÖW"
+msgstr "NSÖV"
 
 #: moon.py:409
 msgid "Latitude"

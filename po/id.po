@@ -245,5 +245,6 @@ msgid "Last Quarter"
 msgstr ""
 
 #: moon.py:559
+#, fuzzy
 msgid "Waning Crescent"
-msgstr ""
+msgstr "Bulan Sabit"

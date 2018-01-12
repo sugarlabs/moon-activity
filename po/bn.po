@@ -58,7 +58,7 @@ msgstr "চাঁদ"
 #. TRANS: "description" option from activity.info file
 msgid ""
 "For all those interested in the moon! See the different phases of the moon, "
-"latitudes and longtiutdes and impress all by \"predicting\" the next full "
+"latitudes and longitudes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
 

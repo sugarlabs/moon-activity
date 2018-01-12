@@ -2,75 +2,43 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: 2010-01-20 22:13+0200\n"
-"Last-Translator: jon <joni-ber_rock@hotmail.com>\n"
+"PO-Revision-Date: 2016-12-22 21:07+0000\n"
+"Last-Translator: Besnik_b <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1482440836.000000\n"
 
 #. TRANS: "name" option from activity.info file
 #: moon.py:68
 msgid "Moon"
-msgstr "Hëna"
+msgstr "Hënë"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid ""
 "For all those interested in the moon! See the different phases of the moon, "
-"latitudes and longtiutdes and impress all by \"predicting\" the next full "
+"latitudes and longitudes and impress all by \"predicting\" the next full "
 "moon!"
 msgstr ""
+"Për tërë ata që u intereson hëna! Shihni fazat e ndryshme të hënës, "
+"gjerësitë dhe gjatësitë gjeografike dhe bëjuni përshtypje të tjerëve duke \""
+"parashikuar\" hënë e plotë pasuese!"
 
 #. TRANS: Date format for next full/new moon and next solar/lunar eclipse
 #: moon.py:60
 #, python-format
 msgid "%c"
-msgstr ""
+msgstr "%c"
 
 #: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
@@ -82,13 +50,15 @@ msgstr ""
 
 #: moon.py:130
 msgid "View"
-msgstr ""
+msgstr "Shihni"
 
 #: moon.py:250
 msgid ""
 "Today's Moon Information\n"
 "\n"
 msgstr ""
+"Të dhëna Mbi Hënën e Sotme\n"
+"\n"
 
 #: moon.py:252
 #, python-format
@@ -97,6 +67,9 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"Fazë:\n"
+"%s\n"
+"\n"
 
 #: moon.py:253
 #, python-format
@@ -105,6 +78,9 @@ msgid ""
 "%.2f (astronomical)\n"
 "\n"
 msgstr ""
+"Datë Sipas Kalendarit Julian:\n"
+"%.2f (astronomike)\n"
+"\n"
 
 #: moon.py:254
 #, python-format
@@ -113,6 +89,9 @@ msgid ""
 "%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
 "\n"
 msgstr ""
+"Mosha:\n"
+"%(days).0f ditë, %(hours).0f orë, %(minutes).0f minuta\n"
+"\n"
 
 #: moon.py:255
 #, python-format
@@ -129,6 +108,9 @@ msgid ""
 "%.0f%% (estimated)\n"
 "\n"
 msgstr ""
+"Dukshmëri Sipërfaqeje:\n"
+"%.0f%% (e pritshme)\n"
+"\n"
 
 #: moon.py:257
 #, python-format
@@ -145,6 +127,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Hëna e Plotë Pasuese:\n"
+"%(date)s për %(days).0f ditë\n"
+"\n"
 
 #: moon.py:259
 #, python-format
@@ -153,6 +138,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Hëna e Re Pasuese:\n"
+"%(date)s për %(days).0f ditë\n"
+"\n"
 
 #: moon.py:260
 #, python-format
@@ -161,6 +149,9 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Eklipsi Hënor Pasues:\n"
+"%(date)s për %(days).0f ditë\n"
+"\n"
 
 #: moon.py:261
 #, python-format
@@ -169,42 +160,45 @@ msgid ""
 "%(date)s in %(days).0f days\n"
 "\n"
 msgstr ""
+"Eklipsi Diellor Pasues:\n"
+"%(date)s për %(days).0f ditë\n"
+"\n"
 
 #: moon.py:354
 msgid "SNWE"
-msgstr ""
+msgstr "JVPL"
 
 #: moon.py:357
 msgid "NSEW"
-msgstr ""
+msgstr "VJLP"
 
 #: moon.py:409
 msgid "Latitude"
-msgstr ""
+msgstr "Gjerësi gjeografike"
 
 #: moon.py:411
 msgid "Longitude"
-msgstr ""
+msgstr "Gjatësi gjeografike"
 
 #: moon.py:522
 msgid "west"
-msgstr ""
+msgstr "perëndim"
 
 #: moon.py:524
 msgid "east"
-msgstr ""
+msgstr "lindje"
 
 #: moon.py:527
 msgid "Sunset"
-msgstr ""
+msgstr "Perëndim Dielli"
 
 #: moon.py:529
 msgid "Sunrise"
-msgstr ""
+msgstr "Ag"
 
 #: moon.py:545 moon.py:561
 msgid "New Moon"
-msgstr ""
+msgstr "Hënë e Re"
 
 #: moon.py:547
 msgid "Waxing Crescent"
@@ -220,7 +214,7 @@ msgstr ""
 
 #: moon.py:553
 msgid "Full Moon"
-msgstr ""
+msgstr "Hënë e Plotë"
 
 #: moon.py:555
 msgid "Waning Gibbous"
