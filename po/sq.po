@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: 2016-12-22 21:07+0000\n"
+"PO-Revision-Date: 2018-02-03 20:47+0000\n"
 "Last-Translator: Besnik_b <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1482440836.000000\n"
+"X-POOTLE-MTIME: 1517690834.000000\n"
 
 #. TRANS: "name" option from activity.info file
 #: moon.py:68
@@ -42,11 +42,11 @@ msgstr "%c"
 
 #: moon.py:92 moon.py:118
 msgid "Toggle Grid View"
-msgstr ""
+msgstr "Kalo Në Pamjen Rrjetë"
 
 #: moon.py:98 moon.py:124
 msgid "Toggle Hemisphere View"
-msgstr ""
+msgstr "Kalo Në Pamjen Hemisferë"
 
 #: moon.py:130
 msgid "View"
