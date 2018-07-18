@@ -1,270 +1,200 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# Moon XO's Activity translation
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Bastien Guerry <bzg@laptop.org>, 2008.
+#. extracted from ../data.ini
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 6\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-03 00:33-0400\n"
-"PO-Revision-Date: 2012-11-24 17:20+0200\n"
-"Last-Translator: Lionel Laské <llaske@c2s.fr>\n"
-"Language-Team: French\n"
-"Language: fr\n"
+"POT-Creation-Date: Tue Mar 06 2018 22:20:09 GMT+0100 (CET)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: ini2po 0.0.1\n"
 
-#. TRANS: "name" option from activity.info file
-#: moon.py:68
-msgid "Moon"
-msgstr "Lune"
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid ""
-"For all those interested in the moon! See the different phases of the moon, "
-"latitudes and longtiutdes and impress all by \"predicting\" the next full "
-"moon!"
-msgstr ""
-"Pour ceux qui sont intéressés par la lune ! Afficher les différentes phases "
-"de la lune, les latitudes et les longitudes. Impressionnes tout le monde en "
-"\"prédisant\" la date de la prochaine pleine lune !"
-
-#. TRANS: Date format for next full/new moon and next solar/lunar eclipse
-#: moon.py:60
-#, python-format
-msgid "%c"
-msgstr "%c"
-
-#: moon.py:92 moon.py:118
-msgid "Toggle Grid View"
-msgstr "Changer la vue Grille"
-
-#: moon.py:98 moon.py:124
-msgid "Toggle Hemisphere View"
-msgstr "Changer la vue Hémisphère"
-
-#: moon.py:130
-msgid "View"
-msgstr "Vue"
-
-#: moon.py:250
-msgid ""
-"Today's Moon Information\n"
-"\n"
-msgstr ""
-"Information sur la lune d'aujourd'hui\n"
-"\n"
-
-#: moon.py:252
-#, python-format
-msgid ""
-"Phase:\n"
-"%s\n"
-"\n"
-msgstr ""
-"Phase:\n"
-"%s\n"
-"\n"
-
-#: moon.py:253
-#, python-format
-msgid ""
-"Julian Date:\n"
-"%.2f (astronomical)\n"
-"\n"
-msgstr ""
-"Date julienne:\n"
-"%.2f (astronomique)\n"
-"\n"
-
-#: moon.py:254
-#, python-format
-msgid ""
-"Age:\n"
-"%(days).0f days, %(hours).0f hours, %(minutes).0f minutes\n"
-"\n"
-msgstr ""
-"Âge:\n"
-"%(days).0f jours, %(hours).0f heures, %(minutes).0f minutes\n"
-"\n"
-
-#: moon.py:255
-#, python-format
-msgid ""
-"Lunation:\n"
-"%(phase).2f%% through lunation %(lunation)d\n"
-"\n"
-msgstr ""
-"Lunaison:\n"
-"%(phase).2f%% de la lunaison %(lunation)d\n"
-"\n"
-
-#: moon.py:256
-#, python-format
-msgid ""
-"Surface Visibility:\n"
-"%.0f%% (estimated)\n"
-"\n"
-msgstr ""
-"Visibilité de la surface:\n"
-"%.0f%% (estimated)\n"
-"\n"
-
-#: moon.py:257
-#, python-format
-msgid ""
-"Selenographic Terminator Longitude:\n"
-"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
-"\n"
-msgstr ""
-"Longitude du terminateur sélénographique:\n"
-"%(deg).1f°%(westOrEast)s (%(riseOrSet)s)\n"
-"\n"
-
-#: moon.py:258
-#, python-format
-msgid ""
-"Next Full Moon:\n"
-"%(date)s in %(days).0f days\n"
-"\n"
-msgstr ""
-"Prochaine pleine lune:\n"
-"%(date)s dans %(days).0f jours\n"
-"\n"
-
-#: moon.py:259
-#, python-format
-msgid ""
-"Next New Moon:\n"
-"%(date)s in %(days).0f days\n"
-"\n"
-msgstr ""
-"Prochaine nouvelle lune:\n"
-"%(date)s dans %(days).0f jours\n"
-"\n"
-
-#: moon.py:260
-#, python-format
-msgid ""
-"Next Lunar eclipse:\n"
-"%(date)s in %(days).0f days\n"
-"\n"
-msgstr ""
-"Prochaine éclipse de lune:\n"
-"%(date)s dans %(days).0f jours\n"
-"\n"
-
-#: moon.py:261
-#, python-format
-msgid ""
-"Next Solar eclipse:\n"
-"%(date)s in %(days).0f days\n"
-"\n"
-msgstr ""
-"Prochaine éclipse de soleil:\n"
-"%(date)s dans %(days).0f jours\n"
-"\n"
-
-#: moon.py:354
-msgid "SNWE"
-msgstr "SNOE"
-
-#: moon.py:357
-msgid "NSEW"
-msgstr "NSEO"
-
-#: moon.py:409
-msgid "Latitude"
-msgstr "Latitude"
-
-#: moon.py:411
-msgid "Longitude"
-msgstr "Longitude"
-
-#: moon.py:522
-msgid "west"
-msgstr "ouest"
-
-#: moon.py:524
-msgid "east"
-msgstr "est"
-
-#: moon.py:527
-msgid "Sunset"
-msgstr "Coucher du soleil"
-
-#: moon.py:529
-msgid "Sunrise"
-msgstr "Lever du soleil"
-
-#: moon.py:545 moon.py:561
+#: phase-0
+msgctxt "phase-0"
 msgid "New Moon"
 msgstr "Nouvelle lune"
 
-#: moon.py:547
+#: phase-1
+msgctxt "phase-1"
 msgid "Waxing Crescent"
 msgstr "Premier croissant"
 
-#: moon.py:549
+#: phase-2
+msgctxt "phase-2"
 msgid "First Quarter"
 msgstr "Premier quartier"
 
-#: moon.py:551
+#: phase-3
+msgctxt "phase-3"
 msgid "Waxing Gibbous"
-msgstr "Lune gibbeuse (croissante)"
+msgstr "Lune gibbeuse croissante"
 
-#: moon.py:553
+#: phase-4
+msgctxt "phase-4"
 msgid "Full Moon"
 msgstr "Pleine lune"
 
-#: moon.py:555
+#: phase-5
+msgctxt "phase-5"
 msgid "Waning Gibbous"
-msgstr "Lune gibbeuse (décroissante)"
+msgstr "Lune gibbeuse décroissante"
 
-#: moon.py:557
+#: phase-6
+msgctxt "phase-6"
 msgid "Last Quarter"
 msgstr "Dernier quartier"
 
-#: moon.py:559
+#: phase-7
+msgctxt "phase-7"
 msgid "Waning Crescent"
 msgstr "Dernier croissant"
+
+#: moonInfo
+msgctxt "moonInfo"
+msgid "Today's Moon Information"
+msgstr "Information sur la lune d'aujourd'hui"
+
+#: phase
+msgctxt "phase"
+msgid "Phase"
+msgstr "Phase"
+
+#: julian
+msgctxt "julian"
+msgid "Julian Date"
+msgstr "Date julienne"
+
+#: age
+msgctxt "age"
+msgid "Age"
+msgstr "Âge"
+
+#: lunation
+msgctxt "lunation"
+msgid "Lunation"
+msgstr "Lunaison"
+
+#: visibility
+msgctxt "visibility"
+msgid "Surface Visibility"
+msgstr "Visibilité de la surface"
+
+#: seleno
+msgctxt "seleno"
+msgid "Selenographic Terminator Longitude"
+msgstr "Sélénographique Terminator Longitude"
+
+#: full
+msgctxt "full"
+msgid "Next Full Moon"
+msgstr "Prochaine pleine lune"
+
+#: new
+msgctxt "new"
+msgid "Next New Moon"
+msgstr "Prochaine nouvelle lune"
+
+#: lunar
+msgctxt "lunar"
+msgid "Next Lunar eclipse"
+msgstr "Prochaine éclipse de lune"
+
+#: solar
+msgctxt "solar"
+msgid "Next Solar eclipse"
+msgstr "Prochaine éclipse de soleil"
+
+#: minutes
+msgctxt "minutes"
+msgid "minutes"
+msgstr "minutes"
+
+#: hours
+msgctxt "hours"
+msgid "hours"
+msgstr "heures"
+
+#: days
+msgctxt "days"
+msgid "days"
+msgstr "jours"
+
+#: astro
+msgctxt "astro"
+msgid "(astronomical)"
+msgstr "(astronomique)"
+
+#: thru
+msgctxt "thru"
+msgid "through lunation"
+msgstr "de la lunaison"
+
+#: in
+msgctxt "in"
+msgid "in"
+msgstr "dans"
+
+#: estimated
+msgctxt "estimated"
+msgid "(estimated)"
+msgstr "(estimée)"
+
+#: west
+msgctxt "west"
+msgid "west"
+msgstr "ouest"
+
+#: east
+msgctxt "east"
+msgid "east"
+msgstr "est"
+
+#: Sunset
+msgctxt "Sunset"
+msgid "Sunset"
+msgstr "Coucher du soleil"
+
+#: Sunrise
+msgctxt "Sunrise"
+msgid "Sunrise"
+msgstr "Lever du soleil"
+
+#: SNWE
+msgctxt "SNWE"
+msgid "SNWE"
+msgstr "SNOE"
+
+#: NSEW
+msgctxt "NSEW"
+msgid "NSEW"
+msgstr "NSEO"
+
+#: Latitude
+msgctxt "Latitude"
+msgid "Latitude"
+msgstr "Latitude"
+
+#: Longitude
+msgctxt "Longitude"
+msgid "Longitude"
+msgstr "Longitude"
+
+#: ToggleGrid
+msgctxt "ToggleGrid"
+msgid "Toggle Grid View"
+msgstr "Afficher/Masquer la grille"
+
+#: ToggleHemisphere
+msgctxt "ToggleHemisphere"
+msgid "Toggle Hemisphere View"
+msgstr "Changer d'hémisphère"
+
+#: SaveImage
+msgctxt "SaveImage"
+msgid "Save As Image"
+msgstr "Enregistrer en tant qu'image"
+
