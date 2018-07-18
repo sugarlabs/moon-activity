@@ -16,185 +16,185 @@ msgstr ""
 #: phase-0
 msgctxt "phase-0"
 msgid "New Moon"
-msgstr "Luna Nueva"
+msgstr ""
 
 #: phase-1
 msgctxt "phase-1"
 msgid "Waxing Crescent"
-msgstr "Luna Nueva Visible"
+msgstr ""
 
 #: phase-2
 msgctxt "phase-2"
 msgid "First Quarter"
-msgstr "Cuarto Creciente"
+msgstr ""
 
 #: phase-3
 msgctxt "phase-3"
 msgid "Waxing Gibbous"
-msgstr "Luna Gibada Creciente"
+msgstr ""
 
 #: phase-4
 msgctxt "phase-4"
 msgid "Full Moon"
-msgstr "Luna Llena"
+msgstr ""
 
 #: phase-5
 msgctxt "phase-5"
 msgid "Waning Gibbous"
-msgstr "Luna Gibada Menguante"
+msgstr ""
 
 #: phase-6
 msgctxt "phase-6"
 msgid "Last Quarter"
-msgstr "Cuarto Menguante"
+msgstr ""
 
 #: phase-7
 msgctxt "phase-7"
 msgid "Waning Crescent"
-msgstr "Luna Menguante"
+msgstr ""
 
 #: moonInfo
 msgctxt "moonInfo"
-msgid "Today's Moon Information"
-msgstr "Información de la Luna para hoy"
+msgid "Today\'s Moon Information"
+msgstr ""
 
 #: phase
 msgctxt "phase"
 msgid "Phase"
-msgstr "Fase"
+msgstr ""
 
 #: julian
 msgctxt "julian"
 msgid "Julian Date"
-msgstr "Fecha Juliana"
+msgstr ""
 
 #: age
 msgctxt "age"
 msgid "Age"
-msgstr "Edad"
+msgstr ""
 
 #: lunation
 msgctxt "lunation"
 msgid "Lunation"
-msgstr "Lunation"
+msgstr ""
 
 #: visibility
 msgctxt "visibility"
 msgid "Surface Visibility"
-msgstr "Visibilidad de la superficie"
+msgstr ""
 
 #: seleno
 msgctxt "seleno"
 msgid "Selenographic Terminator Longitude"
-msgstr "Longitud del terminador selenográfico"
+msgstr ""
 
 #: full
 msgctxt "full"
 msgid "Next Full Moon"
-msgstr "Próxima Luna Llena"
+msgstr ""
 
 #: new
 msgctxt "new"
 msgid "Next New Moon"
-msgstr "Próxima Luna Nueva"
+msgstr ""
 
 #: lunar
 msgctxt "lunar"
 msgid "Next Lunar eclipse"
-msgstr "Próximo eclipse lunar"
+msgstr ""
 
 #: solar
 msgctxt "solar"
 msgid "Next Solar eclipse"
-msgstr "Próximo eclipse solar"
+msgstr ""
 
 #: minutes
 msgctxt "minutes"
 msgid "minutes"
-msgstr "minutos"
+msgstr ""
 
 #: hours
 msgctxt "hours"
 msgid "hours"
-msgstr "días"
+msgstr ""
 
 #: days
 msgctxt "days"
 msgid "days"
-msgstr "días"
+msgstr ""
 
 #: astro
 msgctxt "astro"
 msgid "(astronomical)"
-msgstr "(astronómical)"
+msgstr ""
 
 #: thru
 msgctxt "thru"
 msgid "through lunation"
-msgstr "hasta la lunación"
+msgstr ""
 
 #: in
 msgctxt "in"
 msgid "in"
-msgstr "en"
+msgstr ""
 
 #: estimated
 msgctxt "estimated"
 msgid "(estimated)"
-msgstr "(estimada)"
+msgstr ""
 
 #: west
 msgctxt "west"
 msgid "west"
-msgstr "oeste"
+msgstr ""
 
 #: east
 msgctxt "east"
 msgid "east"
-msgstr "este"
+msgstr ""
 
 #: Sunset
 msgctxt "Sunset"
 msgid "Sunset"
-msgstr "Se pone"
+msgstr ""
 
 #: Sunrise
 msgctxt "Sunrise"
 msgid "Sunrise"
-msgstr "Sale"
+msgstr ""
 
 #: SNWE
 msgctxt "SNWE"
 msgid "SNWE"
-msgstr "SNOE"
+msgstr ""
 
 #: NSEW
 msgctxt "NSEW"
 msgid "NSEW"
-msgstr "NSEO"
+msgstr ""
 
 #: Latitude
 msgctxt "Latitude"
 msgid "Latitude"
-msgstr "Latitud"
+msgstr ""
 
 #: Longitude
 msgctxt "Longitude"
 msgid "Longitude"
-msgstr "Longitud"
+msgstr ""
 
 #: ToggleGrid
 msgctxt "ToggleGrid"
 msgid "Toggle Grid View"
-msgstr "Cambiar a vista grilla"
+msgstr ""
 
 #: ToggleHemisphere
 msgctxt "ToggleHemisphere"
 msgid "Toggle Hemisphere View"
-msgstr "Cambiar a vista hemisferio"
+msgstr ""
 
 #: SaveImage
 msgctxt "SaveImage"
 msgid "Save As Image"
-msgstr "Guardarla como una imagen"
+msgstr ""
 
