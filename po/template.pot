@@ -192,9 +192,3 @@ msgstr ""
 msgctxt "ToggleHemisphere"
 msgid "Toggle Hemisphere View"
 msgstr ""
-
-#: SaveImage
-msgctxt "SaveImage"
-msgid "Save As Image"
-msgstr ""
-

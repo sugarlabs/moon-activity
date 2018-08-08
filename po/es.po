@@ -192,9 +192,3 @@ msgstr "Cambiar a vista grilla"
 msgctxt "ToggleHemisphere"
 msgid "Toggle Hemisphere View"
 msgstr "Cambiar a vista hemisferio"
-
-#: SaveImage
-msgctxt "SaveImage"
-msgid "Save As Image"
-msgstr "Guardarla como una imagen"
-
