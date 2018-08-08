@@ -230,7 +230,6 @@ define(['activity/data-model', 'activity/draw', 'webL10n', 'sugar-web/env', 'sug
 
 		 document.getElementById("toggle-grid-button").title = _('ToggleGrid');
 		 document.getElementById("toggle-hemisphere-button").title = _('ToggleHemisphere');
-		 document.getElementById("save-image-button").title = _('SaveImage');
     }
 
 
@@ -246,7 +245,6 @@ define(['activity/data-model', 'activity/draw', 'webL10n', 'sugar-web/env', 'sug
 
         toggleGridBtn.addEventListener('click', toggleGrid);
         toggleHemisphereBtn.addEventListener('click', toggleHemisphere);
-        document.querySelector('#save-image-button').addEventListener('click', saveImage);
     }
 
 
@@ -279,28 +277,6 @@ define(['activity/data-model', 'activity/draw', 'webL10n', 'sugar-web/env', 'sug
         }
 
         updateView();
-    }
-
-
-    function saveImage() {
-        /*
-            Read canvas data as base64 string and
-            store image in datastore
-        */
-
-		var mimetype = 'image/jpeg';
-        var inputData = canvas.toDataURL(mimetype, 1);
-		var metadata = {
-			mimetype: mimetype,
-			title: "Image Moon",
-			activity: "org.olpcfrance.MediaViewerActivity",
-			timestamp: new Date().getTime(),
-			creation_time: new Date().getTime(),
-			file_size: 0
-		};
-		datastore.create(metadata, function() {
-			console.log("export done.")
-		}, inputData);
     }
 
 

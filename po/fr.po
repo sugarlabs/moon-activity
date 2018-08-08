@@ -192,9 +192,3 @@ msgstr "Afficher/Masquer la grille"
 msgctxt "ToggleHemisphere"
 msgid "Toggle Hemisphere View"
 msgstr "Changer d'hémisphère"
-
-#: SaveImage
-msgctxt "SaveImage"
-msgid "Save As Image"
-msgstr "Enregistrer en tant qu'image"
-
