@@ -7,3 +7,4 @@ icon = activity-icon
 license = Apache-2.0
 repository = https://github.com/sugarlabs/moon-activity.git
 summary = For all those interested in the moon! See the different phases of the moon, latitudes and longitudes and impress all by "predicting" the next full moon!
+tags = Science;Geography
