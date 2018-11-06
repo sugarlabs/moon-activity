@@ -2,9 +2,9 @@
 name = Moon
 activity_version = 19
 bundle_id = com.garycmartin.Moon
-exec = sugar-activity-web
-icon = activity-icon
 license = Apache-2.0
-repository = https://github.com/sugarlabs/moon-activity.git
+icon = activity-icon
+exec = sugar-activity-web
 summary = For all those interested in the moon! See the different phases of the moon, latitudes and longitudes and impress all by "predicting" the next full moon!
+repository = https://github.com/sugarlabs/moon-activity.git
 tags = Science;Geography
