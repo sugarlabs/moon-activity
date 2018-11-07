@@ -8,13 +8,12 @@ license = Apache-2.0
 repository = https://github.com/sugarlabs/moon-activity.git
 summary = For all those interested in the moon! See the different phases of the moon, latitudes and longitudes and impress all by "predicting" the next full moon!
 tags = Science;Geography
-metadata_license = CC0-1.0
 description:
-    <p>For all those interested in the moon!</p>
-    <p>See:</p>
+    <p>Using this activity you can:</p>
     <ul>
-        <li>the diffrent phases of the moon</li>
-        <li>latitudes and longtitudes</li>
+        <li>learn about diffrent Lunar phases</li>
+        <li>see latitudes and longtitudes directly on the moon</li>
+		<li>predict when the next full moon will happen</li>
     </ul>
     
-screenshots = https://github.com/sugarlabs/moon-activity/tree/master/screenshots/moon-1.PNG https://github.com/sugarlabs/moon-activity/tree/master/screenshots/moon-2.PNG https://github.com/sugarlabs/moon-activity/tree/master/screenshots/moon-3.PNG
+screenshots = https://github.com/sugarlabs/moon-activity/tree/master/screenshots/1.png https://github.com/sugarlabs/moon-activity/tree/master/screenshots/2.png https://github.com/sugarlabs/moon-activity/tree/master/screenshots/3.png
