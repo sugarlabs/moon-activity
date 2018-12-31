@@ -1,12 +1,11 @@
 [Activity]
 name = Moon
 summary = For all those interested in the moon! See the different phases of the moon, latitudes and longitudes and impress all by "predicting" the next full moon!
-activity_version = 18
-host_version = 1
+activity_version = 18.1
+tags = Science;Geography
 bundle_id = com.garycmartin.Moon
 icon = moon-icon
 exec = sugar-activity moon.MoonActivity
-show_launcher = yes
 license = GPLv2+
 max_participants = 1
 repository = https://github.com/sugarlabs/moon-activity.git
