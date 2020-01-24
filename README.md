@@ -10,7 +10,7 @@ This activity does not require internet access to work, and will show reasonably
 How to use?
 ===========
 
-Moon is part of the Sugar desktop.  Please refer to;
+Moon is not part of the Sugar desktop, but is often included.  Please refer to;
 
 * [How to Get Sugar on sugarlabs.org](https://sugarlabs.org/),
 * [How to use Sugar](https://help.sugarlabs.org/),
