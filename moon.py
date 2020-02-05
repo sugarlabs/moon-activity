@@ -47,14 +47,9 @@ try:
 except (ImportError, AttributeError):
     import simplejson as json
 
-try:
-    # >= 0.86 toolbars
-    from sugar.graphics.toolbarbox import ToolbarButton, ToolbarBox
-    from sugar.activity.widgets import ActivityToolbarButton
-    from sugar.activity.widgets import StopButton
-except ImportError:
-    # <= 0.84 toolbars
-    pass
+from sugar.graphics.toolbarbox import ToolbarButton, ToolbarBox
+from sugar.activity.widgets import ActivityToolbarButton
+from sugar.activity.widgets import StopButton
 
 IMAGE_SIZE = 726
 HALF_SIZE = IMAGE_SIZE / 2
@@ -127,34 +122,7 @@ class MoonActivity(activity.Activity):
             toolbar_box.show()
 
         except NameError:
-            # Use old <= 0.84 toolbar design
-            toolbox = activity.ActivityToolbox(self)
-            view_tool_bar = gtk.Toolbar()
-            self.toggle_grid_button = ToggleToolButton('grid-icon')
-            self.toggle_grid_button.set_tooltip(_("Toggle Grid View"))
-            self.toggle_grid_button.set_active(self.show_grid)
-            self.toggle_grid_handler_id = self.toggle_grid_button.connect('clicked', self.toggle_grid_clicked)
-            view_tool_bar.insert(self.toggle_grid_button, -1)
-            self.toggle_grid_button.show()
-            self.toggle_hemisphere_button = ToggleToolButton('hemi-icon')
-            self.toggle_hemisphere_button.set_tooltip(_("Toggle Hemisphere View"))
-            self.toggle_hemisphere_button.set_active(self.hemisphere_view == 'south')
-            self.toggle_hemisphere_handler_id = self.toggle_hemisphere_button.connect('clicked', self.toggle_hemisphere_clicked)
-            view_tool_bar.insert(self.toggle_hemisphere_button, -1)
-            self.toggle_hemisphere_button.show()
-
-            self.image_button = ToolButton('save-image')
-            self.image_button.set_tooltip(_("Save As Image"))
-            self.image_button.connect('clicked', self.save_image)
-            toolbar_box.toolbar.insert(self.image_button, -1)
-            self.image_button.show()
-
-            view_tool_bar.show()
-            toolbox.add_toolbar(_('View'), view_tool_bar)
-            self.set_toolbox(toolbox)
-            toolbox.show()
-            activity_toolbar = toolbox.get_activity_toolbar()
-            activity_toolbar.share.props.visible = False
+            pass
 
         # Items we don't have to do every redraw
         colormap = gtk.gdk.colormap_get_system()
