@@ -1,3 +1,10 @@
+18.2
+
+* Remove old toolbar support,
+* Port to get_activity_root(),
+* Show message when clock is wrong,
+* Remove empty translations,
+
 18.1
 
 * Lunar ephemerides phase for 2018 to 2024 (Gary Martin),
