@@ -80,7 +80,7 @@ class MoonActivity(activity.Activity):
         self.activity_state = {}
         self.activity_state['hemisphereView'] = self.hemisphere_view
         self.activity_state['showGrid'] = self.show_grid
-        self.read_and_parse_prefs(os.environ['SUGAR_ACTIVITY_ROOT'] + '/data/defaults')
+        self.read_and_parse_prefs(self.get_activity_root() + '/data/defaults')
                 
         # Toolbox
         try:
@@ -238,7 +238,7 @@ class MoonActivity(activity.Activity):
         finally:
             to_journal.close()
             
-        to_persistent_fs = file(os.environ['SUGAR_ACTIVITY_ROOT'] + '/data/defaults', 'w')
+        to_persistent_fs = file(self.get_activity_root() + '/data/defaults', 'w')
         try:
             to_persistent_fs.write(serialised_data)
         finally:
