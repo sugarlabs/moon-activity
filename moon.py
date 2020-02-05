@@ -187,8 +187,20 @@ class MoonActivity(activity.Activity):
         self.data_model = DataModel()
 
         # Generate first view for text and kick off image update timer
-        self.update_text_information_view()
-        self.update_moon_image_view()
+        try:
+            self.update_text_information_view()
+            self.update_moon_image_view()
+        except:
+            from sugar.graphics.alert import ErrorAlert
+            alert = ErrorAlert()
+            alert.props.title = 'No data for year or clock has bad year.'
+            alert.props.msg = 'Either there is no data for the year, or the year in the computer clock is wrong.'
+            self.add_alert(alert)
+            def response(alert, response_id):
+                self.remove_alert(alert)
+                self.close()
+            alert.connect('response', response)
+            alert.show()
 
         # Display everything
         self.info.show()
