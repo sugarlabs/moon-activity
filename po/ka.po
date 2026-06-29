@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Mar 06 2018 22:20:09 GMT+0100 (CET)\n"
-"PO-Revision-Date: 2026-06-29 08:07+0000\n"
+"PO-Revision-Date: 2026-06-29 08:17+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/moon/ka/>\n"
@@ -128,7 +128,7 @@ msgstr "დღე"
 #: astro
 msgctxt "astro"
 msgid "(astronomical)"
-msgstr ""
+msgstr "(ასტრონომიული)"
 
 #: thru
 msgctxt "thru"
@@ -138,52 +138,52 @@ msgstr ""
 #: in
 msgctxt "in"
 msgid "in"
-msgstr ""
+msgstr "რაში"
 
 #: estimated
 msgctxt "estimated"
 msgid "(estimated)"
-msgstr ""
+msgstr "(დაახლ)"
 
 #: west
 msgctxt "west"
 msgid "west"
-msgstr ""
+msgstr "დასავლ"
 
 #: east
 msgctxt "east"
 msgid "east"
-msgstr ""
+msgstr "აღმოს"
 
 #: Sunset
 msgctxt "Sunset"
 msgid "Sunset"
-msgstr ""
+msgstr "დაისი"
 
 #: Sunrise
 msgctxt "Sunrise"
 msgid "Sunrise"
-msgstr ""
+msgstr "აისი"
 
 #: SNWE
 msgctxt "SNWE"
 msgid "SNWE"
-msgstr ""
+msgstr "სჩდა"
 
 #: NSEW
 msgctxt "NSEW"
 msgid "NSEW"
-msgstr ""
+msgstr "ჩსად"
 
 #: Latitude
 msgctxt "Latitude"
 msgid "Latitude"
-msgstr ""
+msgstr "განედი"
 
 #: Longitude
 msgctxt "Longitude"
 msgid "Longitude"
-msgstr ""
+msgstr "გრძედი"
 
 #: ToggleGrid
 msgctxt "ToggleGrid"
