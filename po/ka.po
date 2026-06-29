@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Mar 06 2018 22:20:09 GMT+0100 (CET)\n"
-"PO-Revision-Date: 2026-06-22 06:20+0000\n"
+"PO-Revision-Date: 2026-06-29 08:07+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/moon/ka/>\n"
@@ -63,7 +63,7 @@ msgstr ""
 #: phase
 msgctxt "phase"
 msgid "Phase"
-msgstr ""
+msgstr "ფაზა"
 
 #: julian
 msgctxt "julian"
@@ -73,12 +73,12 @@ msgstr ""
 #: age
 msgctxt "age"
 msgid "Age"
-msgstr ""
+msgstr "ასაკი"
 
 #: lunation
 msgctxt "lunation"
 msgid "Lunation"
-msgstr ""
+msgstr "მთვარისმიერი თვე"
 
 #: visibility
 msgctxt "visibility"
@@ -113,17 +113,17 @@ msgstr ""
 #: minutes
 msgctxt "minutes"
 msgid "minutes"
-msgstr ""
+msgstr "წუთი"
 
 #: hours
 msgctxt "hours"
 msgid "hours"
-msgstr ""
+msgstr "საათი"
 
 #: days
 msgctxt "days"
 msgid "days"
-msgstr ""
+msgstr "დღე"
 
 #: astro
 msgctxt "astro"
